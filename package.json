@@ -17,12 +17,12 @@
     "grunt-contrib-less": "^1.2.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-postcss": "^0.8.0",
-    "load-grunt-tasks": "^3.4.1"
+    "load-grunt-tasks": "^3.4.1",
+    "normalize.less": "^1.0.0"
   },
   "engines": {
     "node": "^5.0.0"
   },
-  
   "scripts": {
     "build": "grunt less && grunt postcss",
     "start": "npm run build && grunt server"

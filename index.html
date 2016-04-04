@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>ТВОЕ МЕНЮ</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -12,10 +13,10 @@
       <nav class="main-nav">
         <div class="main-nav__user-nav">
           <ul class="user-nav__items">
-            <li class="user-nav__item"><a href="#">Орёл</a></li>
-            <li class="user-nav__item"><a href="#">+7(800)100-01-00</a></li>
-            <li class="user-nav__item"><a href="#">Вход</a></li>
-            <li class="user-nav__item"><a href="#">Корзина</a></li>
+            <li class="user-nav__item user-nav__item--location"><a href="#">Орёл</a></li>
+            <li class="user-nav__item user-nav__item--tel"><a href="#">+7(800)100-01-00</a></li>
+            <li class="user-nav__item user-nav__item--entree"><a href="#">Вход</a></li>
+            <li class="user-nav__item user-nav__item--basket"><a href="#">Корзина</a></li>
           </ul>
         </div>
         <div class="main-nav__service-nav">
@@ -61,7 +62,7 @@
           (Viber, WhatsApp)
         </div>
         <div class="contacts__subscribe">
-          <form action="post">
+          <form class="contacts__form" action="post">
             <input type="email" placeholder="email">
             <button type="submit">OK</button>
           </form>

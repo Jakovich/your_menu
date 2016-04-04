@@ -1,0 +1,30 @@
+{
+  "name": "your_menu",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Сайт по онлайн-продаже еды",
+  "author": "Nadia Pillard",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jakovich/your_menu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jakovich/your_menu/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-less": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "load-grunt-tasks": "^3.4.1"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  },
+  
+  "scripts": {
+    "build": "grunt less && grunt postcss",
+    "start": "npm run build && grunt server"
+  }
+}

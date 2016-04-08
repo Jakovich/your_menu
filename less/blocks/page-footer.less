@@ -1,5 +1,19 @@
 .page-footer__contacts {
   background-color: @bg-green;
+  padding: 7px 0;
+  .clearfix();
+}
+
+.contacts__inner {
+  display: table;
+}
+
+.social-links {
+  padding: 0;
+  border-right: 1px solid #ffffff;
+  display: table-cell;
+  vertical-align: middle;
+  width: 400px;
 }
 
 .social-link {
@@ -8,9 +22,10 @@
   height: 45px;
   border-radius: 50%;
   background-color: #ffffff;
-
+  margin: 0 22px;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .social-link--vk {
@@ -33,6 +48,64 @@
   background-size: 24px auto;
 }
 
+.contacts__tel {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 340px;
+  color: #ffffff;
+  font-size: 24px;
+  border-right: 1px solid #ffffff;
+}
+
+.contacts__explic {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contacts__subscribe {
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  display: table-cell;
+  vertical-align: middle;
+  width: 340px;
+}
+
+.contacts__form {
+  position: relative;
+  display: block;
+}
+
+.contacts__form input {
+  display: block;
+  width: 280px;
+  
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 96px;
+  font-size: 18px;
+}
+
+.contacts__form button {
+  position: absolute;
+  right: 7px;
+  top: 5px;
+  z-index: 5;
+  background-color: #277621;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px; 
+  padding: 5px 20px;
+}
+
+
 
 
 
@@ -49,6 +122,7 @@
 .footer-nav__items {
   list-style: none;
   padding: 0;
+  margin:0;
   display: flex;
   justify-content: center;
 }

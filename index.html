@@ -9,12 +9,13 @@
   <body>
     
       <header class="page-header">
-        <div class="page-header__logo">
-          <a href="#"><img src="img/logo.png" width="233" height="211" alt="ТВОЕ МЕНЮ"></a>
-        </div>
+        
         <nav class="main-nav">
           <div class="main-nav__user-nav">
            <div class="wrapper">
+           <div class="page-header__logo">
+          <a href="#"><img src="img/logo.png" width="233" height="211" alt="ТВОЕ МЕНЮ"></a>
+        </div>
             <ul class="user-nav__items">
               <li class="user-nav__item user-nav__item--location"><a href="#">Орёл</a></li>
               <li class="user-nav__item user-nav__item--tel"><a href="#">+7(800)100-01-00</a></li>
@@ -26,10 +27,10 @@
           <div class="main-nav__service-nav">
            <div class="wrapper">
             <ul class="service-nav__items">
-              <li class="service-nav__item"><a href="#">Меню недели</a></li>
-              <li class="service-nav__item"><a href="#">Товары для кухни</a></li>
-              <li class="service-nav__item"><a href="#">Доставка и оплата</a></li>
-              <li class="service-nav__item"><a href="#">Вместе c нами</a></li>
+              <li class="service-nav__item"><a href="#">Меню<br>недели</a></li>
+              <li class="service-nav__item"><a href="#">Товары<br>для кухни</a></li>
+              <li class="service-nav__item"><a href="#">Доставка<br>и оплата</a></li>
+              <li class="service-nav__item"><a href="#">Вместе<br>c нами</a></li>
             </ul>
             </div>
           </div>     
@@ -37,11 +38,12 @@
 
       </header>
 
-      <main>
+      <main class="page-main">
+       <div class="wrapper">
         <nav class="personal-nav">
           <header class="personal-nav__title">Личный кабинет</header>
          <ul class="personal-nav__items">
-           <li class="personal-nav__item personal-nav__item--code">Ваш код <span>5336855</span></li>
+           <li class="personal-nav__item"><a href="#">Ваш код <span class="personal-nav__code">5336855</span></a></li>
            <li class="personal-nav__item personal__item--active"><a href="#">Мои данные</a></li>
            <li class="personal-nav__item"><a href="#">Мои карты</a></li>
            <li class="personal-nav__item"><a href="#">Мои заказы</a></li>
@@ -52,28 +54,34 @@
          </ul>
 
         </nav>
+        </div>
       </main>
 
 
       <footer class="page-footer">
         <div class="page-footer__contacts">
-         <div class="wrapper wrapper--footer">
-          <div class="social-links">
-            <a class="social-link social-link--vk"></a>
-            <a class="social-link social-link--fb"></a>
-            <a class="social-link social-link--ok"></a>
-            <a class="social-link social-link--inst"></a>
-          </div>
-          <div class="contacts__tel">
-            тел. 8999605000<br>
-            (Viber, WhatsApp)
-          </div>
-          <div class="contacts__subscribe">
-            <form class="contacts__form" action="post">
-              <input type="email" placeholder="email">
-              <button type="submit">OK</button>
-            </form>
-          </div>
+          <div class="wrapper wrapper--footer">
+           <div class="contacts__inner">
+            <div class="social-links">
+              <a class="social-link social-link--vk"></a>
+              <a class="social-link social-link--fb"></a>
+              <a class="social-link social-link--ok"></a>
+              <a class="social-link social-link--inst"></a>
+            </div>
+            <div class="contacts__tel">
+              тел. 8999605000<br>
+              (Viber, WhatsApp)
+            </div>
+            <div class="contacts__subscribe">
+              <div class="contacts__explic">
+                Хочу получать новое меню на почту
+              </div>
+              <form class="contacts__form" action="post">
+                <input type="email" placeholder="email">
+                <button type="submit">Ok</button>
+              </form>
+            </div>
+            </div>
           </div>
         </div>
         <div class="page-footer__nav">

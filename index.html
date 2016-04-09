@@ -11,29 +11,31 @@
       <header class="page-header">
         
         <nav class="main-nav">
-          <div class="main-nav__user-nav">
-           <div class="wrapper">
-           <div class="user-nav__inner">
-           <div class="page-header__logo">
-          <a href="#"><img src="img/logo.png" width="233" height="211" alt="ТВОЕ МЕНЮ"></a>
-        </div>
-            <ul class="user-nav__items">
-              <li class="user-nav__item user-nav__item--location"><a href="#">Орёл</a></li>
-              <li class="user-nav__item user-nav__item--tel"><a href="#">+7(800)100-01-00</a></li>
-              <li class="user-nav__item user-nav__item--entree"><a href="#">Вход</a></li>
-              <li class="user-nav__item user-nav__item--basket"><a href="#">Корзина</a></li>
-            </ul>
+          <div class="main-nav__user">
+            <div class="wrapper">
+              <div class="user-nav">
+                <div class="page-header__logo">
+                <a href="#"><img src="img/logo.png" width="233" height="211" alt="ТВОЕ МЕНЮ"></a>
+                </div>
+                <ul class="user-nav__items">
+                  <li class="user-nav__item user-nav__item--location"><a href="#">Орёл</a></li>
+                  <li class="user-nav__item user-nav__item--tel"><a href="#">+7(800)100-01-00 <span class="tel-expl">Перезвоните мне</span></li>
+                  <li class="user-nav__item user-nav__item--entree"><a href="#">Вход</a></li>
+                  <li class="user-nav__item user-nav__item--basket"><a href="#">Корзина</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-          </div>
-          </div>
-          <div class="main-nav__service-nav">
-           <div class="wrapper">
-            <ul class="service-nav__items">
-              <li class="service-nav__item"><a href="#">Меню<br>недели</a></li>
-              <li class="service-nav__item"><a href="#">Товары<br>для кухни</a></li>
-              <li class="service-nav__item"><a href="#">Доставка<br>и оплата</a></li>
-              <li class="service-nav__item"><a href="#">Вместе<br>c нами</a></li>
-            </ul>
+          <div class="main-nav__service">
+            <div class="wrapper">
+              <div class="service-nav">
+                <ul class="service-nav__items">
+                  <li class="service-nav__item"><a href="#">Меню<br>недели</a></li>
+                  <li class="service-nav__item"><a href="#">Товары<br>для кухни</a></li>
+                  <li class="service-nav__item"><a href="#">Доставка<br>и оплата</a></li>
+                  <li class="service-nav__item"><a href="#">Вместе<br>c нами</a></li>
+                </ul>
+              </div>
             </div>
           </div>     
         </nav>
@@ -45,7 +47,7 @@
         <nav class="personal-nav">
           <header class="personal-nav__title">Личный кабинет</header>
          <ul class="personal-nav__items">
-           <li class="personal-nav__item"><a href="#">Ваш код <span class="personal-nav__code">5336855</span></a></li>
+           <li class="personal-nav__item personal-nav__item--code"><a href="#">Ваш код <span class="personal-nav__code">5336855</span></a></li>
            <li class="personal-nav__item personal__item--active"><a href="#">Мои данные</a></li>
            <li class="personal-nav__item"><a href="#">Мои карты</a></li>
            <li class="personal-nav__item"><a href="#">Мои заказы</a></li>
@@ -53,7 +55,13 @@
            <li class="personal-nav__item"><a href="#">Подписка</a></li>
            <li class="personal-nav__item"><a href="#">Выход</a></li>
            <li class="personal-nav__item"><a href="#"></a></li>
-         </ul>
+        </ul>
+        <div class="popup popup--friend">
+           При заказе Вашим другом с использованием кода Вы получите 10 баллов
+        </div>
+        <div class="popup popup--lock">
+            Ваш код появится после первого заказа
+        </div>
 
         </nav>
         </div>
@@ -106,9 +114,11 @@
           </div>
         </div>
     </footer>
+    
+    
   
  
 
-  
+    <script src="js/main.js"></script>
   </body>
 </html>

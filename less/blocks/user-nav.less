@@ -1,0 +1,85 @@
+.user-nav {
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 0;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  z-index: 10;
+}
+
+.user-nav__items {
+  list-style: none;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.user-nav__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 45px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
+.user-nav__item a {
+  color: @user-nav-color;
+  display: block;
+  padding-left: 50px;
+  font-weight: 300;
+  font-size: 18px;
+  position: relative;
+}
+
+.user-nav__item--tel a{
+  text-align: center;
+}
+
+.tel-expl {
+  display: block;
+  font-size: 16px;
+}
+
+.user-nav__item a::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -7px;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: 30px auto;
+}
+
+.user-nav__item--location a::before {
+  background-image: url("../img/icons/icon-marqer.svg");
+  background-size: 22px auto;
+  left: 15px;
+}
+
+.user-nav__item--tel a::before {
+  background-image: url("../img/icons/icon-phone.svg");
+  top: 3px;
+}
+
+.user-nav__item--entree a::before {
+  background-image: url("../img/icons/icon-entree.svg");
+  top: -5px;
+  left: 5px;
+}
+
+.user-nav__item--basket a::before {
+  background-image: url("../img/icons/icon-basket.svg");
+}
+
+.user-nav__item a:hover {
+  color: #000000;
+}
+
+.user-nav__item:hover a::before{
+  filter: brightness(0.5);
+}

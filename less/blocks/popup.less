@@ -1,0 +1,38 @@
+.popup {
+  background-color: #ffffff;
+  border: 1.3px solid #bfbfbf;
+  padding-top: 14px;
+  padding-bottom: 9px;
+  padding-left: 9px;
+  padding-right: 9px; 
+  font-size: 14px;
+  color: #7f7f7f;
+  box-shadow: 2px 2px 5px grey;
+  position: absolute;
+  top: 140px;
+  right: -10px;
+  z-index: 20;
+}
+
+.popup::before {
+  position: absolute;
+  content: "";
+  top: -16px;
+  left: -1px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/pointer.png");
+  background-repeat: no-repeat;
+}
+
+.popup--lock {
+  width: 60px;
+  display: none;
+}
+
+.popup--friend {
+  display: none;
+  width: 135px;
+  top: 140px;
+  right:-85px;
+}

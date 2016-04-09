@@ -6,4 +6,5 @@ Thumbs.db
 *.ai
 css/*.css
 build/
-pixel_perfect
+pixel_perfect/
+maket/

@@ -1,4 +1,5 @@
 "use strict";
+(function() {
 var personalNav = document.querySelector(".personal-nav");
 var codeItem = personalNav.querySelector(".personal-nav__item--code");
 var codePopupFriend = personalNav.querySelector(".popup--friend");
@@ -31,3 +32,5 @@ function removeDotes(item) {
       item.classList.remove('personal__item--dot');
     }
 }
+
+})();

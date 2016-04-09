@@ -22,7 +22,7 @@
   height: 45px;
   border-radius: 50%;
   background-color: #ffffff;
-  margin: 0 22px;
+  margin: 5px 22px;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -48,11 +48,15 @@
   background-size: 24px auto;
 }
 
+.social-link:hover{
+  background-color: @bg-grey;
+}
+
 .contacts__tel {
   text-align: center;
   display: table-cell;
   vertical-align: middle;
-  width: 340px;
+  width: 385px;
   color: #ffffff;
   font-size: 24px;
   border-right: 1px solid #ffffff;
@@ -67,10 +71,10 @@
 .contacts__subscribe {
   padding-left: 15px;
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 17px;
   display: table-cell;
   vertical-align: middle;
-  width: 340px;
+  width: 330px;
 }
 
 .contacts__form {
@@ -80,9 +84,8 @@
 
 .contacts__form input {
   display: block;
-  width: 280px;
-  
-  border-radius: 5px;
+  width: 255px;
+  border-radius: 10px;
   outline: none;
   border: none;
   padding-top: 10px;
@@ -101,13 +104,13 @@
   border: none;
   color: #ffffff;
   font-size: 16px;
-  border-radius: 5px; 
-  padding: 5px 20px;
+  border-radius: 10px; 
+  padding: 5px 25px;
 }
 
-
-
-
+.contacts__form button:hover{
+  background-color: @bg-green;
+}
 
 
 
@@ -122,13 +125,16 @@
 .footer-nav__items {
   list-style: none;
   padding: 0;
-  margin:0;
+  margin: 0;
   display: flex;
   justify-content: center;
 }
 
 .footer-nav__item {
-  padding: 10px 25px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 4px;
+  padding-bottom: 10px;
 }
 
 .footer-nav__item a {

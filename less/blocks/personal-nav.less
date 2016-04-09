@@ -35,12 +35,13 @@
 .personal-nav__item {
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-right: 10px;
+  display: flex;
 }
 
 .personal-nav__item a{
-  display: inline-block;
   color: #707070;
-  display: block;
+  flex: 1;
   font-size: 18px;
   text-decoration: none;
 }
@@ -51,4 +52,14 @@
 
 .personal__item--active a{
   font-weight: bold;
+}
+
+.personal__item--dot {
+  padding-right: 5px;
+  flex: 2;
+  height: 20px;
+  border-bottom: 8px dotted #bebebe;
+  margin-left: 10px;
+  margin-top: -10px;
+
 }

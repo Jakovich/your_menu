@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     less: {
       style: {
         files: {
-          "css/style.css": "less/style.less"
+          "build/css/style.css": "less/style.less"
         }
       }
     },
@@ -25,13 +25,18 @@ module.exports = function(grunt) {
           ]})
         ]
       },
-      style: {src: "css/*.css"}
+      style: {src: "build/css/*.css"}
     },
 
     watch: {
+      html: {
+        files: ["*.html"],
+        tasks: ["copy:html"],
+        options: {spawn: false}
+      },
       style: {
         files: ["less/**/*.less"],
-        tasks: ["less", "postcss"],
+        tasks: ["less", "postcss", "csso"],
         options: {
             spawn: false
           }
@@ -42,20 +47,97 @@ module.exports = function(grunt) {
     browserSync: {
       server: {
         bsFiles: {
-          src: ["*.html", "css/*.css"]
+          src: ["build/*.html", "build/css/*.css"]
         },
         options: {
-          server: '.',
+          server: './build',
           watchTask: true,
           notify: false,
           open: true,
           ui: false
         }
       }
+    },
+    
+    clean: {
+      build: ["build"]
+    },
+    
+    copy: {
+      build: {
+        files: [{
+          expand: true,
+          src: [
+            "fonts/**/*.{woff,woff2}",
+            "img/**",
+            "js/**",
+            "*.html"
+          ],
+          dest: "build"
+        }]
+      },
+      html: {
+        files: [{
+          expand: true,
+          src: ["*.html"],
+          dest: "build"
+        }]
+      }
+    },
+    
+    csso: {
+      style: {
+        options: {
+          report: "gzip"
+        },
+        files: {
+          "build/css/style.min.css": ["build/css/style.css"]
+        }
+      }
+    },
+    
+    uglify: {
+      js_min: {
+        files: {
+          "build/js/main.min.js": ["build/js/main.js"]
+        }
+      }
+    },
+    
+    imagemin: {
+      images: {
+        options: {
+          optimizationLevel: 3
+        },
+        files: [{
+          expand: true,
+          src: ["build/img/**/*.{png,jpg,gif}"]
+        }]
+      }
+    },
+    
+    svgmin: {
+      symbols: {
+        files: [{
+          expand: true,
+          src: ["build/img/icons/*.svg"]
+        }]
+      }
     }
 
   });
   
   grunt.registerTask("server", ["browserSync", "watch"]);
+  grunt.registerTask("build",[
+    "clean",
+    "copy",
+    "less",
+    "postcss",
+    "csso",
+    "uglify",
+    "svgmin",
+    "imagemin"
+  ]);
+
 
 };

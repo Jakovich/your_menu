@@ -1,5 +1,6 @@
 .payment {
   background-color: #ffffff;
+  padding-top: 10px;
   padding-bottom: 50px;
 }
 
@@ -25,6 +26,7 @@
 .payment__items {
   display: table;
 }
+
 .payment__item {
   padding-top: 102px;
   display: table-cell;
@@ -35,33 +37,45 @@
   line-height: 30px;
   color: #7c7c7c;
   border-right: 1px solid #a2a2a2;
+  
+  &::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #e95d0f;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 50%;
+  }
+  
+  &:first-child{
+    width: 278px;
+  }
+  
+  &:nth-child(2n) {
+    width: 310px;
+  }
+  &:nth-child(3n) {
+    border: none;
+  }
 }
 
 .payment__item span {
   color: #ec6f09;
   position: relative;
-}
-.payment__item span::before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 2px;
-  background-color: #ec6f09;
-  top: 15px;
-  left: -15px;
-}
-
-.payment__item::before {
-  content: "";
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  border: 2px solid #e95d0f;
-  border-radius: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  top: 0;
-  left: 50%;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background-color: #ec6f09;
+    top: 15px;
+    left: -15px;
+  }
 }
 
 .payment__item--cash::before {
@@ -79,22 +93,8 @@
   margin-left: -26px;
 }
 
-
-.payment__item:first-child {
-  width: 278px;
-}
-
-.payment__item:nth-child(2n) {
-  width: 310px;
-}
-.payment__item:nth-child(3n) {
-  border: none;
- 
-}
-
 .payment__requisites {
   color: #7c7c7c;
-  
 }
 
 

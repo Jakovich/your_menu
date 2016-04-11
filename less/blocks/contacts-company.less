@@ -1,0 +1,142 @@
+.contacts-company {
+  float: left;
+  margin-left: 20px;
+  width: 780px;
+  position: relative;
+}
+
+.contacts-company__tel {
+  width: 430px;
+  background-image: url("../img/contacts-tel-bg.png");
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+.contacts-company__text {
+  transform: rotate(-10deg);
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 15px;
+  
+  p {
+    
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    color: #878686;
+    margin: 10px 0;
+  }
+}
+
+.contacts-company__title {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  color: #878686;
+  padding-left: 50px;
+}
+
+.contacts-company__number {
+  font-size: 36px;
+  font-style: italic;
+  color: #d38c6c;
+}
+
+.contacts-company__messenger {
+  transform: rotate(-10deg);
+  padding-left: 40px;
+  font-size: 20px;
+  font-style: italic;
+  color: #5e5e5e;
+  
+  img {
+    margin-right: 10px;
+  }
+  
+  .number {
+    font-size: 30px;
+  }
+  p{
+    margin: 5px 0;
+  }
+}
+
+.map {
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
+  width: 633px;
+  height: 391px;
+  background-color: transparent;
+  background-image: url("../img/contacts-map.png");
+}
+
+.map__marqer {
+  background-color: #ffffff;
+  position: absolute;
+  top: 85px;
+  left: 300px;
+  width: 190px;
+  padding: 5px;
+  border: 1px solid #b0aeaa;
+  border-radius: 10px 10px 10px 0;
+  font-size: 14px;
+  line-height: 15px;
+  color: #878686;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 31px;
+    background-image: url("../img/pointer--down.png");
+    bottom: -31px;
+    left: -1px;
+  }
+  
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+  }
+}
+
+.map__address {
+  display: inline-block;
+  vertical-align: middle;
+  width: 90px;
+}
+
+.contacts-company__email {
+  position: absolute;
+  bottom: 180px;
+  right: -50px;
+  z-index: 0;
+  font-size: 22px;
+  font-style: italic;
+  color: #cab7a2;
+  width: 558px;
+  height: 427px;
+  background-image: url("../img/contacts-email-bg.png"); 
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+}
+
+.email__inner {
+  padding-top: 80px;
+  transform: rotate(-23deg);
+}
+
+.contacts-company__detail a{
+  display: block;
+  font-size: 14px;
+  color: #00702a;
+  margin-left: 220px;
+  text-decoration: none;
+}
+

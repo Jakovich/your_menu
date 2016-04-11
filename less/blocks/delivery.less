@@ -1,0 +1,38 @@
+.delivery__title {
+  color: @orange-delivery;
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.delivery__item {
+  display: flex;
+  justify-content: center;
+}
+
+.delivery__explic {
+  min-height: 290px;
+  flex-basis: 460px;
+  border: 1px solid #a2a2a2;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+.delivery__icon {
+  background-color: @orange-delivery;
+  min-height: 290px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 460px;
+}
+
+.delivery__item:nth-child(2n) .delivery__icon{
+  order: -1;
+}
+
+.delivery__text {
+  text-align: center;
+}

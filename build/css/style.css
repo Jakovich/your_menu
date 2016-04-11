@@ -390,7 +390,7 @@ textarea {
   -webkit-appearance: none;
 }
 .wrapper {
-  width: 1200px;
+  width: 1172px;
   margin: 0 auto;
 }
 .wrapper--footer {
@@ -483,7 +483,7 @@ textarea {
           filter: brightness(0.5);
 }
 .service-nav {
-  padding: 0 15px;
+  padding: 0 8px;
 }
 .service-nav__items {
   list-style: none;
@@ -584,7 +584,6 @@ textarea {
 .page-footer__contacts {
   background-color: #00702a;
   padding: 7px 0;
-  padding-left: 30px;
 }
 .page-footer__contacts::after {
   content: "";
@@ -596,10 +595,12 @@ textarea {
 }
 .social-links {
   padding: 0;
+  padding-right: 10px;
   border-right: 1px solid #ffffff;
   display: table-cell;
   vertical-align: middle;
-  width: 408px;
+  text-align: right;
+  width: 393px;
 }
 .social-link {
   display: inline-block;
@@ -607,7 +608,7 @@ textarea {
   height: 45px;
   border-radius: 50%;
   background-color: #ffffff;
-  margin: 5px 22px;
+  margin: 5px 25px;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -783,7 +784,7 @@ textarea {
           justify-content: center;
 }
 .delivery__explic {
-  min-height: 290px;
+  min-height: 250px;
   -webkit-flex-basis: 420px;
       -ms-flex-preferred-size: 420px;
           flex-basis: 420px;
@@ -817,7 +818,7 @@ textarea {
   right: -32px;
 }
 .delivery__explic p {
-  margin: 7px 0;
+  margin: 3px 0;
 }
 .delivery__explic--big-padding {
   padding-left: 60px;
@@ -865,7 +866,7 @@ textarea {
   font-size: 28px;
   color: #656565;
   text-align: center;
-  padding: 35px 150px;
+  padding: 35px 130px;
 }
 .delivery__text-green {
   color: #00702a;
@@ -903,7 +904,7 @@ textarea {
   padding-top: 102px;
   display: table-cell;
   position: relative;
-  padding-left: 58px;
+  padding-left: 53px;
   padding-right: 40px;
   font-size: 24px;
   line-height: 30px;
@@ -926,10 +927,11 @@ textarea {
   width: 278px;
 }
 .payment__item:nth-child(2n) {
-  width: 310px;
+  width: 320px;
 }
 .payment__item:nth-child(3n) {
   border: none;
+  padding-right: 0;
 }
 .payment__item span {
   color: #ec6f09;
@@ -946,15 +948,19 @@ textarea {
 }
 .payment__item--cash::before {
   background-image: url("../img/icon-cash.png");
-  margin-left: -34px;
+  margin-left: -44px;
 }
 .payment__item--cart::before {
   background-image: url("../img/icon-creditcart.png");
-  margin-left: -25px;
+  margin-left: -45px;
 }
 .payment__item--transfer::before {
   background-image: url("../img/icon-transfer.png");
   margin-left: -26px;
+}
+.payment__logo {
+  display: inline-block;
+  padding: 0 5px;
 }
 .payment__requisites {
   color: #7c7c7c;

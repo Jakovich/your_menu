@@ -31,7 +31,7 @@
   padding-top: 102px;
   display: table-cell;
   position: relative;
-  padding-left: 58px;
+  padding-left: 53px;
   padding-right: 40px;
   font-size: 24px;
   line-height: 30px;
@@ -53,13 +53,15 @@
   
   &:first-child{
     width: 278px;
+    
   }
   
   &:nth-child(2n) {
-    width: 310px;
+    width: 320px;
   }
   &:nth-child(3n) {
     border: none;
+    padding-right: 0;
   }
 }
 
@@ -80,17 +82,22 @@
 
 .payment__item--cash::before {
   background-image: url("../img/icon-cash.png");
-  margin-left: -34px;
+  margin-left: -44px;
 }
 
 .payment__item--cart::before {
   background-image: url("../img/icon-creditcart.png");
-  margin-left: -25px;
+  margin-left: -45px;
 }
 
 .payment__item--transfer::before {
   background-image: url("../img/icon-transfer.png");
   margin-left: -26px;
+}
+
+.payment__logo {
+  display: inline-block;
+  padding: 0 5px; 
 }
 
 .payment__requisites {

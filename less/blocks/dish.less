@@ -76,7 +76,6 @@
   display: inline-block;
   margin-right: 6px;
   background-repeat: no-repeat;
-  
   background-position: center;
 }
 
@@ -104,3 +103,73 @@
   padding-left: 25px;
   padding-right: 25px;
 }
+
+.dish__table {
+  margin-top: 60px;
+
+  td {
+    padding: 15px 10px;
+    vertical-align: bottom;
+  }
+}
+
+.dish__table-title {
+  font-size: 18px;
+  color: #eb6426;
+}
+
+.dish__table-text {
+  font-size: 21px;
+  color: #7a7a7a;
+}
+
+
+.dish__table-text--time,
+.dish__table-text--level {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 30px;
+    top: 3px;
+    left: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.dish__table-text--time::before {
+  background-image: url("../img/icon-clock--small.png")
+}
+
+.dish__table-text--level::before {
+  background-image: url("../img/icon-level--easy.png");
+  top: -10px;
+}
+
+.dish__facts {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px 15px;
+  border-top: 5px #b5afaf dotted;
+  border-bottom: 5px #b5afaf dotted;
+}
+
+.dish__facts-title {
+  font-family: "Neucha";
+  font-size: 36px;
+  color: #e85511;
+  
+  img {
+    margin-right: 10px;
+  }
+}
+
+.dish__facts-text {
+  font-size: 18px;
+  line-height: 26px;
+  color: #797878;
+  padding: 0 220px;
+}
+

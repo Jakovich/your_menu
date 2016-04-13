@@ -16,20 +16,20 @@ codeItem.onmouseout = function() {
 
 for (var i = 0; i < personalItems.length; i++ ) {
   removeDotes(personalItems[i]);
-  if (personalItems[i].classList.contains('personal__item--active')) {
+  if (personalItems[i].classList.contains("personal__item--active")) {
     addDotes(personalItems[i]);
   }
 }
 
 function addDotes(item) {
-    var spanDot = document.createElement('span');
-    spanDot.className = 'personal__item--dot';
+    var spanDot = document.createElement("span");
+    spanDot.className = "personal__item--dot";
     item.appendChild(spanDot);
 }
 
 function removeDotes(item) {
-    if (item.classList.contains('personal__item--dot')){
-      item.classList.remove('personal__item--dot');
+    if (item.classList.contains("personal__item--dot")){
+      item.classList.remove("personal__item--dot");
     }
 }
 

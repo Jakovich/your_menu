@@ -106,25 +106,32 @@
 }
 
 .dish__table {
-  margin-top: 60px;
+  padding-top: 55px;
   margin-left: 10px;
   margin-right: 13px;
-  
-  td {
-    padding: 14px 0;
-    vertical-align: bottom;
-  }
+  margin-bottom: 10px;
+}
+
+.dish__table-wrap {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.dish__table-wrap:last-child {
+  margin-bottom: 0;
 }
 
 .dish__table-title {
   font-size: 18px;
   color: #eb6426;
+  max-width: 50px;
 }
 
 .dish__table-text {
   font-size: 21px;
   color: #7a7a7a;
-  text-align: right;
 }
 
 .dish__table-text--small {
@@ -139,8 +146,8 @@
     content: "";
     width: 40px;
     height: 30px;
-    top: 3px;
-    left: 28px;
+    top: -25px;
+    left: 10px;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -152,7 +159,6 @@
 
 .dish__table-text--level::before {
   background-image: url("../img/icon-level--easy.png");
-  top: -10px;
 }
 
 .dish__ingredients {
@@ -188,7 +194,6 @@
       background-image: url("../img/pointer--down-dish.png");
       bottom: -28px;
       left: 50px;
-      
     }
   }
 }
@@ -250,7 +255,6 @@
 }
 
 .dish__ingredients-select {
- 
   font-size: 16px;
   color: #9e9d9d;
   border: none;

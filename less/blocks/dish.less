@@ -7,11 +7,11 @@
   padding-left: 35px;
   padding-top: 22px;
   padding-bottom: 0;
-  padding-right: 10px;
+  padding-right: 5px;
   background-color: #ffffff;
   border: 1px solid #dadada;
   border-bottom: 0;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
     .clearfix();
 }
 
@@ -107,9 +107,11 @@
 
 .dish__table {
   margin-top: 60px;
-
+  margin-left: 10px;
+  margin-right: 13px;
+  
   td {
-    padding: 15px 10px;
+    padding: 14px 0;
     vertical-align: bottom;
   }
 }
@@ -122,6 +124,11 @@
 .dish__table-text {
   font-size: 21px;
   color: #7a7a7a;
+  text-align: right;
+}
+
+.dish__table-text--small {
+  font-size: 18px;
 }
 
 .dish__table-text--time,
@@ -133,7 +140,7 @@
     width: 40px;
     height: 30px;
     top: 3px;
-    left: 20px;
+    left: 28px;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -152,14 +159,16 @@
   .clearfix();
   background-color: #ffffff;
   padding-bottom: 10px;
+  
   box-shadow: 0 5px 5px rgba(0,0,0,0.4);
   border: 1px solid #dadada;
   border-top:0;
 }
 
+
 .dish__ingredients-title {
   background-color: #ffffff;
-  
+  box-shadow: 0 10px 7px -5px rgba(0,0,0,0.1);
   border-top: 0;
   padding-bottom: 5px;
   
@@ -187,39 +196,57 @@
 
 .dish__ingredients-img {
   float: left;
-  width: 515px;
+  width: 515px;  
 }
 
 .dish__ingredients-descr {
   float: right;
   width: 335px;
+  padding-top: 20px;
 }
 
 .dish__ingredients-table {
-  width: 95%;
+  width: 92%;
   margin: 0 auto;
+  padding: 5px 5px;
  
-  caption {
+  h4 {
     font-size: 19px;
     color: #00702a;
     font-weight: bold;
     text-align: left;
-    margin-top: 15px;
+    margin-top: 3px;
     margin-bottom: 8px;
   }
-  
-  td {
-    font-size: 19px;
-    color: #7c7c7c;
-  }
+
+}
+
+.dish__ingredients-wrap {
+  .clearfix();
+  background: url('../img/dot--ingredient.png') repeat-x 0 85%;
+
+  overflow: hidden;
 }
 
 .dish__ingredients-table--home {
+  margin-top: 15px;
   border: 1px dashed #00702a;
 }
 
+.dish__ingredients-name {
+  float: left;
+  font-size: 19px;
+  color: #7c7c7c;
+  background-color: #ffffff;
+}
+
 .dish__ingredients-quantity {
-  text-align: right;
+  text-align: left;
+  float: right;
+  min-width: 60px;
+  font-size: 19px;
+  color: #7c7c7c;
+  background-color: #ffffff;
 }
 
 .dish__facts {

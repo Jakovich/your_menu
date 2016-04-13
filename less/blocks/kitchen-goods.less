@@ -13,22 +13,61 @@
    }
 }
 
+.kitchen-goods__slider {
+  width: 1012px;
+  padding: 0 50px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.kitchen-goods__slider::-moz-selection { background: transparent; color: #fff; text-shadow: none; }
+.kitchen-goods__slider::selection { background: transparent; color: #fff; text-shadow: none; }
+
 .kitchen-goods__items {
-  margin-bottom: 30px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.kitchen-goods__wrap {
+  position: relative;
+  padding: 4px;
+  left: 0;
+  top: 0;
+  width: 10000000px;
+  .clearfix();
 }
 
 .kitchen-goods__item {
   padding: 7px;
   padding-top: 0;
   background-color: #ffffff;
-  display: inline-block;
+  float: left;
   box-shadow: 0 0 5px rgba(0,0,0,0.4);
   margin-right: 20px;
-  
-  &:nth-child(4n) {
-    margin-right: 0;
-  }
 }
+
+.kitchen-goods__nav {
+  position: absolute;
+  width: 31px;
+  height: 55px;
+  background-image: url("../img/icon-arrow.png");
+  top: 90px;
+  
+  cursor: pointer;
+}
+
+.kitchen-goods__nav--prev {
+  left: 0;
+}
+
+.kitchen-goods__nav--next {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+/*стилизация kitchen-goods__item*/
 
 .kitchen-goods__name {
   text-align: center;

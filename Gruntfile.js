@@ -99,7 +99,8 @@ module.exports = function(grunt) {
     uglify: {
       js_min: {
         files: {
-          "build/js/main.min.js": ["build/js/main.js"]
+          "build/js/personal-nav.min.js": ["build/js/personal-nav.js"],
+          "build/js/kitchen-slider.min.js": ["build/js/kitchen-slider.js"]
         }
       }
     },

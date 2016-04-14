@@ -1,0 +1,141 @@
+.personl-points__inner {
+  .clearfix();
+}
+
+.personal-points {
+  float: left;
+  width: 900px;
+  margin-left: 30px;
+}
+
+
+.personal-points__title {
+  font-size: 20px;
+  color: #ec7037;
+  text-align: left;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 25px;
+}
+
+
+
+.personal-gift__descr {
+  padding: 0 5px;
+}
+
+.personal-gift__name {
+  font-family: "Neucha", "Arial", sans-serif;
+  font-size: 21px;
+  color: #e95d0f;
+  text-align: center;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.personal-gift__button {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 5px;
+  color: #8b8b8b;
+}
+
+.personal-gift__button--active {
+  text-decoration: underline;
+}
+
+.personal-gift__item--inactive {
+  position: relative;
+  img {
+    filter: opacity(0.6);
+  }
+  
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #e9651c;
+    background-color: rgba(255,255,255,0.6);
+    background-image: url("../img/icon-lock.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .personal-gift__button {
+    text-decoration: none;
+    cursor: text;
+  }
+}
+
+.personal-gift__slider {
+  width: 860px;
+  padding: 0 36px;
+  margin: 30px auto;
+  position: relative;
+  
+  &::before {
+    position: absolute;
+    content: "";
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: 1px dashed #e85511;
+    left: -255px;
+    top: 8px;
+    background-image: url("../img/icon-gift--big.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.personal-gift__slider::-moz-selection { background: transparent; color: #fff; text-shadow: none; }
+.personal-gift__slider::selection { background: transparent; color: #fff; text-shadow: none; }
+
+.personal-gift__items {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.personal-gift__wrap {
+  position: relative;
+  padding: 4px;
+  left: 0;
+  top: 0;
+  width: 10000000px;
+  .clearfix();
+}
+
+.personal-gift__item {
+  padding: 7px;
+  background-color: #ffffff;
+  float: left;
+  border: 1px solid #d1d1d1;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.personal-gift__nav {
+  position: absolute;
+  width: 28px;
+  height: 53px;
+  background-image: url("../img/icon-arrow--small.png");
+  top: 90px;
+  cursor: pointer;
+}
+
+.personal-gift__nav--prev {
+  left: 0;
+}
+
+.personal-gift__nav--next {
+  right: 0;
+  transform: rotate(180deg);
+}

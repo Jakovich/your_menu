@@ -20,37 +20,59 @@
 }
 
 .personal-orders__table {
-  padding: 0 10px;
-  padding-bottom: 30px;
+  padding: 0;
   display: inline-block;
   vertical-align: top;
   border: 1px solid #dadada;
-  border-spacing: 5px;
+  border-collapse: collapse;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
-  
-  td, th {
-    font-size: 18px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+  line-height: 25px;
+  color: #868686;
+  text-align: left;
+  vertical-align: top;
+
+  th {
     font-weight: normal;
-    padding: 0px 10px;
-    line-height: 36px;
-    color: #868686;
-    text-align: left;
-     height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    div{
+      padding-left: 7px;
+    }
   }
   
-  td {
-    border: 1px dashed #cccccc;
-    border-radius: 18px;
+  td div {
+    border: 1px dashed  #dadada;
+    border-radius: 16px;
+    min-height: 30px;
     background-color: #ffffff;
+    padding: 0 10px;
+    padding-top: 5px;
+  }
+  
+  tr:last-child td{
+    padding-bottom: 45px;
   }
 }
 
-.personal-orders__table--white {
+.personal-orders__date {
+  padding: 3px 15px;
+  width: 140px;
+  border-right: 1px solid #dadada ;
+}
+
+.personal-orders__composition {
+  width: 340px;
   background-color: #ffffff;
-  border-left: 0;
-  border-right: 0;
-  td{
-    width: 342px;
-  }
+  padding: 3px 35px;
+  box-shadow: -8px 0 6px -6px rgba(0,0,0,0.4) inset;
+}
+
+.personal-orders__price {
+  width: 120px;
+  padding: 3px 15px;
 }
 

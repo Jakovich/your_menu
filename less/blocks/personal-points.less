@@ -44,6 +44,64 @@
   position: absolute;
   top: 60px;
   left: 40px;
-
 }
+
+.personal-points__diagram-number {
+  font-size: 14px;
+  color: #727272;
+  font-weight: bold;
+  position: absolute;
+  z-index: 5;
+  top: 30px;
+  
+  span{
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  &::before {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icon-points.png");
+    z-index:-1;
+    top: -7px;
+    left: -7px;
+  }
+}
+
+.personal-points__diagram-number--0 {
+  left: 30px;
+  span {
+    margin-left: 6px;
+    margin-right: 13px;
+  }
+}
+
+.personal-points__diagram-number--30 {
+  left: 228px;
+}
+
+.personal-points__diagram-number--50 {
+  left: 437px; 
+}
+
+.personal-points__diagram-number--70 {
+  left: 640px;
+}
+
+.personal-points__diagram-number--100 {
+  right: -26px;
+  
+  span {
+    margin-left: -5px;
+    margin-right: 5px;
+  }
+  
+}
+
 

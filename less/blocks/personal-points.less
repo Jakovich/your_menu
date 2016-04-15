@@ -37,13 +37,21 @@
   height: 220px;
   background-image: url("../img/bg_personal_nav.jpg");
   margin-bottom: 60px;
+  padding-top: 5px;
   position: relative;
 }
 
-.personal-points__diagram-axis {
+.personal-points__diagram-inner {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 23px;
+}
+
+
+.personal-points__diagram-numbers {
   position: absolute;
-  top: 60px;
-  left: 40px;
+  left: 0;
+  right: 0;
 }
 
 .personal-points__diagram-number {
@@ -52,7 +60,7 @@
   font-weight: bold;
   position: absolute;
   z-index: 5;
-  top: 30px;
+  top: -30px;
   
   span{
     color: #ffffff;
@@ -75,7 +83,7 @@
 }
 
 .personal-points__diagram-number--0 {
-  left: 30px;
+  left: -10px;
   span {
     margin-left: 6px;
     margin-right: 13px;
@@ -83,19 +91,19 @@
 }
 
 .personal-points__diagram-number--30 {
-  left: 228px;
+  left: 187px;
 }
 
 .personal-points__diagram-number--50 {
-  left: 437px; 
+  left: 396px; 
 }
 
 .personal-points__diagram-number--70 {
-  left: 640px;
+  left: 600px;
 }
 
 .personal-points__diagram-number--100 {
-  right: -26px;
+  right: -10px;
   
   span {
     margin-left: -5px;
@@ -104,4 +112,90 @@
   
 }
 
+.personal-points__diagram-gifts {
+  position: absolute;
+  top: 10px;
+}
+.personal-points__diagram-gift {
+  font-size: 14px;
+  color: #696969;
+  position: absolute;
+  top: 55px;
+  padding-top: 50px;
+  position: absolute;
+  text-align: center;
+  
+  &::before {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.personal-points__diagram-gift--surprise {
+  left: 166px;
+  &::before {
+    width: 49px;
+    height: 52px;
+    background-image: url("../img/icon-gift.png");
+    margin-left: -24.5px;
+  }
+}
+
+.personal-points__diagram-gift--smoothie {
+  left: 340px;
+  width: 140px;
+  &::before {
+    width: 35px;
+    height: 56px;
+    margin-left: -17.5px;
+    background-image: url("../img/icon-smoothies.png");
+  }
+}
+
+.personal-points__diagram-gift--sandwich {
+  left: 550px;
+  width: 140px;
+  &::before {
+    width: 60px;
+    height: 52px;
+    margin-left: -30px;
+    background-image: url("../img/icon-sandwich.png");
+  }
+}
+
+.personal-points__diagram-gift--box {
+  left: 750px;
+  width: 140px;
+  &::before {
+    width: 48px;
+    height: 50px;
+    margin-left: -24px;
+    background-image: url("../img/icon-box.png");
+  }
+}
+
+.personal-points__diagram-pointer {
+  font-family: "Neucha", "Arial";
+  font-size: 14px;
+  color: #e95d0f;
+  top: -5px;
+  left: 98px;
+  position: absolute;
+  
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #e95d0f;
+    top: 25px;
+    left: -10px;
+  }
+  
+}
 

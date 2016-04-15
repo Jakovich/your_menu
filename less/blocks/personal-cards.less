@@ -1,0 +1,81 @@
+.personal-cards {
+  float: left;
+  width: 400px;
+  margin-left: 240px;
+  padding-bottom: 55px;
+}
+
+.personl-cards__inner {
+  .clearfix();
+  font-size: 0;
+  padding-bottom: 60px;
+}
+
+.personal-cards__title {
+  font-size: 20px;
+  color: #ec7037;
+  text-align: center;
+ 
+  margin-bottom: 10px;
+  padding-top: 25px;
+}
+
+.personal-cards__list {
+  padding: 18px 25px;
+  width: 360px;
+  background-color: #ffffff;
+  border: 1px solid #dadada;
+  box-shadow: 4px 4px 5px rgba(0,0,0,0.3);
+  font-size: 20px;
+}
+
+.personal-cards__exist {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.personal-cards__item input {
+  display: none;
+}
+
+.personal-cards__item label {
+  color: #565656;
+  padding-left: 43px;
+  margin-bottom: 25px;
+  display: block;
+  position: relative;
+}
+
+.personal-cards__item label::before {
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid #565656;
+  left: -3px;
+  top: -3px;
+}
+
+.personal-cards__item input:checked~label::before {
+  border: 12px solid #009036;
+  width: 13px;
+  height: 13px;
+  left: -4px;
+}
+
+.personal-cards__add button[type="submit"] {
+  font-size: 24px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  background-color: #e95d0f;
+  padding: 8px 15px;
+  border-radius: 15px;
+  margin-top: 10px;
+  width: 350px;
+}
+
+
+
+

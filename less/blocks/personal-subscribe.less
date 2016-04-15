@@ -1,0 +1,62 @@
+.personal-subscribe__details {
+  display: table;
+  border: 1px dashed #009036;
+  border-radius: 15px;
+}
+
+.personal-subscribe__detail {
+  display: table-cell;
+}
+
+.delivery-time__item input {
+  display: none;
+}
+
+.delivery-time__item label {
+  font-size: 20px;
+  color: #565656;
+  padding-left: 43px;
+  margin-bottom: 25px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.delivery-time__item label::before {
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid #565656;
+  left: -3px;
+  top: -3px;
+}
+
+.delivery-time__item input:checked~label::before {
+  border: 12px solid #009036;
+  width: 13px;
+  height: 13px;
+  left: -4px;
+}
+
+.personal-subscribe__detail--date select {
+  color: #878686;
+  font-size: 24px;
+  -webkit-appearance: none;
+  padding: 15px 28px;
+  padding-right: 32px;
+  
+  background-image: url("../img/pointer--cardselect.png");
+  background-repeat: no-repeat; 
+  background-position: 88% 19px;
+  -moz-appearance: none;
+  text-indent: 0.01px; 
+  text-overflow: '';
+  -ms-appearance: none;
+  appearance: none!important;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #009036;
+  border-radius: 15px;
+}

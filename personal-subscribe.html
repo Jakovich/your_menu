@@ -44,16 +44,16 @@
 
       <main class="page-main">
        <div class="wrapper wrapper--personal">
-       <div class="personal-carts__inner">
+       <div class="personal-subscribe__inner">
         <nav class="personal-nav">
           <header class="personal-nav__title">Личный кабинет</header>
          <ul class="personal-nav__items">
            <li class="personal-nav__item personal-nav__item--code"><a href="#">Ваш код <span class="personal-nav__code">5336855</span></a></li>
            <li class="personal-nav__item"><a href="#">Мои&nbsp;данные</a></li>
-           <li class="personal-nav__item personal__item--active"><a href="personal-cards.html">Мои&nbsp;карты</a></li>
+           <li class="personal-nav__item"><a href="personal-cards.html">Мои&nbsp;карты</a></li>
            <li class="personal-nav__item"><a href="personal-orders.html">Мои&nbsp;заказы</a></li>
            <li class="personal-nav__item"><a href="personal-points.html">Мои&nbsp;баллы</a></li>
-           <li class="personal-nav__item"><a href="#">Подписка</a></li>
+           <li class="personal-nav__item personal__item--active"><a href="#">Подписка</a></li>
            <li class="personal-nav__item"><a href="#">Выход</a></li>
         </ul>
         <div class="popup popup--friend">
@@ -65,62 +65,80 @@
 
         </nav>
         
-        <section class="personal-cards">
-          <h2 class="personal-cards__title">Мои карты</h2>
-          
-            <div class="personal-cards__list">
-             <div class="personal-cards__exist">
-              <div class="personal-cards__item">
-                <input type="radio" name="card" value="card1" id="card1" checked>
-                <label for="card1">карта Visa 5550 0000 0000 9999</label>
+        
+        <section class="personal-subscribe">
+          <h2 class="personal-subscribe__title">Вместе с нами</h2>
+          <form>
+          <div class="personal-subscribe__details">
+            <div class="personal-subscribe__detail personal-subscribe__detail--address">
+             <div class="personal-subscribe__address-exist">
+               <span>Адрес:</span>
+              Санкт-Петербург<br>ул. Камская, д.10, кв. 86
               </div>
-              <div class="personal-cards__item">
-                <input type="radio" name="card" value="card2" id="card2">
-                <label for="card2">карта Visa 5550 0000 0000 9999</label>
+              <div class="personal-subscribe__address-add">
+                <form action="post" class="personal-subscribe__address-form">
+                  <input type="text" placeholder="Улица">
+                  <input type="text" placeholder="Дом">
+                  <input type="text" placeholder="Корпус">
+                  <input type="text" placeholder="Кв.">
+                </form>
               </div>
             </div>
-          
-            <form action="post" class="personal-cards__add">
-              <div class="add-card">
-               <legend class="add-card__title">Добавить</legend>
-                <input class="add-cart__item add-cart__item--number" type="type" name="card-number" placeholder="Номер карты" id="card-number">
-                <select class="add-cart__item add-cart__item--select" name="card-month" id="card-month">
-                  <option value="1">01</option>
-                  <option value="2">02</option>
-                  <option value="3">03</option>
-                  <option value="4">04</option>
-                  <option value="5">05</option>
-                  <option value="6">06</option>
-                  <option value="7">07</option>
-                  <option value="8">08</option>
-                  <option value="9">09</option>
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
-                </select>
-                <select class="add-cart__item add-cart__item--select" name="card-year" id="card-year">
-                  <option value="2016">16</option>
-                  <option value="2017">17</option>
-                  <option value="2018">18</option>
-                  <option value="2019">19</option>
-                  <option value="2020">20</option>
-                  <option value="2021">21</option>
-                  <option value="2022">22</option>
-                  <option value="2023">23</option>
-                  <option value="2024">24</option>
-                  <option value="2025">25</option>
-                  <option value="2026">26</option>
-                  <option value="2027">27</option>
-                </select>
-                <input class="add-cart__item add-cart__item--css" type="text" placeholder="CSS">
-                <input class="add-cart__item add-cart__item--name" type="text" name="card-name" placeholder="Имя держателя" id="card-name">
+            <div class="personal-subscribe__detail personal-subscribe__detail--date">
+              <select name="delivery-date" id="delivery-date">
+                <option value="12.02.2016">Пт, 12 февраля</option>
+                <option value="13.02.2016">Сб, 13 февраля</option>
+                <option value="14.02.2016">Вс, 14 февраля</option>
+                <option value="15.02.2016">Пн, 15 февраля</option>
+                <option value="16.02.2016">Вт, 16 февраля</option>
+              </select>
+            
+              <div class="delivery-time">
+                <div class="delivery-time__item">
+                  <input type="radio" name="delivery-time" value="12:00-14:00" id="time1" checked>
+                  <label for="time1">12:00 - 14:00</label>
+                </div>
+                <div class="delivery-time__item">
+                  <input type="radio" name="delivery-time" value="14:00-16:00" id="time2">
+                  <label for="time2">14:00 - 16:00</label>
+                </div>
+                <div class="delivery-time__item">
+                  <input type="radio" name="delivery-time" value="16:00-18:00" id="time3">
+                  <label for="time3">16:00 - 18:00</label>
+                </div>
+                <div class="delivery-time__item">
+                  <input type="radio" name="delivery-time" value="18:00-20:00" id="time4">
+                  <label for="time4">18:00 - 20:00</label>
+                </div>
+                <div class="delivery-time__item">
+                  <input type="radio" name="delivery-time" value="20:00-22:00" id="time5">
+                  <label for="time5">20:00 - 22:00</label>
+                </div>
+                <div class="delivery-time__item">
+                  <input type="radio" name="delivery-time" value="22:00-00:00" id="time6">
+                  <label for="time6">22:00 - 00:00</label>
+                </div>
               </div>
-          
-              <button type="submit">Привязать карту</button>
-            </form>
+              </div>
+            <div class="personal-subscribe__detail personal-subscribe__detail--comment">
+              Комментарий к заказу
+              <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit">Отменить подписку</button>
           </div>
-                    
-
+          <div class="personal-subscribe__explic">
+            <div class="personal-subscribe__explic-text">
+              <p> За неделю до доставки до 21:00 понедельника Вы можете сменить продукт, приостановить или отменить вашу подписку.</p>
+              <p>Списание средств по активной подписке произойдет с привязанной карты после 21:00 понедельника до доставки.</p>
+              <p>Вы можете изменить адрес или время доставки вашего заказа вплоть до 21:00 каждого четверга.</p> 
+              <p>По окончании месяца, наш менеджер свяжется с Вами по вопросу продления подписки на следующий месяц, так же Вы можете сообщить ему о прекращении подписки.</p>
+            </div>
+            <div class="personal-subscribe__explic-button">
+              <a href="#">Оформить подписку</a>
+            </div>
+          </div>
+          </form>
+          
              
          
               

@@ -69,27 +69,32 @@
           <h2 class="subscribe-variants__title">Вместе с нами</h2>
         </section>
          </div>
+           </div>
         
         
         <section class="personal-subscribe">
-          
+          <div class="wrapper wrapper--personal">
           <form>
           <div class="personal-subscribe__details">
             <div class="personal-subscribe__detail personal-subscribe__detail--address">
-             <div class="personal-subscribe__address-exist">
-               <span>Адрес:</span>
+              <div class="personal-subscribe__title">
+                Адрес:
+              </div>
+              <div class="personal-subscribe__address-exist">
               Санкт-Петербург<br>ул. Камская, д.10, кв. 86
               </div>
               <div class="personal-subscribe__address-add">
-                <form action="post" class="personal-subscribe__address-form">
-                  <input type="text" placeholder="Улица">
-                  <input type="text" placeholder="Дом">
-                  <input type="text" placeholder="Корпус">
-                  <input type="text" placeholder="Кв.">
-                </form>
+                 <div class="personal-subscribe__add-title">Добавить</div>
+                  <input class="personal-subscribe__add-item personal-subscribe__add-item--street" type="text" placeholder="Улица">
+                  <input class="personal-subscribe__add-item" type="text" placeholder="Дом">
+                  <input class="personal-subscribe__add-item" type="text" placeholder="Корпус">
+                  <input class="personal-subscribe__add-item" type="text" placeholder="Кв.">
               </div>
             </div>
             <div class="personal-subscribe__detail personal-subscribe__detail--date">
+             <div class="personal-subscribe__title">
+               Дата и время
+             </div>
               <select name="delivery-date" id="delivery-date">
                 <option value="12.02.2016">Пт, 12 февраля</option>
                 <option value="13.02.2016">Сб, 13 февраля</option>
@@ -123,13 +128,14 @@
                   <input type="radio" name="delivery-time" value="22:00-00:00" id="time6">
                   <label for="time6">22:00 - 00:00</label>
                 </div>
+                <button type="submit" class="personal-subscribe__delete">Отменить подписку</button>
               </div>
             </div>
             <div class="personal-subscribe__detail personal-subscribe__detail--comment">
-              Комментарий к заказу
-              <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+              <div class="personal-subscribe__title">Комментарий к заказу</div>
+              <textarea class="personal-subscribe__comment" name="comment" id="comment" cols="30" rows="10"></textarea>
             </div>
-            <button type="submit">Отменить подписку</button>
+            
           </div>
           <div class="personal-subscribe__explic">
             <div class="personal-subscribe__explic-text">
@@ -146,9 +152,9 @@
           
              
          
-              
+          </div>    
         </section>
-        </div>
+      
 
       </main>
 

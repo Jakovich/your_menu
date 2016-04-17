@@ -100,7 +100,8 @@ module.exports = function(grunt) {
       js_min: {
         files: {
           "build/js/personal-nav.min.js": ["build/js/personal-nav.js"],
-          "build/js/kitchen-slider.min.js": ["build/js/kitchen-slider.js"]
+          "build/js/kitchen-slider.min.js": ["build/js/kitchen-slider.js"],
+          "build/js/personal-subscribe.min.js": ["build/js/personal-nav.js",  "build/js/subscribe-popup.js", "build/js/subscribe-counter.js"]
         }
       }
     },

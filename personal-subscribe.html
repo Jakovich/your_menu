@@ -160,8 +160,8 @@
                   <input type="radio" name="delivery-time" value="22:00-00:00" id="time6">
                   <label for="time6">22:00 - 00:00</label>
                 </div>
-                <button type="submit" class="personal-subscribe__delete">Отменить подписку</button>
               </div>
+              <button type="submit" class="personal-subscribe__delete">Отменить подписку</button>
             </div>
             <div class="personal-subscribe__detail personal-subscribe__detail--comment">
               <div class="personal-subscribe__title">Комментарий к заказу</div>
@@ -241,14 +241,20 @@
     <div class="subscribe-popup">
      <div class="subscribe-popup__close"></div>
      <form action="post">
-      <legen class="subscribe-popup__title">Отменить подписку</legend>
-      <input type="radio">
-      <label for="">5 ужинов</label>
-      <input type="radio" checked>
-      <label for="">Сэндвич-start</label>
-      <input type="radio">
-      <label for="">Смузи</label>
-      <button type="submit">Подтвердить</button>
+      <legend class="subscribe-popup__title">Отменить подписку</legend>
+      <div class="subscribe-popup__item">
+        <input type="radio" name="subscribe-no" value="dinner-no" id="dinner-no">
+        <label for="dinner-no">5 ужинов</label>
+      </div>
+      <div class="subscribe-popup__item">
+        <input type="radio" name="subscribe-no" value="sandwitch-no" id="sandwitch-no" checked>
+        <label for="sandwitch-no">Сэндвич-start</label>
+      </div>
+      <div class="subscribe-popup__item">
+        <input type="radio" name="subscribe-no" value="smothies-no" id="smothies-no">
+        <label for="smothies-no">Смузи</label>
+      </div>
+      <button class="subscribe-popup__btn" type="submit">Подтвердить</button>
       <div class="subscribe-popup__expl">Наш менеджер перезвонит Вам
 в ближайшее время для отмены подписки.</div>
       </form>

@@ -35,7 +35,6 @@
   border-radius: 15px;
   width: 278px;
   margin-bottom: 18px;
-  
 }
 
 .subscribe-variant--check {
@@ -65,6 +64,113 @@
     right: 10px;
     z-index: 5;
   }
+}
+
+.subscribe-variant--counter {
+  border: none;
+  box-shadow: none;
+  backgound-color: #000000;
+  background-image: url("../img/bg-subscribe-dinner.jpg");
+  background-repeat: repeat-y;
+  background-position: top center;
+  font-family: "AnimeAce";
+ 
+  .subscribe-variant__title {
+    color: #ffe2ab;
+    font-size: 18px;
+    font-family: "AnimeAce";
+    margin-top: 7px;
+    margin-bottom: 15px;
+  }
+}
+
+.subscribe-variant__form {
+  text-align: center;
+  background-image: url("../img/subscribe-dinner-axes.png");
+  background-repeat: no-repeat;
+  background-position: center 35px;
+  
+  legend{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #94e07a;
+  }
+}
+
+.subscribe-variant__form-item {
+  display: inline-block;
+  margin-right: 31px;
+  
+  &:nth-child(5n) {
+    margin-right: 0;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  label { 
+    display: block;
+    color: #ffffff;
+    padding-top: 35px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  input:checked~label::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -2px;
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/subscribe-pointer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+  }
+}
+
+.subscribe-variant__form-text {
+  font-size: 14px;
+  color: #94e07a;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 50px;
+  span {
+    color: #ffa47a;
+  }
+}
+
+.subscribe-variant__form-total {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.subscribe-variant__btn {
+  display: inline-block;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  padding: 10px 11px;
+  background-image: url("../img/bg-button-dinner.png");
+  background-position: center;
+  background-size: content;
+  background-repeat: no-repeat;
+  margin-right: 0;
+  margin-bottom: 7px;
+}
+
+.subscribe-variant__btn--no {
+  color: #ff7839;
+}
+
+.subscribe-variant__btn--yes {
+  color: #8bd074;
 }
 
 .subscribe-variant__title {

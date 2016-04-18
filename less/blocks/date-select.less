@@ -1,0 +1,87 @@
+.date-select {
+   text-align: center;
+}
+
+.date-select__title {
+  font-size: 18px;
+  color: #878686;
+  text-align: center;
+}
+
+.date-select {
+  width: 450px;
+
+  padding-bottom: 14px;
+  .date-select__title {
+    text-align: center;
+  }
+}
+
+.delivery-time {
+  text-align: left;
+  padding-left: 40px;
+  
+}
+
+.delivery-time__item {
+  display: inline-block;
+  margin-right: 50px;
+  
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.delivery-time__item input {
+  display: none;
+}
+
+.delivery-time__item label {
+  font-size: 20px;
+  color: #565656;
+  padding-left: 43px;
+  margin-bottom: 25px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.delivery-time__item label::before {
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid #565656;
+  left: -3px;
+  top: -5px;
+}
+
+.delivery-time__item input:checked~label::before {
+  border: 12px solid #009036;
+  width: 13px;
+  height: 13px;
+  left: -4px;
+}
+
+.date-select select{
+  color: #878686;
+  font-size: 24px;
+  -webkit-appearance: none;
+  padding: 6px 25px;
+  padding-right: 75px;
+  background-image: url("../img/pointer--cardselect.png");
+  background-repeat: no-repeat; 
+  background-position: 94% 19px;
+  -moz-appearance: none;
+  text-indent: 0.01px; 
+  text-overflow: "";
+  -ms-appearance: none;
+  appearance: none!important;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #009036;
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 39px;
+}

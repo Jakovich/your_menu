@@ -1,0 +1,53 @@
+.basket-delivery {
+  background-color: #ffffff;
+  border: 1px dashed #009036;
+  border-radius: 15px;
+  padding: 15px 18px;
+  padding-right: 0;
+  width: 858px;
+  margin-left: 250px;/*!!!!!!!!!!!!!!!!!!!*/
+  .clearfix();
+}
+
+.basket-delivery__left {
+  float: left;
+  margin-left: 30px;
+  position: relative;
+  
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #dedede;
+    right: -36px;
+    top: 0;
+  }
+}
+
+.basket-delivery__right {
+  float: right;
+  padding-top: 5px;
+  .clearfix();
+}
+
+.basket-delivery__input-name {
+  font-size: 24px;
+  color: #878686;
+  padding: 6px 25px;
+  border: 1px solid #009036;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.basket-delivery__btn {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #009036;
+  float: right;
+  margin-right: 62px;
+  padding: 9px 18px;
+  border-radius: 15px;
+}

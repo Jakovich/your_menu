@@ -2,18 +2,26 @@
   background-color: #ffffff;
   border: 1px dashed #009036;
   border-radius: 15px;
-  padding: 12px;
-  width: 876px;
+  padding: 12px 18px;
+  width: 840px;
+  margin-left: 250px;/*!!!!!!!!!!!!!!!!!!!*/
 }
 
 .total-basket__table {
   width: 100%;
+  margin-bottom: 25px;
+  
   th {
     font-size: 18px;
     color: #878686;
     text-align: center;
     vertical-align: top;
     font-weight: normal;
+    padding: 15px 0;
+    
+    &:first-child {
+  
+    }
   }
 }
 
@@ -22,9 +30,12 @@
   color: #7f7e7e;
   display: flex;
   align-items: center;
+  width: 300px;
+
   
   img {
     border: 1px solid #bcbcbc;
+    margin-right: 11px;
   }
   
 }
@@ -72,12 +83,14 @@
 
 .total-basket__summary {
   .clearfix();
-
+border-top: 1px solid #eeeeee;
+  padding-top: 6px;
 }
 
 .total-basket__summary-left {
   .clearfix();
   width: 383px;
+ 
   float: left;
 }
 
@@ -146,7 +159,7 @@
 
 .total-basket__summary-right {
   float: right;
-  width: 425px;
+  width: 386px;
 }
 
 .total-basket__promo {
@@ -208,7 +221,8 @@
   color: #e95d0f;
   font-style: italic;
   text-decoration: underline;
-  padding-right: 15px;
+  display: inline-block;
+  padding-right: 28px;
   position: relative;
   
   &::after {
@@ -216,6 +230,8 @@
     content: "";
     width: 20px;
     height: 27px;
+    right: 0;
+    top: 3px;
     background-image: url("../img/icon-points--small.png");
   }
 }

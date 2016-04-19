@@ -1,0 +1,109 @@
+.index-reasons {
+  background-image: url("../img/bg.jpg");
+  font-family: "Neucha", "Arial", sans-serif;
+  padding: 5px 0;
+}
+
+.index-reasons__title {
+  font-size: 48px;
+  text-align: center;
+  font-weight: normal;
+  color: #ec7037;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 67px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-arrow-draw.png");
+    top: 20px;
+    left: 860px;
+  } 
+}
+
+.index-reasons__items {
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.index-reasons__item {
+  position: relative;
+  padding-left: 175px;
+  margin-bottom: 50px;
+  flex-basis: 383px;
+  
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    left: 0;
+    top: 35px;
+  }
+}
+
+.index-reasons__item--time::before {
+  width: 112px;
+  height: 115px;
+  background-image: url("../img/icon-clock-draw.png");
+}
+
+.index-reasons__item--money::before {
+  width: 129px;
+  height: 144px;
+  top: 15px;
+  background-image: url("../img/icon-pig-draw.png");
+}
+
+.index-reasons__item--capabil::before {
+  width: 124px;
+  height: 90px;
+  background-image: url("../img/icon-dish-draw.png");
+}
+
+.index-reasons__item--health::before {
+  width: 131px;
+  height: 101px;
+  background-image: url("../img/icon-heart-draw.png");
+}
+
+.index-reasons__item-title {
+  font-size: 24px;
+  color: #e85511;
+}
+
+.index-reasons__item-content {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  color: #5f5e5e;
+  
+  
+  li {
+    position: relative;
+    margin-bottom: 7px;
+    
+    &::before {
+      position: absolute;
+      content: "";
+      width: 23px;
+      height: 23px;
+      left: -30px;
+      background-image:url("../img/icon-face-smile--grey.png");
+      background-repeat: no-repeat;
+    }  
+  }
+  
+
+}
+
+.index-reasons__item-ps {
+  font-size: 24px;
+  color: #e85511;
+  margin-top: 17px;
+}

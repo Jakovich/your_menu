@@ -27,12 +27,6 @@
   color: #868686;
   text-align: left;
 
-    
-    div {
-      padding-left: 7px;
-      padding-top: 4px;
-    }
-  
     tr:last-child td {
     padding-bottom: 45px;
     }
@@ -43,33 +37,41 @@
   }
 
 .personal-info__data {
-  width: 350px;
+  width: 380px;
   background-color: #ffffff;
-  padding: 0px 35px;
+  padding: 4px 35px;
+  position: relative;
 }
   
-.personal-info__data div {
+.personal-info__data{ 
+  
+  div, input {
   border: 1px dashed  #dadada;
   border-radius: 16px;
-  min-height: 30px;
+  min-height: 31px;
   background-color: #ffffff;
   padding: 0 10px;
   padding-top: 4px;
   display: inline-block;
-  width: 80%;
+  width: 86%;
+}
+  
+  input {
+        display: none;
+  }
 }
 
 .personal-info__name {
-  padding: 3px 15px;
-  width: 140px;
+  padding: 4px 10px;
+  width: 160px;
   border-right: 1px solid #dadada ;
 }
 
 .personal-info__edit {
-  display: inline-block;
-  margin-left: 5px;
+  position: absolute;
   width: 30px;
   height: 30px;
+  right: 30px;
   background-image: url("../img/icons/icon-pen.svg");
   background-repeat: no-repeat;
   background-size: 30px auto;

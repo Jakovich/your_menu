@@ -10,6 +10,7 @@
 }
 
 .basket-nav__item {
+  cursor: pointer;
   text-align: center;
   font-size: 24px;
   font-family: "Comfortaa";
@@ -39,7 +40,26 @@
     bottom: -60px;
   }
   
-  &:last-child::after {
+  &:last-child {
+    span {
+      background-color: #009036;
+      color: #ffffff;
+    }
+    
+    &::before {
+      position: absolute;
+      content: "";
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 1px solid #009036;
+      top: -4px;
+      left: 50%;
+      margin-left: -29px;
+    }
+    &::after{
     display: none;
+    }
   }
+  
 }

@@ -49,10 +49,10 @@
          <div class="basket-wrapper">
          <div class="basket-nav">
            <ul class="basket-nav__items">
-             <li class="basket-nav__item"><span>1</span> Корзина</li>
-             <li class="basket-nav__item"><span>2</span> Вход</li>
-             <li class="basket-nav__item"><span>3</span> Доставка</li>
-             <li class="basket-nav__item"><span>4</span> Подтверждение</li>
+             <li class="basket-nav__item basket-nav__item--basket"><span>1</span> Корзина</li>
+             <li class="basket-nav__item basket-nav__item--entry"><span>2</span> Вход</li>
+             <li class="basket-nav__item basket-nav__item--delivery"><span>3</span> Доставка</li>
+             <li class="basket-nav__item basket-nav__item--confirm"><span>4</span> Подтверждение</li>
            </ul>
          </div>
           <section class="basket-total">
@@ -65,7 +65,7 @@
                  <th></th>
                </tr>
 
-               <tr>
+               <tr class="basket-total__dish-item">
                  <td class="basket-total__recipe">
                    <img src="img/photo-fish--small.jpg" alt="" width="68" height="68">
                    <div>Треска на подушечке из&nbsp;овощей со сливочным соусом</div>
@@ -97,7 +97,7 @@
 
                 </div>
                 <a href="#" class="basket-total__btn basket-total__btn--white">Продолжить покупки</a>
-                <a href="#" class="basket-total__btn basket-total__btn--green">Далее >></a>
+                <a href="#" id="total-next" class="basket-total__btn basket-total__btn--green">Далее >></a>
                 <a class="basket-total__clear" href="#">Очистить корзину</a>
               </div>
               <div class="basket-total__summary-right">
@@ -221,7 +221,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="basket-delivery__btn">Далее >></a>
+              <a href="#" class="basket-delivery__btn" id="delivery-next">Далее >></a>
             </div>
           </section>
           
@@ -241,7 +241,7 @@
                 <div class="basket-confirm__total-delivery">Доставка - <span>0р.</span></div>
                 <div class="basket-confirm__total-sum">Итоговая сумма заказа: <span>2000Р</span></div>  
               </div>
-              <a href="#" class="basket-confirm__link">&lt;&lt;Назад</a>
+              <a href="#" id="confirm-prev" class="basket-confirm__link">&lt;&lt;Назад</a>
             </div>
             <div class="basket-confirm__right">
              <form class="basket-confirm__payment">
@@ -353,6 +353,8 @@
           </div>
         </div>
     </footer>
+    
+    <script src="js/basket-nav.js"></script>
 
   </body>
 </html>

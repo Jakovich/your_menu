@@ -101,6 +101,8 @@ module.exports = function(grunt) {
         files: {
           "build/js/personal-nav.min.js": ["build/js/personal-nav.js"],
           "build/js/kitchen-slider.min.js": ["build/js/kitchen-slider.js"],
+          "build/js/basket-nav.min.js": ["build/js/basket-nav.js"],
+           "build/js/personal-points.min.js": ["build/js/personal-nav.js",  "build/js/gift-slider"],          
           "build/js/personal-subscribe.min.js": ["build/js/personal-nav.js",  "build/js/subscribe-popup.js", "build/js/subscribe-counter.js"]
         }
       }

@@ -219,6 +219,7 @@
           
           <section class="basket-confirm">
             <div class="basket-confirm__left">
+             <div class="basket-confirm__title">Итог</div>
               <div class="basket-confirm__item basket-confirm__item--compos">
                 Треска на подушечке из овощей со сливочным соусом (2 порции)
               </div>
@@ -235,6 +236,61 @@
               <a href="#" class="basket-confirm__link">&lt;&lt;Назад</a>
             </div>
             <div class="basket-confirm__right">
+             <form class="basket-confirm__payment">
+             <div class="basket-confirm__payment-title">Способ оплаты</div>
+              <div class="basket-confirm__payment-item">
+                <input type="radio" name="card" value="card1" id="card1" checked>
+                <label for="card1">Наличными курьеру</label>
+              </div>
+              <div class="basket-confirm__payment-change">
+                <input type="checkbox" id="payment-change">
+                <label for="payment-change">Нужна сдача</label>
+              </div>
+              
+              <div class="basket-confirm__payment-item">
+                <input type="radio" name="card" value="card2" id="card2">
+                <label for="card2">карта Visa 5550 0000 0000 9999</label>
+              </div>
+              
+              <div class="basket-confirm__add-card">
+            
+              <div class="add-card">
+               <legend class="add-card__title">Добавить</legend>
+                <input class="add-cart__item add-cart__item--number" type="type" name="card-number" placeholder="Номер карты" id="card-number">
+                <select class="add-cart__item add-cart__item--select" name="card-month" id="card-month">
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">04</option>
+                  <option value="5">05</option>
+                  <option value="6">06</option>
+                  <option value="7">07</option>
+                  <option value="8">08</option>
+                  <option value="9">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <select class="add-cart__item add-cart__item--select" name="card-year" id="card-year">
+                  <option value="2016">16</option>
+                  <option value="2017">17</option>
+                  <option value="2018">18</option>
+                  <option value="2019">19</option>
+                  <option value="2020">20</option>
+                  <option value="2021">21</option>
+                  <option value="2022">22</option>
+                  <option value="2023">23</option>
+                  <option value="2024">24</option>
+                  <option value="2025">25</option>
+                  <option value="2026">26</option>
+                  <option value="2027">27</option>
+                </select>
+                <input class="add-cart__item add-cart__item--css" type="text" placeholder="CV2" title="Введите три цифры, расположенные на оборотной стороне вашей банковской карты">
+                <input class="add-cart__item add-cart__item--name" type="text" name="card-name" placeholder="Имя держателя" id="card-name">
+            </div>
+            </div>
+            <button type="submit" class="basket-confirm__btn">Оформить заказ</button>
+             </form>
             </div>
           </section>
         </div>

@@ -5,8 +5,19 @@
   padding: 15px 18px;
   padding-right: 0;
   width: 858px;
-  margin-left: 250px;/*!!!!!!!!!!!!!!!!!!!*/
+  float: right;
   .clearfix();
+  position: relative;
+  
+  &::before {
+    position: absolute;
+    content: "";
+    width: 120px;
+    left: -135px;
+    top: 25px;
+    height: 2px;
+    border-bottom: 1px dashed #009036;
+  }
 }
 
 .basket-entry__inner {

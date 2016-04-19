@@ -1,10 +1,26 @@
+.basket-wrapper {
+  .clearfix();
+}
+
 .basket-total {
   background-color: #ffffff;
   border: 1px dashed #009036;
   border-radius: 15px;
   padding: 12px 18px;
   width: 840px;
-  margin-left: 250px;/*!!!!!!!!!!!!!!!!!!!*/
+  float: right;
+  margin-top: 65px;
+  position: relative;
+  
+  &::before {
+    position: absolute;
+    content: "";
+    width: 120px;
+    left: -135px;
+    top: 25px;
+    height: 2px;
+    border-bottom: 1px dashed #009036;
+  }
 }
 
 .basket-total__table {
@@ -18,10 +34,6 @@
     vertical-align: top;
     font-weight: normal;
     padding: 15px 0;
-    
-    &:first-child {
-  
-    }
   }
 }
 
@@ -30,7 +42,7 @@
   color: #7f7e7e;
   display: flex;
   align-items: center;
-  width: 310px;
+  width: 290px;
 
   
   img {
@@ -47,7 +59,7 @@ th.basket-total__recipe {
   font-size: 30px;
   color: #a7a7a7;
   text-align: center;
-  width: 350px;
+  width: 330px;
   span {
     color: #ec7037;
   }
@@ -76,6 +88,7 @@ th.basket-total__recipe {
   text-align: center;
   font-size: 30px;
   color: #ec7037;
+  width: 150px;
 }
 
 .basket-total__delete {

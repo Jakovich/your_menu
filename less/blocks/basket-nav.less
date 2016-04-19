@@ -40,7 +40,14 @@
     bottom: -60px;
   }
   
-  &:last-child {
+  &:last-child::after{    
+    display: none;
+  }
+}
+  
+  .basket-nav__item--active {
+    position: relative;
+    
     span {
       background-color: #009036;
       color: #ffffff;
@@ -57,9 +64,6 @@
       left: 50%;
       margin-left: -29px;
     }
-    &::after{
-    display: none;
-    }
   }
   
-}
+  

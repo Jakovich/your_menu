@@ -20,6 +20,7 @@
   basketDelivery .style.display = "none";
   basketConfirm.style.display = "none";
 
+
   totalNext.addEventListener("click", function(event){
     event.preventDefault();
     elementHide(basketTotal);
@@ -55,19 +56,39 @@
       elem.style.display = "none";
     }
   };
+  
+  var navActive = function(elem) {
+    if (!elem.classList.contains("basket-nav__item--active")) {
+      elem.classList.add("basket-nav__item--active");
+    }
+  };
+  
+  var navInactive = function(elem) {
+    if (elem.classList.contains("basket-nav__item--active")) {
+      elem.classList.remove("basket-nav__item--active");
+    }
+  }
 
-    navBasket.addEventListener("click", function(){
-      elementShow(basketTotal);
-      elementHide(basketEntry);
-      elementHide(basketDelivery);
-      elementHide(basketConfirm);
+  navBasket.addEventListener("click", function(){
+    elementShow(basketTotal);
+    elementHide(basketEntry);
+    elementHide(basketDelivery);
+    elementHide(basketConfirm);
+    navActive(navBasket);
+    navInactive(navEntry);
+    navInactive(navDelivery);
+    navInactive(navConfirm);
   });
 
   navEntry.addEventListener("click", function(){
-      elementShow(basketEntry);
-      elementHide(basketTotal);
-      elementHide(basketDelivery);
-      elementHide(basketConfirm);
+    elementShow(basketEntry);
+    elementHide(basketTotal);
+    elementHide(basketDelivery);
+    elementHide(basketConfirm);
+    navInactive(navBasket);
+    navActive(navEntry);
+    navInactive(navDelivery);
+    navInactive(navConfirm);
   });
 
   navDelivery.addEventListener("click", function(){
@@ -75,6 +96,10 @@
     elementHide(basketEntry);
     elementHide(basketTotal);
     elementHide(basketConfirm);
+    navInactive(navBasket);
+    navInactive(navEntry);
+    navActive(navDelivery);
+    navInactive(navConfirm);
   });
 
   navConfirm.addEventListener("click", function(){
@@ -82,5 +107,9 @@
     elementHide(basketDelivery);  
     elementHide(basketEntry);
     elementHide(basketTotal);
+    navInactive(navBasket);
+    navInactive(navEntry);
+    navInactive(navDelivery);
+    navActive(navConfirm);
   });
 })();

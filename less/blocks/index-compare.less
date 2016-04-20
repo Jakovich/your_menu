@@ -1,15 +1,43 @@
 .index-compare {
   background-image: url("../img/bg-index-grey.jpg");
+  padding-top: 25px;
+  position: relative;
+  padding-bottom: 50px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    top: -30px;
+    background-image: url("../img/bg-index-compare.png");
+  }
 }
 
-.index-compare__resource {
-  font-size: 14px;
-  img {
-    display: block;
+.index-compare__table {
+  td {
+    padding: 5px 45px;
+    text-align: center;
+  }
+   img {
+     margin: 0 2px;
+   }
+
+
+  .index-compare__resource {
+    font-size: 24px;
+    color: #949494;
+    padding-bottom: 25px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
   }
 }
 
 .index-compare__category {
-  text-align: center;
+  font-size: 24px;
+  color: #949494;
 }
 

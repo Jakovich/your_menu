@@ -145,17 +145,70 @@
 /*модальное окно главная страница - меню недели*/
 
 .popup-menu {
+  display: none;
   background-color: #000000;
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 20px;
+  width: 360px;
+  background-image: url("../img/bg-popup-menu.jpg");
+  background-position: top center;
+  position: absolute;
+  top: 166px;
+  left: 110px;
+  
+  &::after {
+    top:0;
+    left: 115px;
+    position: absolute;
+    content: "";
+    width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #009036;
+  }
 }
 
 .popup-menu__item {
   font-family: "Neucha", "Arial", sans-serif;
   font-size: 22px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding-left: 128px;
   position: relative;
+  
+  &::before {
+    position: absolute;
+    content: "";
+    top:0;
+    left: 10px;
+    background-repeat: no-repeat;
+  }
+}
+
+.popup-menu__item--dinner {
+  &::before {
+    background-image: url("../img/icon-dish-popup.png");
+    width: 116px;
+    height: 66px;
+  }
+}
+
+.popup-menu__item--smoothies {
+  &::before {
+    background-image: url("../img/logo-smoothies-popup.png");
+    left: 35px;
+    width: 54px;
+    height: 66px;
+  }
+}
+
+.popup-menu__item--sandwich {
+  &::before {
+    background-image: url("../img/icon-sandwich-popup.png");
+    left: 15px;
+    width: 96px;
+    height: 79px;
+  }
 }
 
 .popup-menu__title {
@@ -165,4 +218,5 @@
 .popup-menu__link {
   text-decoration: none;
   color: #ffffff;
+  display: block;
 }

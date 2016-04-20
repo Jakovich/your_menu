@@ -2,6 +2,7 @@
   float: left;
   width: 765px;
   margin-left: 148px;
+  padding-top: 25px;
 }
 
 .personal-info_inner {
@@ -25,10 +26,7 @@
   font-weight: normal;
   color: #868686;
   text-align: left;
-
-    tr:last-child td {
-    padding-bottom: 45px;
-    }
+  margin-bottom: 50px;
   
     tr:first-child td {
     padding-top: 45px;
@@ -56,7 +54,7 @@
 }
   
   input {
-        display: none;
+    display: none;
   }
 }
 
@@ -77,3 +75,71 @@
   cursor: pointer;
 }
 
+.personal-info__add-tel {
+  font-size: 14px;
+  color: #e85511;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.personal-info__data-table--address {
+  margin-bottom: 50px;
+}
+
+.personal-info__address {
+  border: 1px solid #dadada;
+  background-color: #ffffff;
+  padding: 25px 30px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  font-size: 18px;
+  font-weight: normal;
+  color: #868686;
+  text-align: left;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: flex-start;
+  width: 570px;
+}
+
+.personal-info__address-items {
+  width: 410px;
+}
+
+.personal-info__address-item {
+  border: 1px dashed  #dadada;
+  border-radius: 16px;
+  min-height: 31px;
+  background-color: #ffffff;
+  padding: 0 10px;
+  padding-top: 4px;
+  display: inline-block;
+  width: 330px;
+}
+
+.personal-info__add {
+  color: #878686;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 7px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: #d1d1d1;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  width: 135px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.personal-info__add::after{
+  position: absolute;
+  content: "+";
+  font-weight: normal;
+  font-size: 65px;
+  left: 52px;
+  color: #ffffff;
+  top: -12px;
+}

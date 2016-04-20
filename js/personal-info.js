@@ -1,6 +1,6 @@
 "use strict";
 (function() {
-var personalTable = document.querySelector(".personal-info__data-table");
+var personalTable = document.querySelector(".personal-info__data-table--edit");
 var personalInfo = personalTable.querySelectorAll(".personal-info__data");
 var infoEdit = personalTable.querySelectorAll(".personal-info__edit"); 
 

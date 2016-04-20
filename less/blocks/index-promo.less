@@ -1,0 +1,73 @@
+.index-promo {
+  background-image: url("../img/index-smoothies-bg.jpg");
+  background-size: cover;
+}
+
+.index-promo__item {
+  font-size: 18px;
+  line-height: 25px;
+  color: #666666;
+  padding: 20px 45px;
+  padding-top: 120px;
+  background-color: rgba(255,255,255,0.8);
+  width: 220px;
+  position: relative;
+  
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    top: 0;
+  }
+  
+  p{
+    margin: 5px;
+  }
+}
+
+.index-promo__item--sandwitch {
+  
+  &::before {
+    width: 212px;
+    height: 220px;
+    background-image: url("../img/logo-sandwitch.png")
+  }
+}
+
+.index-promo__item--smoothies {
+  
+    &::before {
+    width: 182px;
+    height: 106px;
+    background-image: url("../img/logo-smoothies.png")
+  }
+}
+
+.index-promo__link {
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ed6f35;
+  display: block;
+  border-radius: 25px;
+  border: 2px solid #ffffff;
+  padding: 15px;
+}
+
+.index-promo__text {
+  font-size: 24px;
+  color: #ec7037;
+  padding: 24px 12px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.index-promo__text--energy {
+  width: 240px;
+}
+
+.index-promo__text--delivery {
+  width: 125px;
+}

@@ -144,13 +144,13 @@
 
 /*модальное окно главная страница - меню недели*/
 
-.popup-menu {
+.popup-dinner {
   display: none;
   background-color: #000000;
   padding-top: 50px;
   padding-bottom: 20px;
-  width: 360px;
-  background-image: url("../img/bg-popup-menu.jpg");
+  width: 355px;
+  background-image: url("../img/bg-popup-dinner.jpg");
   background-position: top center;
   position: absolute;
   top: 166px;
@@ -169,7 +169,7 @@
   }
 }
 
-.popup-menu__item {
+.popup-dinner__item {
   font-family: "Neucha", "Arial", sans-serif;
   font-size: 22px;
   margin-bottom: 30px;
@@ -185,7 +185,7 @@
   }
 }
 
-.popup-menu__item--dinner {
+.popup-dinner__item--dinner {
   &::before {
     background-image: url("../img/icon-dish-popup.png");
     width: 116px;
@@ -193,7 +193,7 @@
   }
 }
 
-.popup-menu__item--smoothies {
+.popup-dinner__item--smoothies {
   &::before {
     background-image: url("../img/logo-smoothies-popup.png");
     left: 35px;
@@ -202,7 +202,7 @@
   }
 }
 
-.popup-menu__item--sandwich {
+.popup-dinner__item--sandwich {
   &::before {
     background-image: url("../img/icon-sandwich-popup.png");
     left: 15px;
@@ -211,12 +211,18 @@
   }
 }
 
-.popup-menu__title {
+.popup-dinner__title {
   color: #ffb58c;
 }
 
-.popup-menu__link {
+.popup-dinner__link {
   text-decoration: none;
   color: #ffffff;
   display: block;
+}
+
+/*всплывающее меню на главной странице*/
+
+.popup_menu {
+  background-image: url("../img/bg_personal_nav.jpg");
 }

@@ -12,7 +12,7 @@
         <nav class="main-nav">
           <div class="main-nav__user">
             <div class="wrapper">
-              <div class="user-nav">
+              <div class="user-nav user-nav--index">
                 <div class="page-header__logo">
                 <a href="#"><img src="img/logo.png" width="233" height="211" alt="ТВОЕ МЕНЮ"></a>
                 </div>
@@ -27,7 +27,7 @@
           </div>
           <div class="main-nav__service">
             <div class="wrapper">
-              <div class="service-nav">
+              <div class="service-nav service-nav__index">
                 <ul class="service-nav__items">
                   <li class="service-nav__item"><a href="#">Меню<br>недели</a></li>
                   <li class="service-nav__item"><a href="#">Товары<br>для кухни</a></li>
@@ -45,37 +45,44 @@
        
        <section class="index-intro">
          <div class="wrapper wrapper--index">
-           <div class="index-intro__text">
-             <h4 class="index-intro__title">Удобно для жизни</h4>
-             <p>Мы доставляем набор свежих отмеренных продуктов с вкусными пошаговыми фото&shy;рецептами к Вашей двери. Просто приготовь.</p>
-             
-             <a href="#" class="index-intro__link">Попробовать</a>
-             <div class="index-intro__sale">
-               <span>20%</span> <span>скидка</span> <span>на первый</span> <span>заказ</span>
+           <div class="index-intro__inner">
+             <div class="index-intro__text">
+               <h4 class="index-intro__title">Удобно для жизни</h4>
+               <p>Мы доставляем набор свежих отмеренных продуктов с вкусными пошаговыми фото&shy;рецептами к Вашей двери. Просто приготовь.</p>
+
+               <a href="#" class="index-intro__link">Попробовать <div class="index__offer index__offer--sale index__offer--down">
+                 <span>20%</span> <span>скидка</span> <span>на первый</span> <span>заказ</span>
+               </div></a>
+
              </div>
-           </div>
-           
-           <div class="index-intro__icons">
-             <div class="index-intro__icon-item">
-               небольшое время приготовления
-             </div>
-             <div class="index-intro__icon-item">
-               большие порции
-             </div>
-             <div class="index-intro__icon-item">
-               новое меню каждую неделю
+
+             <div class="index-intro__icons">
+               <div class="index-intro__icon-item index-intro__icon-item--time">
+                 небольшое время приготовления
+               </div>
+               <div class="index-intro__icon-item index-intro__icon-item--portion">
+                 большие порции
+               </div>
+               <div class="index-intro__icon-item  index-intro__icon-item--news">
+                 новое меню каждую неделю
+               </div>
              </div>
            </div>
          </div>
        </section>
        
        <section class="index-promo">
-         <div class="wrapper wrapper--index">
+        
            <div class="index-promo__item index-promo__item--sandwitch">
              <p>Отличное начало дня</p>
              <p>Замены ланча, когда&nbsp;не успеваешь</p>
              <p>Детям в школу</p>
              <a href="#" class="index-promo__link">хочу сэндвич</a>
+           </div>
+           
+           <div class="index-promo__texts">
+             <div class="index-promo__text index-promo__text--energy">Больше энергии для Ваших подвигов</div>
+             <div class="index-promo__text index-promo__text--delivery">5 &ndash; одной доставкой</div>
            </div>
            
            <div class="index-promo__item index-promo__item--smoothies">
@@ -84,17 +91,12 @@
              <p>Очищает организм и укрепляет иммунитет</p>
              <a href="#" class="index-promo__link">хочу смузи</a>
            </div>
-           
-           <div class="index-promo__text index-promo__text--energy">Больше энергии для Ваших подвигов</div>
-           <div class="index-promo__text index-promo__text--delivery">5 &ndash; одной доставкой</div>
-           
-           
-         </div>
+    
        </section>
        
         <section class="index-together">
-          <div class="index-together__offer index-together__offer--left"><span>20%</span> <span>скидка</span> <span>на первый</span> <span>заказ</span></div>
-          <div class="index-together__offer index-together__offer--right">Больше порций - меньше цена</div>
+          <div class="index__offer index__offer--sale index__offer--left"><span>20%</span> <span>скидка</span> <span>на первый</span> <span>заказ</span></div>
+          <div class="index__offer index__offer--right">Больше порций - меньше цена</div>
           <div class="wrapper wrapper--index">
             <div class="index-together__inner">
               <h2 class="index-together__title">Вместе с нами</h2>

@@ -1,0 +1,83 @@
+.index__offer {
+  position: absolute;
+  font-size: 25px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #b80000;
+  padding: 7px 10px;
+  width: 110px;
+  top: 30px;
+}
+
+.index__offer--sale {
+  padding-top: 15px;
+   text-align: center;
+  span:nth-child(1) {
+    font-size: 46px;
+  }
+  
+  span:nth-child(2) {
+    font-size: 24px;
+    line-height: 16px;
+  }
+  
+  span:nth-child(3) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  
+  span:nth-child(4) {
+    font-size: 31px;
+    line-height: 16px;
+  }
+}
+
+.index__offer--left {
+ 
+   &::after {
+     position: absolute;
+     content: "";
+     top: 0;
+     right: -30px;
+     width: 0;
+	 height: 0;
+	 border-top: 68px solid transparent;
+	 border-left: 30px solid #b80000;
+	 border-bottom: 68px solid transparent;
+   }
+  
+  
+}
+
+.index__offer--right {
+  right: 0;
+  
+  &::after {
+     position: absolute;
+     content: "";
+     top: 0;
+     left: -30px;
+     width: 0;
+	 height: 0;
+	 border-top: 60px solid transparent;
+	 border-right: 30px solid #b80000;
+	 border-bottom: 60px solid transparent;
+   }
+
+}
+
+.index__offer--down {
+  top: -15px;
+  right: 10px;
+  &::after {
+     position: absolute;
+     content: "";
+     bottom: -30px;
+     left: 0;
+     width: 0;
+	 height: 0;
+	 border-left: 65px solid transparent;
+	 border-top: 30px solid #b80000;
+	 border-right: 65px solid transparent;
+   }
+}

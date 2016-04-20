@@ -1,14 +1,22 @@
 .index-intro {
   background-image: url("../img/index-intro-bg.jpg");
   background-size: cover;
+  padding-bottom: 3px;
+}
+
+.index-intro__inner {
+  .clearfix();
+  padding: 0 50px;
 }
 
 .index-intro__text {
-  padding: 90px 23px;
+  padding: 85px 23px;
+  padding-bottom: 115px;
   background-color: rgba(255,255,255,0.8);
   color: #565656;
   font-size: 24px;
   width: 340px;
+  float: left;
 }
 
 .index-intro__title {
@@ -17,6 +25,7 @@
   color: #ed6f35;
   font-size: 43px;
   margin-bottom: 7px;
+  margin-top: 0;
   text-align: center;
 }
 
@@ -29,6 +38,13 @@
   padding: 10px 10px;
   border-radius: 15px;
   border: 2px solid #a0a0a0;
+  position: relative;
+}
+
+.index-intro__icons {
+  display: flex;
+  float: right;
+  margin-top: 40px;
 }
 
 .index-intro__icon-item {
@@ -36,4 +52,51 @@
   color: #272727;
   font-family: "Neucha", "Arial", sans-serif;
   text-align: center;
+  position: relative;
+  padding-top: 65px;
+  margin-right: 25px;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+  
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    top: 0;
+    left: 50%;
+  }
+}
+
+.index-intro__icon-item--time {
+  width: 139px;
+  &::before {
+    top: 5px;
+    width: 52px;
+    height: 52px;
+    background-image: url("../img/icon-clock-orangesm.png");
+    margin-left: -26px;
+  }
+}
+
+.index-intro__icon-item--portion {
+  width: 80px;
+  &::before{
+    width: 54px;
+    height: 58px;
+    margin-left: -28px;
+    background-image: url("../img/icon-dish-orangesm.png");
+  }
+}
+
+.index-intro__icon-item--news {
+  width: 139px;
+  &::before{
+    width: 79px;
+    margin-left: -43px;
+    top: 18px;
+    height: 39px;
+    background-image: url("../img/icon-food-orangesm.png");
+  }
 }

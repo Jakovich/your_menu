@@ -1,0 +1,114 @@
+.index-explic {
+  background-image:  url("../img/bg-index-grey.jpg");
+  font-family: "Neucha", "Arial", sans-serif;
+  position: relative;
+  padding-bottom: 45px; 
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 100%;
+    background-image: url("../img/dot.png");
+    top: 0;
+  }
+}
+
+.index-explic__title { 
+  margin-top: 0;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  font-size: 36px;
+  color: #e85511;
+  text-align: center;
+}
+
+.index-explic__items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.index-explic__item {
+  font-size: 24px;
+  color: #655c61;
+  padding-top: 120px;
+  position: relative;
+  margin-right: 30px;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+  
+  &::after {
+    position: absolute;
+    content: "";
+    width: 69px;
+    height: 26px;
+    background-image: url("../img/icon-arrow-graphic.png");
+    top: 25px;
+    right: -20px;
+  }
+  
+  &:nth-child(2n+1)::after {
+    transform: scaleY(-1);
+  }
+  
+  &:last-child::after {
+    display: none;
+  }
+  
+  &::before {
+    content: "";
+    top: 0;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+}
+
+.index-explic__item--dish {
+  width: 190px;
+  &::before {
+  width: 124px;
+  height: 121px;
+  background-image: url("../img/icon-dish-graphic.png");
+}
+}
+
+.index-explic__item--tel {
+  width: 200px;
+  &::before {
+    width: 84px;
+    height: 84px;
+    background-image: url("../img/icon-tel-graphic.png");
+  }
+}
+
+.index-explic__item--basket {
+  width: 212px;
+ &::before {
+  width: 86px;
+  height: 94px;
+  background-image: url("../img/icon-basket-graphic.png");
+}
+}
+
+.index-explic__item--delivery {
+  width: 160px;
+  &::before {
+  width: 103px;
+  height: 109px;
+  background-image: url("../img/icon-delivery-graphic.png");
+}
+}
+
+.index-explic__item--pleasure {
+  width: 230px;
+  &::before {
+  width: 103px;
+  height: 109px;
+  background-image: url("../img/icon-food-graphic.png");
+}
+}

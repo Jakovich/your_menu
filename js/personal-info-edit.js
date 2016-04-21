@@ -2,7 +2,16 @@
 (function() {
   var infoEdit = document.querySelectorAll(".personal-info__edit"); 
   var addressButton = document.querySelector(".personal-info__add");
-  var template = document.querySelector('.address-template');
+  var template = document.querySelector('#address-template');
+  var elementToClone;
+  
+  if ('content' in template) {
+    elementToClone = template.content.querySelector('.personal-info__address-item');
+  } else {
+    elementToClone = template.querySelector('.personal-info__address-item');
+  }
+  
+  
   var editFunction = function() {
     for (var i = 0; i < infoEdit.length; i++) {
 
@@ -17,13 +26,11 @@
     }
   };
 
-  
   addressButton.addEventListener ("click", function(event) {
     event.preventDefault();
     var addressContainer = document.querySelector(".personal-info__address-items");
     var addressItems = document.querySelectorAll(".personal-info__address-item");
-    var addressItem = document.querySelector(".personal-info__address-item");
-    var newAddressItem = addressItem.cloneNode(true);
+    var newAddressItem = elementToClone.cloneNode(true);
     var Edit = document.querySelector(".personal-info__edit"); 
     var newEdit = Edit.cloneNode(true);
     if (addressItems.length < 3){

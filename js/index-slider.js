@@ -1,5 +1,5 @@
  // Des Variables pour pouvoir modifier facilement ce qui doit l'être
-      var secDuration = 5;
+      var secDuration = 6;
       var image = 1;
       var maxImages = 3;
       var slider = document.querySelector('.index-slider');

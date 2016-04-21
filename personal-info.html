@@ -81,11 +81,6 @@
                 
               </tr>
               <tr>
-                <td class="personal-info__name"><div>Ваш пол</div></td>
-                <td class="personal-info__data"><div></div><input type="text" class="personal-info__input"><span class="personal-info__edit"></span></td>
-                
-              </tr>
-              <tr>
                 <td class="personal-info__name"><div>Почта</div></td>
                 <td class="personal-info__data"><div></div><input type="text" class="personal-info__input"><span class="personal-info__edit"></span></td>
                 
@@ -110,12 +105,6 @@
                 <td class="personal-info__data"><div></div><input type="text" class="personal-info__input"><span class="personal-info__edit"></span></td>
                 
               </tr>
-              <tr>
-              <td class="personal-info__name">
-                <div><a href="#" class="personal-info__add-tel">Добавить телефон</a></div>
-              </td>
-              <td  class="personal-info__data"></td>
-              </tr>
 
               
             </tbody>
@@ -127,10 +116,12 @@
   
           <div class="personal-info__address">
             <div class="personal-info__address-items">
-              <div class="personal-info__address-item"></div>
-              <div class="personal-info__address-item"></div>
-              <div class="personal-info__address-item"></div>
-              <div class="personal-info__address-item"></div>               
+              <div class="personal-info__address-item">
+                <div class="personal-info__address-div">Адрес</div>
+                <input type="text" class="personal-info__input personal-info__input--address">
+                <span class="personal-info__edit"></span>
+              </div>
+              
             </div>
             <a href="#" class="personal-info__add">Добавить еще адрес</a>
           </div> 
@@ -188,11 +179,18 @@
         </div>
     </footer>
     
+    <template style="display: none;" class="address-template">
+      <div class="personal-info__address-item">
+        <div class="personal-info__address-div">Введите адрес</div>
+        <input type="text" class="personal-info__input personal-info__input--address">
+        <span class="personal-info__edit"></span>
+      </div>
+    </template>
     
   
  
 
 
-    <script src="js/personal-info.min.js"></script>
+    <script src="js/personal-info-edit.js"></script>
   </body>
 </html>

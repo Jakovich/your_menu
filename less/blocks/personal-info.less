@@ -31,6 +31,10 @@
     tr:first-child td {
     padding-top: 45px;
     }
+  
+    tr:last-child td {
+      padding-bottom: 45px;
+    }
     
   }
 
@@ -45,7 +49,7 @@
 .personal-info__data{ 
   
   
-  div, input {
+  div {
   border: 1px dashed  #dadada;
   border-radius: 16px;
   min-height: 31px;
@@ -62,6 +66,17 @@
   
 
 }
+
+.personal-info__input {
+  border: 1px dashed  #dadada;
+  border-radius: 16px;
+  min-height: 31px;
+  background-color: #ffffff;
+  padding: 0 10px;
+  padding-top: 4px;
+  width: 86%;
+}
+
 
 .personal-info__name {
   padding: 4px 10px;
@@ -95,9 +110,6 @@
   margin-bottom: 5px;
 }
 
-.personal-info__data-table--address {
-  margin-bottom: 50px;
-}
 
 .personal-info__address {
   border: 1px solid #dadada;
@@ -119,14 +131,29 @@
 }
 
 .personal-info__address-item {
+  position: relative;
+  padding-right: 20px;
+  
+  .personal-info__edit {
+    right: 20px;
+  }
+}
+
+.personal-info__address-div {
   border: 1px dashed  #dadada;
   border-radius: 16px;
-  min-height: 31px;
+  min-height: 30px;
   background-color: #ffffff;
   padding: 0 10px;
-  padding-top: 4px;
+  padding-top: 5px;
   margin-bottom: 7px;
   width: 330px;
+}
+
+.personal-info__input--address {
+  width: 330px;
+  display: none;
+  margin-bottom: 7px;
 }
 
 .personal-info__add {
@@ -156,3 +183,4 @@
   color: #ffffff;
   top: -12px;
 }
+

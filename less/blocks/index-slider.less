@@ -1,0 +1,93 @@
+#slider {
+  width: 1280px;
+  height: 550px;;
+  margin: 0 auto;
+  position: relative;
+}
+
+.index-slider__item {
+  width: 1280px;
+  height: 515px;
+}
+
+.index-slider__mask {
+  width:100%;
+  height:100%;
+  position:absolute;
+  overflow: hidden;
+}
+
+ /* Les points de navigation */
+
+.index-slider__dots {
+  position: absolute;
+  width: 85px;
+  height: 17px;
+  right: 25px;
+  bottom: 0;
+  list-style: none;
+}
+      /* les points, avec leur background non selectionné */
+.index-slider__dots li {
+  float: left;
+  margin: 0px 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 4px solid  #ffffff;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 1px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+.index-slider__dots li:hover {
+    background-color: #ea7037;
+}
+
+      
+      /* Point "selectionné". De la même manière que l'image, on change en fonction de la classe de slider */
+.image1 .index-slider__dots li.button1, .image2 .index-slider__dots li.button2, .image3 .index-slider__dots li.button3 {
+  background-color: #ea7037;
+  cursor: normal;
+}
+
+
+.index-slider__container{
+  width: 300%;
+  height:100%;
+        /* La transition sur tout les navigateurs */
+           /* Chrome */ 
+          -webkit-transition-property:all;
+          -webkit-transition-duration:1s;
+
+           /* Firefox */ 
+          -moz-transition-property:all;
+          -moz-transition-duration:1s;
+          
+           /* Opera */ 
+          transition-property:all;
+          transition-duration:1s;
+
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  position: relative;
+
+      }
+      
+      /* Les différentes positions du slider */
+      .image1 .index-slider__container{
+        left:0;
+      }
+      .image2 .index-slider__container {
+        left:-100%;
+      }
+      .image3 .index-slider__container {
+        left:-200%;
+      }
+ 
+      
+      /* Les images */
+    .index-slider__container li{
+        float: left;
+      }

@@ -43,9 +43,13 @@
       </header>
 
       <main>
-       
-        <section class="index-intro">
-          <div class="wrapper wrapper--index">
+      
+      <section id="slider" class="index-slider">
+        <div class="index-slider__mask">
+          <ul class="index-slider__container">
+            <li>
+              <section class="index-slider__item index-intro">
+      
             <div class="index-intro__inner">
               <div class="index-intro__text">
                 <h4 class="index-intro__title">Удобно для жизни</h4>
@@ -69,10 +73,11 @@
                 </div>
               </div>
             </div>
-          </div>
+      
         </section>
-       
-        <section class="index-promo">
+            </li>
+            <li>
+              <section class="index-slider__item index-promo">
         
           <div class="index-promo__item index-promo__item--sandwitch">
             <ul class="index-promo__list">
@@ -98,11 +103,12 @@
           </div>
     
         </section>
-       
-        <section class="index-together">
+            </li>
+            <li>
+              <section class="index-slider__item index-together">
           <div class="index__offer index__offer--sale index__offer--left"><span>20%</span> <span>скидка</span> <span>на первый</span> <span>заказ</span></div>
           <div class="index__offer index__offer--right">Больше порций - меньше цена</div>
-          <div class="wrapper wrapper--index">
+     
             <div class="index-together__inner">
               <h2 class="index-together__title">Вместе с нами</h2>
               
@@ -134,8 +140,19 @@
                 
               </div>
             </div>
-          </div>
+
         </section>
+            </li>
+          </ul>
+        
+            <ul class="index-slider__dots">
+              <li class="button1" onClick="changeImage(1)"></li>
+              <li class="button2" onClick="changeImage(2)"></li>
+              <li class="button3" onClick="changeImage(3)"></li>
+            </ul>
+        
+        </div>
+      </section>
         
         <section class="index-reasons">
           <div class="wrapper wrapper--index">
@@ -425,5 +442,6 @@
  
 
   <script src="js/index.min.js"></script>
+  <script src="js/index-slider.js"></script>
   </body>
 </html>

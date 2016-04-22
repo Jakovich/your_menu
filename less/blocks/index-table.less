@@ -11,7 +11,7 @@
   }
 }
 
-.index-table__content {
+.index-table__contents {
     margin-left: auto;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
@@ -60,18 +60,18 @@
   top: 0;
 }
 
-.index-table-item {    
+.index-table__item {    
   cursor: pointer;
   opacity: 0;
   position: absolute;
   transition: opacity 0.1s ease-in 0s;
 }
 
-.index-table-item:hover {
+.index-table__item:hover {
   opacity:1;
 }
 
-.index-table-item--gift {
+.index-table__item--gift {
     background: transparent url("../img/border-gift.png") no-repeat scroll center center;
     height: 149px;
     left: 48px;
@@ -80,7 +80,7 @@
     z-index: 10;
 }
 
-.index-table-item--apple {
+.index-table__item--apple {
   background: transparent url("../img/border-apple.png") no-repeat scroll center center;
   width: 130px;  
   height: 142px;
@@ -89,7 +89,7 @@
   z-index: 10;
 }
 
-.index-table-item--meat {
+.index-table__item--meat {
   background: transparent url("../img/border-meat.png") no-repeat scroll center center;
   width: 175px;  
   height: 250px;
@@ -98,7 +98,7 @@
   z-index: 10;
 }
 
-.index-table-item--spice {
+.index-table__item--spice {
   background: transparent url("../img/border-spice.png") no-repeat scroll center center;
   width: 121px;  
   height: 100px;
@@ -107,7 +107,7 @@
   z-index: 10;
 } 
 
-.index-table-item--tomato {
+.index-table__item--tomato {
   background: transparent url("../img/border-tomato.png") no-repeat scroll center center;
   width: 127px;  
   height: 130px;
@@ -116,7 +116,7 @@
   z-index: 10;
 } 
 
-.index-table-item--recipe {
+.index-table__item--recipe {
   background: transparent url("../img/border-recipe.png") no-repeat scroll center center;
   width: 246px;  
   height: 208px;
@@ -125,7 +125,7 @@
   z-index: 10;
 } 
 
-.index-table-item--key {
+.index-table__item--key {
   background: transparent url("../img/border-key.png") no-repeat scroll center center;
   width: 115px;  
   height: 105px;
@@ -134,7 +134,7 @@
   z-index: 10;
 }
 
-.index-table-item--bone {
+.index-table__item--bone {
   background: transparent url("../img/border-bone.png") no-repeat scroll center center;
   width: 232px;  
   height: 142px;
@@ -143,7 +143,7 @@
   z-index: 10;
 }
 
-.index-table-item--green {
+.index-table__item--green {
   background: transparent url("../img/border-green.png") no-repeat scroll center center;
   width: 213px;  
   height: 155px;
@@ -152,7 +152,7 @@
   z-index: 10;
 }
 
-.index-table-item--tel {
+.index-table__item--tel {
   background: transparent url("../img/border-tel.png") no-repeat scroll center center;
   width: 102px;  
   height: 148px;
@@ -160,3 +160,7 @@
   top: 360px;
   z-index: 10;
 } 
+
+.index-table__item--active {
+  opacity: 1;
+}

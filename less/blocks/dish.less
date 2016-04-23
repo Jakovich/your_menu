@@ -12,7 +12,7 @@
   border: 1px solid #dadada;
   border-bottom: 0;
   box-shadow: 0 0 5px rgba(0,0,0,0.4);
-    .clearfix();
+  .clearfix();
 }
 
 .dish__img {
@@ -55,10 +55,24 @@
     font-size: 14px;
   }
   
+  a:hover {
+    color: #ff5000;
+  }
+  
   img {
     display: block;
     margin: 0 auto;
     margin-bottom: -7px;
+  }
+}
+
+.dish__recipe--smoothies {
+  position: relative;
+  right: 0;
+
+  margin-top: auto;
+  a {
+    font-size: 20px;
   }
 }
 
@@ -103,6 +117,20 @@
   font-family: "Neucha";
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.dish__text--smoothies {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  
+  .dish__title {
+    margin-top: 150px; 
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
 }
 
 .dish__table {
@@ -173,7 +201,7 @@
 
 .dish__ingredients-title {
   background-color: #ffffff;
-  box-shadow: 0 10px 7px -5px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 7px -5px rgba(0,0,0,0.25);
   border-top: 0;
   padding-bottom: 5px;
   
@@ -189,11 +217,21 @@
     &::after {
       position: absolute;
       content: "";
-      width: 62px;
-      height: 28px;
+      width: 63px;
+      height: 33px;
       background-image: url("../img/pointer--down-dish.png");
-      bottom: -28px;
+      bottom: -34px;
       left: 50px;
+    }
+  }
+}
+
+.dish__ingredients-title--smoothies {
+  h2 {
+    margin-left: 140px;
+    &::after {
+      left: 100px;
+      z-index: 10;
     }
   }
 }
@@ -201,6 +239,16 @@
 .dish__ingredients-img {
   float: left;
   width: 515px;  
+}
+
+.dish__ingredients-text {
+  float: left;
+
+  width: 445px;
+  padding: 35px;
+  font-size: 18px;
+  color: #7c7c7c;
+  
 }
 
 .dish__ingredients-descr {

@@ -48,6 +48,7 @@
   border: 1px solid #bababb;
   border-radius: 15px;
   width: 278px;
+  height: 265px;
   margin-bottom: 20px;
 }
 
@@ -208,7 +209,6 @@
   font-family: "Neucha", "Arial", sans-serif;
   font-size: 18px;
   color: #e85511;
-  
 }
 
 .subscribe-variant__price__button {
@@ -219,6 +219,62 @@
   border-radius: 15px;
   padding: 5px 20px;
 }
+
+.subscribe-variant__container {
+  -webkit-perspective: 1200;
+  -moz-perspective: 1200;
+  perspective: 1200;
+  width: 300px;
+  margin-bottom: 12px;
+}
+
+.subscribe-variant__item {
+  position: relative;
+  width: 300px;
+  height: 275px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: .7s linear;
+  -moz-transition: .7s linear;
+  -o-transition: .7s linear;
+  transition: .7s linear;
+}
+
+.subscribe-variant__front,
+.subscribe-variant__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.subscribe-variant__front {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.subscribe-variant__back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.subscribe-variant__container:hover .subscribe-variant__item {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
 
 .subscribe-variant__total {
   font-size: 18px;

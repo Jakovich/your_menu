@@ -48,20 +48,23 @@
     
 }
 
-
-.faq__item--active {
-  .faq__question {
-    color: #e85511;
-    
-    &::before {
-    left: -5px;
-    width: 36px;
-    height: 31px;
-    background-image: url("../img/icon-box-open.png");
-  }
-  }
-  
-  .faq__answer {
-    display: block;
-  }
+.faq__subquestion {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2f2f2f;
+  padding-left: 45px;
+  margin: 5px 0;
+  cursor: pointer;
 }
+
+
+
+  .faq__question--active {
+      color: #e85511;
+      &::before {
+      left: -5px;
+      width: 36px;
+      height: 31px;
+      background-image: url("../img/icon-box-open.png");
+    }
+  }

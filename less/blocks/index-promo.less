@@ -35,17 +35,20 @@
   margin-top: 100px;
   &::before {
     width: 212px;
-    height: 220px;
-    background-image: url("../img/logo-sandwitch.png")
+    height: 120px;
+    background-image: url(@logo-sandwitch-image);
+    background-position: @logo-sandwitch-offset-x @logo-sandwitch-offset-y;
+    background-repeat: no-repeat;
   }
 }
 
 .index-promo__item--smoothies {
-  
     &::before {
     width: 182px;
     height: 106px;
-    background-image: url("../img/logo-smoothies.png")
+    background-image: url(@logo-smoothies-image);
+    background-position: @logo-smoothies-offset-x @logo-smoothies-offset-y;
+    background-repeat: no-repeat;
   }
 }
 

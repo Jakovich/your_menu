@@ -2,6 +2,7 @@
 
 module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
+  grunt.loadNpmTasks('grunt-spritesmith');
   
   
   grunt.initConfig({
@@ -130,7 +131,17 @@ module.exports = function(grunt) {
           src: ["build/img/icons/*.svg"]
         }]
       }
+    },
+    
+    sprite:{
+      index: {
+        src: "img/index-icons/*.png",
+        dest: "img/sprite-index.png",
+        destCss: "less/sprite-index.less",
+        padding: 2
+      }
     }
+
 
   });
   

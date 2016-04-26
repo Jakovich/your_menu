@@ -16,9 +16,9 @@
     content: "";
     width: 35px;
     height: 67px;
-    background-position: center;
     background-repeat: no-repeat;
-    background-image: url("../img/icon-arrow-draw.png");
+    background-image: url(@icon-arrow-draw-image);
+    background-position: @icon-arrow-draw-offset-x @icon-arrow-draw-offset-y;
     top: 20px;
     left: 860px;
   } 
@@ -49,26 +49,34 @@
 .index-reasons__item--time::before {
   width: 112px;
   height: 115px;
-  background-image: url("../img/icon-clock-draw.png");
+  background-image: url(@icon-clock-draw-image);
+  background-position: @icon-clock-draw-offset-x @icon-clock-draw-offset-y;
+  background-repeat: no-repeat;
 }
 
 .index-reasons__item--money::before {
   width: 129px;
   height: 144px;
   top: 15px;
-  background-image: url("../img/icon-pig-draw.png");
+  background-image: url(@icon-pig-draw-image);
+  background-position: @icon-pig-draw-offset-x @icon-pig-draw-offset-y;
+  background-repeat: no-repeat;
 }
 
 .index-reasons__item--capabil::before {
   width: 124px;
   height: 90px;
-  background-image: url("../img/icon-dish-draw.png");
+  background-image: url(@icon-dish-draw-image);
+  background-position: @icon-dish-draw-offset-x @icon-dish-draw-offset-y;
+  background-repeat: no-repeat;
 }
 
 .index-reasons__item--health::before {
   width: 131px;
   height: 101px;
-  background-image: url("../img/icon-heart-draw.png");
+  background-image: url(@icon-heart-draw-image);
+  background-position: @icon-heart-draw-offset-x @icon-heart-draw-offset-y;
+  background-repeat: no-repeat;
 }
 
 .index-reasons__item-title {
@@ -94,12 +102,11 @@
       width: 23px;
       height: 23px;
       left: -30px;
-      background-image:url("../img/icon-face-smile--grey.png");
+      background-image: url(@icon-face-smile-grey-image);
+      background-position: @icon-face-smile-grey-offset-x @icon-face-smile-grey-offset-y;
       background-repeat: no-repeat;
     }  
   }
-  
-
 }
 
 .index-reasons__item-ps {

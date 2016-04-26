@@ -45,7 +45,9 @@
     content: "";
     width: 69px;
     height: 26px;
-    background-image: url("../img/icon-arrow-graphic.png");
+    background-repeat: no-repeat;
+    background-image: url(@icon-arrow-graphic-image);
+    background-position: @icon-arrow-graphic-offset-x @icon-arrow-graphic-offset-y;
     top: 55px;
     right: -20px;
   }
@@ -75,7 +77,9 @@
     width: 124px;
     height: 121px;
     left: 27px;
-    background-image: url("../img/icon-dish-graphic.png");
+    background-repeat: no-repeat;
+    background-image: url(@icon-dish-graphic-image);
+    background-position: @icon-dish-graphic-offset-x @icon-dish-graphic-offset-y;
   }
 }
 
@@ -87,18 +91,22 @@
     height: 84px;
     left: 35px;
     top: 10px;
-    background-image: url("../img/icon-tel-graphic.png");
+    background-repeat: no-repeat;
+    background-image: url(@icon-tel-graphic-image);
+    background-position: @icon-tel-graphic-offset-x @icon-tel-graphic-offset-y;
   }
 }
 
 .index-explic__item--basket {
   width: 212px;
   
- &::before {
+  &::before {
     width: 86px;
     height: 94px;
-   left: 40px;
-    background-image: url("../img/icon-basket-graphic.png");
+    left: 40px;
+    background-repeat: no-repeat;
+    background-image: url(@icon-basket-graphic-image);
+    background-position: @icon-basket-graphic-offset-x @icon-basket-graphic-offset-y;
   }
 }
 
@@ -107,7 +115,9 @@
   &::before {
     width: 103px;
     height: 109px;
-    background-image: url("../img/icon-delivery-graphic.png");
+    background-repeat: no-repeat;
+    background-image: url(@icon-delivery-graphic-image);
+    background-position: @icon-delivery-graphic-offset-x @icon-delivery-graphic-offset-y;
   }
 }
 
@@ -118,6 +128,8 @@
     width: 103px;
     height: 109px;
     left: 25px;
-    background-image: url("../img/icon-food-graphic.png");
+    background-repeat: no-repeat;
+    background-image: url(@icon-food-graphic-image);
+    background-position: @icon-food-graphic-offset-x @icon-food-graphic-offset-y;
   }
 }

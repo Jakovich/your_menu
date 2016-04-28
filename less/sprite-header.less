@@ -1,0 +1,198 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@icon-basket-hover-name: 'icon-basket-hover';
+@icon-basket-hover-x: 0px;
+@icon-basket-hover-y: 0px;
+@icon-basket-hover-offset-x: 0px;
+@icon-basket-hover-offset-y: 0px;
+@icon-basket-hover-width: 35px;
+@icon-basket-hover-height: 36px;
+@icon-basket-hover-total-width: 133px;
+@icon-basket-hover-total-height: 100px;
+@icon-basket-hover-image: '../img/sprite-header.png';
+@icon-basket-hover: 0px 0px 0px 0px 35px 36px 133px 100px '../img/sprite-header.png' 'icon-basket-hover';
+@icon-basket-orange-name: 'icon-basket-orange';
+@icon-basket-orange-x: 37px;
+@icon-basket-orange-y: 0px;
+@icon-basket-orange-offset-x: -37px;
+@icon-basket-orange-offset-y: 0px;
+@icon-basket-orange-width: 35px;
+@icon-basket-orange-height: 36px;
+@icon-basket-orange-total-width: 133px;
+@icon-basket-orange-total-height: 100px;
+@icon-basket-orange-image: '../img/sprite-header.png';
+@icon-basket-orange: 37px 0px -37px 0px 35px 36px 133px 100px '../img/sprite-header.png' 'icon-basket-orange';
+@icon-basket-name: 'icon-basket';
+@icon-basket-x: 74px;
+@icon-basket-y: 0px;
+@icon-basket-offset-x: -74px;
+@icon-basket-offset-y: 0px;
+@icon-basket-width: 35px;
+@icon-basket-height: 36px;
+@icon-basket-total-width: 133px;
+@icon-basket-total-height: 100px;
+@icon-basket-image: '../img/sprite-header.png';
+@icon-basket: 74px 0px -74px 0px 35px 36px 133px 100px '../img/sprite-header.png' 'icon-basket';
+@icon-entry-green-name: 'icon-entry-green';
+@icon-entry-green-x: 0px;
+@icon-entry-green-y: 38px;
+@icon-entry-green-offset-x: 0px;
+@icon-entry-green-offset-y: -38px;
+@icon-entry-green-width: 28px;
+@icon-entry-green-height: 31px;
+@icon-entry-green-total-width: 133px;
+@icon-entry-green-total-height: 100px;
+@icon-entry-green-image: '../img/sprite-header.png';
+@icon-entry-green: 0px 38px 0px -38px 28px 31px 133px 100px '../img/sprite-header.png' 'icon-entry-green';
+@icon-entry-hover-name: 'icon-entry-hover';
+@icon-entry-hover-x: 30px;
+@icon-entry-hover-y: 38px;
+@icon-entry-hover-offset-x: -30px;
+@icon-entry-hover-offset-y: -38px;
+@icon-entry-hover-width: 28px;
+@icon-entry-hover-height: 31px;
+@icon-entry-hover-total-width: 133px;
+@icon-entry-hover-total-height: 100px;
+@icon-entry-hover-image: '../img/sprite-header.png';
+@icon-entry-hover: 30px 38px -30px -38px 28px 31px 133px 100px '../img/sprite-header.png' 'icon-entry-hover';
+@icon-entry-name: 'icon-entry';
+@icon-entry-x: 60px;
+@icon-entry-y: 38px;
+@icon-entry-offset-x: -60px;
+@icon-entry-offset-y: -38px;
+@icon-entry-width: 28px;
+@icon-entry-height: 31px;
+@icon-entry-total-width: 133px;
+@icon-entry-total-height: 100px;
+@icon-entry-image: '../img/sprite-header.png';
+@icon-entry: 60px 38px -60px -38px 28px 31px 133px 100px '../img/sprite-header.png' 'icon-entry';
+@icon-marqer-hover-name: 'icon-marqer-hover';
+@icon-marqer-hover-x: 111px;
+@icon-marqer-hover-y: 0px;
+@icon-marqer-hover-offset-x: -111px;
+@icon-marqer-hover-offset-y: 0px;
+@icon-marqer-hover-width: 22px;
+@icon-marqer-hover-height: 31px;
+@icon-marqer-hover-total-width: 133px;
+@icon-marqer-hover-total-height: 100px;
+@icon-marqer-hover-image: '../img/sprite-header.png';
+@icon-marqer-hover: 111px 0px -111px 0px 22px 31px 133px 100px '../img/sprite-header.png' 'icon-marqer-hover';
+@icon-marqer-name: 'icon-marqer';
+@icon-marqer-x: 111px;
+@icon-marqer-y: 33px;
+@icon-marqer-offset-x: -111px;
+@icon-marqer-offset-y: -33px;
+@icon-marqer-width: 22px;
+@icon-marqer-height: 31px;
+@icon-marqer-total-width: 133px;
+@icon-marqer-total-height: 100px;
+@icon-marqer-image: '../img/sprite-header.png';
+@icon-marqer: 111px 33px -111px -33px 22px 31px 133px 100px '../img/sprite-header.png' 'icon-marqer';
+@icon-phone-hover-name: 'icon-phone-hover';
+@icon-phone-hover-x: 0px;
+@icon-phone-hover-y: 71px;
+@icon-phone-hover-offset-x: 0px;
+@icon-phone-hover-offset-y: -71px;
+@icon-phone-hover-width: 28px;
+@icon-phone-hover-height: 29px;
+@icon-phone-hover-total-width: 133px;
+@icon-phone-hover-total-height: 100px;
+@icon-phone-hover-image: '../img/sprite-header.png';
+@icon-phone-hover: 0px 71px 0px -71px 28px 29px 133px 100px '../img/sprite-header.png' 'icon-phone-hover';
+@icon-phone-name: 'icon-phone';
+@icon-phone-x: 30px;
+@icon-phone-y: 71px;
+@icon-phone-offset-x: -30px;
+@icon-phone-offset-y: -71px;
+@icon-phone-width: 28px;
+@icon-phone-height: 29px;
+@icon-phone-total-width: 133px;
+@icon-phone-total-height: 100px;
+@icon-phone-image: '../img/sprite-header.png';
+@icon-phone: 30px 71px -30px -71px 28px 29px 133px 100px '../img/sprite-header.png' 'icon-phone';
+@spritesheet-width: 133px;
+@spritesheet-height: 100px;
+@spritesheet-image: '../img/sprite-header.png';
+@spritesheet-sprites: @icon-basket-hover @icon-basket-orange @icon-basket @icon-entry-green @icon-entry-hover @icon-entry @icon-marqer-hover @icon-marqer @icon-phone-hover @icon-phone;
+@spritesheet: 133px 100px '../img/sprite-header.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

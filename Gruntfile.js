@@ -139,7 +139,13 @@ module.exports = function(grunt) {
         dest: "img/sprite-index.png",
         destCss: "less/sprite-index.less",
         padding: 2
-      }
+      },
+      header: {
+        src: "img/header-icons/*.png",
+        dest: "img/sprite-header.png",
+        destCss: "less/sprite-header.less",
+        padding: 2
+      } 
     }
 
 
@@ -153,8 +159,8 @@ module.exports = function(grunt) {
     "postcss",
     "csso",
     "uglify",
-    "svgmin",
-    "imagemin"
+    "svgmin"
+
   ]);
 
 

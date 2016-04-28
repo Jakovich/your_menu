@@ -20,7 +20,7 @@
                 <ul class="user-nav__items">
                   <li class="user-nav__item user-nav__item--location"><a href="#">Орёл</a></li>
                   <li class="user-nav__item user-nav__item--tel"><a href="#">89996050000 <span class="tel-expl">Перезвоните мне</span></a></li>
-                  <li class="user-nav__item user-nav__item--entree"><a href="#">Вход</a></li>
+                  <li class="user-nav__item user-nav__item--entry"><a href="#">Вход</a></li>
                   <li class="user-nav__item user-nav__item--basket"><a href="#">Корзина</a></li>
                 </ul>
               </div>
@@ -67,64 +67,69 @@
         
         <section class="personal-info">
           <h2 class="personal-info__title">Ваши персональные данные</h2>
-     
-          <table class="personal-info__data-table personal-info__data-table--edit">
-            <tbody>
-              <tr>
-                <td class="personal-info__name"><div>Имя</div></td>
-                <td class="personal-info__data"><div>Джонни</div><input type="text" class="personal-info__input"><span class="personal-info__edit"></span></td>
-                
-              </tr>
-               <tr>
-                <td class="personal-info__name"><div>Фамилия</div></td>
-                <td class="personal-info__data"><div>Депп</div><input type="text" class="personal-info__input"><span class="personal-info__edit"></span></td>
-                
-              </tr>
-              <tr>
-                <td class="personal-info__name"><div>Почта</div></td>
-                <td class="personal-info__data"><div></div><input type="text" class="personal-info__input"><span class="personal-info__edit"></span></td>
-                
-              </tr>
-              <tr>
-                <td class="personal-info__name"><div>Пароль</div></td>
-                <td class="personal-info__data"><div></div><input type="text" class="personal-info__input"><span class="personal-info__edit"></span></td>
-                
-              </tr>
-              <tr>
-                <td class="personal-info__name"><div>Дата рождения</div></td>
-                <td class="personal-info__data"><div></div><input type="text" class="personal-info__input"><span class="personal-info__edit"></span></td>
-                
-              </tr>
-              <tr>
-                <td class="personal-info__name"><div>Телефон</div></td>
-                <td class="personal-info__data"><div></div><input type="text" class="personal-info__input"><span class="personal-info__edit"></span></td>
-                
-              </tr>
-              <tr>
-                <td class="personal-info__name"><div>Instagram</div></td>
-                <td class="personal-info__data"><div></div><input type="text" class="personal-info__input"><span class="personal-info__edit"></span></td>
-                
-              </tr>
+          
+          <form action="post" name="personal-info">
+            <table class="personal-info__data-table personal-info__data-table--edit">
+              <tbody>
+                <tr>
+                  <td class="personal-info__name"><div>Имя</div></td>
+                  <td class="personal-info__data"><div>Джонни</div><input type="text" class="personal-info__input" name="surname"><span class="personal-info__edit"></span></td>
 
-              
-            </tbody>
-            
-          </table>
+                </tr>
+                 <tr>
+                  <td class="personal-info__name"><div>Фамилия</div></td>
+                  <td class="personal-info__data"><div>Депп</div><input type="text" class="personal-info__input" name="name"><span class="personal-info__edit"></span></td>
+
+                </tr>
+                <tr>
+                  <td class="personal-info__name"><div>Почта</div></td>
+                  <td class="personal-info__data"><div></div><input type="text" class="personal-info__input"><span class="personal-info__edit" name="email"></span></td>
+
+                </tr>
+                <tr>
+                  <td class="personal-info__name"><div>Пароль</div></td>
+                  <td class="personal-info__data"><div></div><input type="text" class="personal-info__input" name="password"><span class="personal-info__edit"></span></td>
+
+                </tr>
+                <tr>
+                  <td class="personal-info__name"><div>Дата рождения</div></td>
+                  <td class="personal-info__data"><div></div><input type="text" class="personal-info__input" name="birthday"><span class="personal-info__edit"></span></td>
+
+                </tr>
+                <tr>
+                  <td class="personal-info__name"><div>Телефон</div></td>
+                  <td class="personal-info__data"><div></div><input type="text" class="personal-info__input"><span class="personal-info__edit" name="phone"></span></td>
+
+                </tr>
+                <tr>
+                  <td class="personal-info__name"><div>Instagram</div></td>
+                  <td class="personal-info__data"><div></div><input type="text" class="personal-info__input" name="instagram"><span class="personal-info__edit"></span></td>
+
+                </tr>
+
+
+              </tbody>
+
+            </table>
+          </form>
 
           
           <h2 class="personal-info__title">Ваши адреса доставки</h2>
+          
+          <form action="post" name="personal-address">
   
-          <div class="personal-info__address">
-            <div class="personal-info__address-items">
-              <div class="personal-info__address-item">
-                <div class="personal-info__address-div">Адрес</div>
-                <input type="text" class="personal-info__input personal-info__input--address">
-                <span class="personal-info__edit"></span>
+            <div class="personal-info__address">
+              <div class="personal-info__address-items">
+                <div class="personal-info__address-item">
+                  <div class="personal-info__address-div">Адрес</div>
+                  <input type="text" class="personal-info__input personal-info__input--address" name="address1">
+                  <span class="personal-info__edit"></span>
+                </div>
+
               </div>
-              
+              <a href="#" class="personal-info__add">Добавить еще адрес</a>
             </div>
-            <a href="#" class="personal-info__add">Добавить еще адрес</a>
-          </div> 
+          </form> 
 
         </section>
         </div>
@@ -182,7 +187,7 @@
     <template style="display: none" id="address-template">
       <div class="personal-info__address-item">
         <div class="personal-info__address-div">Адрес</div>
-        <input type="text" class="personal-info__input personal-info__input--address">
+        <input type="text" class="personal-info__input personal-info__input--address" name="address">
         <span class="personal-info__edit"></span>
       </div>
     </template>

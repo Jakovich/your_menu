@@ -159,7 +159,8 @@ module.exports = function(grunt) {
     "postcss",
     "csso",
     "uglify",
-    "svgmin"
+    "svgmin",
+    "imagemin"
 
   ]);
 

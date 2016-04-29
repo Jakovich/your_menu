@@ -145,7 +145,13 @@ module.exports = function(grunt) {
         dest: "img/sprite-header.png",
         destCss: "less/sprite-header.less",
         padding: 2
-      } 
+      },
+      together: {
+        src: "img/together-icons/*.png",
+        dest: "img/sprite-together.png",
+        destCss: "less/sprite-together.less",
+        padding: 2
+      }
     }
 
 

@@ -151,6 +151,12 @@ module.exports = function(grunt) {
         dest: "img/sprite-together.png",
         destCss: "less/sprite-together.less",
         padding: 2
+      },
+      social: {
+        src: "img/social-icons/*.png",
+        dest: "img/sprite-social.png",
+        destCss: "less/sprite-social.less",
+        padding: 2
       }
     }
 

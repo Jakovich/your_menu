@@ -1,6 +1,7 @@
 .together-points__title {
   background-color: #e95d0f;
   padding: 5px 0;
+  box-shadow: 1px 3px 5px 0px rgba(5, 5, 6, 0.34);
   h3 {
     font-size:30px;
     color: #ffffff;
@@ -12,11 +13,19 @@
 
 .together-points__explic-items {
   display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 23px;
 }
 
 .together-points__explic-item {
   font-size: 20px;
   color:#585858;
+  flex-basis: 505px;
+  margin: 0 25px;
+  &:first-child {
+    text-align: right;
+  }
 }
 
 .together-points__items-inner {

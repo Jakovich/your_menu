@@ -4,6 +4,7 @@
   .clearfix();
 }
 
+
 .page-footer__contacts--comming-soon {
   background: transparent;
 }
@@ -28,7 +29,7 @@
   display: table-cell;
   vertical-align: middle;
   text-align: right;
-  width: 393px;
+  width: 395px;
 }
 
 .social-links--comming-soon {
@@ -39,59 +40,94 @@
 .social-links--index {
   border: none;
   display: block;
-  width: 200px;
+  width: 210px;
   padding-right: 0;
   margin-top: 10px;
+  
+  .social-link--vk {
+    background-position: @icon-vk-orange-offset-x @icon-vk-orange-offset-y;
+  }
+  .social-link--fb {
+    background-position: @icon-fb-orange-offset-x @icon-fb-orange-offset-y;
+  }
+  .social-link--ok {
+    background-position: @icon-ok-orange-offset-x @icon-ok-orange-offset-y;
+  }
+  .social-link--inst {
+    background-position: @icon-inst-orange-offset-x @icon-inst-orange-offset-y;
+  }
 }
 
 .social-link {
   display: inline-block;
-  width: 45px;
-  height: 45px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: transparent;
   margin: 5px 6%;
-  background-position: center;
   background-repeat: no-repeat;
+  background-image: url("../img/sprite-social.png");
   cursor: pointer;
+ 
 }
 
 .social-link--vk {
-  background-image: url("../img/icons/icon-vk.svg");
-  background-size: 30px auto;
+  background-position: @icon-vk-white-offset-x @icon-vk-white-offset-y;
 }
 
 .social-link--fb {
-  background-image: url("../img/icons/icon-fb.svg");
-  background-size: 13px auto;
+  background-position: @icon-fb-white-offset-x @icon-fb-white-offset-y;
 }
 
 .social-link--ok {
-  background-image: url("../img/icons/icon-ok.svg");
-  background-size: 45px auto;
+  background-position: @icon-ok-white-offset-x @icon-ok-white-offset-y;
 }
 
 .social-link--inst {
-  background-image: url("../img/icons/icon-inst.svg");
-  background-size: 24px auto;
-}
+  background-position: @icon-inst-white-offset-x @icon-inst-white-offset-y;
+  }
 
 .social-link--comming-soon {
   background-color: transparent;
   border-radius: 50%;
   background-image: none;
+  &:hover{
+  background-color: @bg-grey;
+  }
 }
 
-.social-link--index {
-  background-color: transparent;
-  border-radius: 50%;
-  background-image: none;
-  margin-right: 0;
-  margin-left: 0;
+.social-links--together {
+  border: 0;
+  width: 350px;
 }
 
 .social-link:hover{
+  background-color: #11a24b;
+}
+
+.social-link--index {
+  width: 47px;
+  height: 47px;
+  background-color: transparent;
+  border-radius: 50%;
+  margin-right: 0;
+  margin-left: 0;
+  &:hover{
   background-color: @bg-grey;
+  }
+}
+
+.social-link--together {
+  background-color: transparent;
+  &:hover{
+  background-color: @bg-grey;
+  }
+  &:first-child{
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .contacts__tel {

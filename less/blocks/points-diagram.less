@@ -40,8 +40,8 @@
     width: 34px;
     height: 45px;
     background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../img/icon-points.png");
+    background-image: url(@icon-points-image);
+    background-position:@icon-points-offset-x @icon-points-offset-y;
     z-index:-1;
     top: -7px;
     left: -7px;
@@ -106,7 +106,9 @@
   &::before {
     width: 49px;
     height: 52px;
-    background-image: url("../img/icon-gift.png");
+    background-repeat: no-repeat;
+    background-image: url(@icon-gift-image);
+    background-position:@icon-gift-offset-x @icon-gift-offset-y;
     margin-left: -24.5px;
   }
 }
@@ -118,7 +120,9 @@
     width: 35px;
     height: 56px;
     margin-left: -17.5px;
-    background-image: url("../img/icon-smoothies.png");
+    background-repeat: no-repeat;
+    background-image: url(@icon-smoothies-image);
+    background-position:@icon-smoothies-offset-x @icon-smoothies-offset-y;
   }
 }
 
@@ -129,7 +133,9 @@
     width: 60px;
     height: 52px;
     margin-left: -30px;
-    background-image: url("../img/icon-sandwich.png");
+    background-repeat: no-repeat;
+    background-image: url(@icon-sandwich-image);
+    background-position:@icon-sandwich-offset-x @icon-sandwich-offset-y;
   }
 }
 
@@ -140,7 +146,9 @@
     width: 48px;
     height: 50px;
     margin-left: -24px;
-    background-image: url("../img/icon-box.png");
+    background-repeat: no-repeat;
+    background-image: url(@icon-box-image);
+    background-position:@icon-box-offset-x @icon-box-offset-y;
   }
 }
 
@@ -170,7 +178,9 @@
     height: 17px;
     left: -15px;
     top: 15px;
-    background-image:url("../img/icon-arrow--diagram.png");
+    background-repeat: no-repeat;
+    background-image: url(@icon-arrow-diagram-image);
+    background-position:@icon-arrow-diagram-offset-x @icon-arrow-diagram-offset-y;
   }
   
 }
@@ -182,6 +192,9 @@
     position: absolute;
     content: "";
     background-image: url("../img/arrow-bg-grey.png");
+    background-repeat: no-repeat;
+    background-image: url(@arrow-bg-grey-image);
+    background-position:@arrow-bg-grey-offset-x @arrow-bg-grey-offset-y;
     width: 45px;
     height: 26px;
     bottom: -22px;

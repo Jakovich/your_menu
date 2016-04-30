@@ -137,25 +137,31 @@ module.exports = function(grunt) {
       index: {
         src: "img/index-icons/*.png",
         dest: "img/sprite-index.png",
-        destCss: "less/sprite-index.less",
+        destCss: "less/sprites/sprite-index.less",
         padding: 2
       },
       header: {
         src: "img/header-icons/*.png",
         dest: "img/sprite-header.png",
-        destCss: "less/sprite-header.less",
+        destCss: "less/sprites/sprite-header.less",
         padding: 2
       },
       together: {
         src: "img/together-icons/*.png",
         dest: "img/sprite-together.png",
-        destCss: "less/sprite-together.less",
+        destCss: "less/sprites/sprite-together.less",
         padding: 2
       },
       social: {
         src: "img/social-icons/*.png",
         dest: "img/sprite-social.png",
-        destCss: "less/sprite-social.less",
+        destCss: "less/sprites/sprite-social.less",
+        padding: 2
+      },
+      points: {
+        src: "img/points-icons/*.png",
+        dest: "img/sprite-points.png",
+        destCss: "less/sprites/sprite-points.less",
         padding: 2
       }
     }

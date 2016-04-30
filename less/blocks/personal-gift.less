@@ -175,3 +175,105 @@
   }
   
 }
+
+.personal-gift__confirm {
+  width: 430px;
+  position: fixed;
+  top: 250px;
+  left: 50%;
+  margin-left: -215px;
+  z-index: 30;
+}
+
+.personal-gift__confirm-title {
+  font-size: 23px;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #e95d0f;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 0px 5px 0 rgba(5, 5, 6, 0.3);
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/gift-confirm-top.png");
+    width: 273px;
+    height: 76px;
+    top: -76px;
+    left: 50%;
+    margin-left: -136px;
+  }
+}
+.personal-gift__confirm-inner {
+  width: 385px;
+  box-shadow: 0px 0px 5px 0 rgba(5, 5, 6, 0.3);
+  margin: 0 auto;
+  position: relative;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+.personal-gift__confirm-point {
+  font-size: 14px;
+  color: #727272;
+  font-weight: bold;
+  position: absolute;
+  z-index: 5px;
+  right: 45px;
+  top: 20px;
+  padding-left: 40px;
+  
+  span{
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 10px;
+    position: absolute;
+    display: block;
+    padding-top: 7px;
+    width: 34px;
+    height: 38px;
+    text-align: center;
+    left:0;
+    top: -7px;
+    z-index: 5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icon-points.png");
+  }
+  
+}
+
+.personal-gift__confirm-text {
+  font-size: 14px;
+  color: #e95d0f;
+  font-style: italic;
+  width: 85px;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.personal-gift__confirm-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 10px;
+  background-color: #e95d0f;
+  border-radius: 15px;
+  width: 300px;
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -165px;
+  cursor: pointer;
+  &:hover {
+    background-color: #f76f24;
+  }
+}
+
+
+

@@ -177,6 +177,17 @@
 
 .points-diagram--big {
   margin-bottom: 0;
+  
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/arrow-bg-grey.png");
+    width: 45px;
+    height: 26px;
+    bottom: -22px;
+    left: 50%;
+    margin-left: -22px;
+  }
   .points-diagram__inner {
     margin-left: 95px;
   }

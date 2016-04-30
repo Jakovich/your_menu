@@ -2,8 +2,8 @@
 (function() {
 var personalNav = document.querySelector(".personal-nav");
 var codeItem = personalNav.querySelector(".personal-nav__item--code");
-var codePopupFriend = personalNav.querySelector(".popup--friend");
-var codePopupLock = personalNav.querySelector(".popup--lock");
+var codePopupFriend = personalNav.querySelector(".menu-popup--friend");
+var codePopupLock = personalNav.querySelector(".menu-popup--lock");
 var personalItems = personalNav.querySelectorAll(".personal-nav__item");
 
 codeItem.onmouseover = function() {

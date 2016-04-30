@@ -49,6 +49,7 @@
 
 .personal-gift__item {
   padding: 7px;
+  width: 190px;
   background-color: #ffffff;
   float: left;
   border: 1px solid #d1d1d1;
@@ -131,4 +132,46 @@
     color: #8b8b8b;
   }
   }
+}
+
+.personal-gift__inner {
+  background-color: #ffffff;
+}
+
+.personal-gift--together {
+  background-image: url("../img/bg.jpg");
+  padding-top: 180px;
+  
+  .personal-gift__stat {
+    padding-left: 0;
+    font-family: "Century Gothic", "Arial", sans-serif;
+  }
+  .personal-gift__slider {
+    width: 1077px;
+    padding: 0 36px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 1px dashed #e85511;
+      left: 510px;
+      top: -160px;
+      background-image: url("../img/icon-gift--middle.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  
+  .personal-gift__item {
+    width: 222px;
+    margin-right: 39px;
+  }
+  
 }

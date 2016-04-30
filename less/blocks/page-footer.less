@@ -20,6 +20,7 @@
 
 .contacts__inner {
   display: table;
+  position: relative;
 }
 
 .social-links {
@@ -253,4 +254,28 @@
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
+}
+
+.up-scroll {
+  position: absolute;
+  padding-top: 45px;
+  width: 91px;
+  height: 46px;
+  border: 1px solid #a2a2a2;
+  border-radius: 50%;
+  color:#878787;
+  text-align: center;
+  cursor: pointer;
+  right: -70px;
+  top: -150px;
+  &::before {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 30px;
+    top: 0;
+    content: "";
+    width: 28px;
+    height: 53px;
+    background-image: url("../img/icon-arrow--small.png");
+  }
 }

@@ -163,6 +163,12 @@ module.exports = function(grunt) {
         dest: "img/sprite-points.png",
         destCss: "less/sprites/sprite-points.less",
         padding: 2
+      },
+      dish: {
+        src: "img/dish-icons/*.png",
+        dest: "img/sprite-dish.png",
+        destCss: "less/sprites/sprite-dish.less",
+        padding: 2
       }
     }
 

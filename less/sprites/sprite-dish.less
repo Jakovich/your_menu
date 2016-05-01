@@ -1,0 +1,154 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@icon-clock-small-name: 'icon-clock--small';
+@icon-clock-small-x: 94px;
+@icon-clock-small-y: 48px;
+@icon-clock-small-offset-x: -94px;
+@icon-clock-small-offset-y: -48px;
+@icon-clock-small-width: 26px;
+@icon-clock-small-height: 26px;
+@icon-clock-small-total-width: 120px;
+@icon-clock-small-total-height: 110px;
+@icon-clock-small-image: '../../img/sprite-dish.png';
+@icon-clock-small: 94px 48px -94px -48px 26px 26px 120px 110px '../../img/sprite-dish.png' 'icon-clock--small';
+@icon-level-easy-name: 'icon-level--easy';
+@icon-level-easy-x: 0px;
+@icon-level-easy-y: 85px;
+@icon-level-easy-offset-x: 0px;
+@icon-level-easy-offset-y: -85px;
+@icon-level-easy-width: 38px;
+@icon-level-easy-height: 25px;
+@icon-level-easy-total-width: 120px;
+@icon-level-easy-total-height: 110px;
+@icon-level-easy-image: '../../img/sprite-dish.png';
+@icon-level-easy: 0px 85px 0px -85px 38px 25px 120px 110px '../../img/sprite-dish.png' 'icon-level--easy';
+@icon-recipe-big-hover-name: 'icon-recipe-big-hover';
+@icon-recipe-big-hover-x: 0px;
+@icon-recipe-big-hover-y: 0px;
+@icon-recipe-big-hover-offset-x: 0px;
+@icon-recipe-big-hover-offset-y: 0px;
+@icon-recipe-big-hover-width: 59px;
+@icon-recipe-big-hover-height: 46px;
+@icon-recipe-big-hover-total-width: 120px;
+@icon-recipe-big-hover-total-height: 110px;
+@icon-recipe-big-hover-image: '../../img/sprite-dish.png';
+@icon-recipe-big-hover: 0px 0px 0px 0px 59px 46px 120px 110px '../../img/sprite-dish.png' 'icon-recipe-big-hover';
+@icon-recipe-big-name: 'icon-recipe-big';
+@icon-recipe-big-x: 61px;
+@icon-recipe-big-y: 0px;
+@icon-recipe-big-offset-x: -61px;
+@icon-recipe-big-offset-y: 0px;
+@icon-recipe-big-width: 59px;
+@icon-recipe-big-height: 46px;
+@icon-recipe-big-total-width: 120px;
+@icon-recipe-big-total-height: 110px;
+@icon-recipe-big-image: '../../img/sprite-dish.png';
+@icon-recipe-big: 61px 0px -61px 0px 59px 46px 120px 110px '../../img/sprite-dish.png' 'icon-recipe-big';
+@icon-recipe-hover-name: 'icon-recipe-hover';
+@icon-recipe-hover-x: 0px;
+@icon-recipe-hover-y: 48px;
+@icon-recipe-hover-offset-x: 0px;
+@icon-recipe-hover-offset-y: -48px;
+@icon-recipe-hover-width: 45px;
+@icon-recipe-hover-height: 35px;
+@icon-recipe-hover-total-width: 120px;
+@icon-recipe-hover-total-height: 110px;
+@icon-recipe-hover-image: '../../img/sprite-dish.png';
+@icon-recipe-hover: 0px 48px 0px -48px 45px 35px 120px 110px '../../img/sprite-dish.png' 'icon-recipe-hover';
+@icon-recipe-name: 'icon-recipe';
+@icon-recipe-x: 47px;
+@icon-recipe-y: 48px;
+@icon-recipe-offset-x: -47px;
+@icon-recipe-offset-y: -48px;
+@icon-recipe-width: 45px;
+@icon-recipe-height: 35px;
+@icon-recipe-total-width: 120px;
+@icon-recipe-total-height: 110px;
+@icon-recipe-image: '../../img/sprite-dish.png';
+@icon-recipe: 47px 48px -47px -48px 45px 35px 120px 110px '../../img/sprite-dish.png' 'icon-recipe';
+@spritesheet-width: 120px;
+@spritesheet-height: 110px;
+@spritesheet-image: '../../img/sprite-dish.png';
+@spritesheet-sprites: @icon-clock-small @icon-level-easy @icon-recipe-big-hover @icon-recipe-big @icon-recipe-hover @icon-recipe;
+@spritesheet: 120px 110px '../../img/sprite-dish.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

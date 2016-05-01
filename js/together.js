@@ -3,8 +3,6 @@
 (function() {
   var togetherPoints = document.querySelectorAll(".together-points__item");
 
-  
-  
   for (var i = 0; i < togetherPoints.length; i++) {
     
     togetherPoints[i].onmouseover = function() {
@@ -15,12 +13,7 @@
       var currentHover = this.querySelector(".together-points__hover");
       currentHover.style.display = "none";
     }
-  }
-    
-    
-    
-    
-    
+  }  
 })();
 
 

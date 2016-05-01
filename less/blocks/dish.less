@@ -53,26 +53,59 @@
   a {
     color: #de5800;
     font-size: 14px;
-  }
-  
-  a:hover {
-    color: #ff5000;
-  }
-  
-  img {
+    position: relative;
     display: block;
-    margin: 0 auto;
-    margin-bottom: -7px;
+    padding-top: 35px;
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url(@icon-recipe-image);
+      background-position: @icon-recipe-offset-x @icon-recipe-offset-y;
+      background-repeat: no-repeat;
+      width: 45px;
+      height: 35px;
+      top: 0;
+      left: 3px;
+    }
+    
+    &:hover{
+      color: rgb(238,164,116);
+      &::before{
+        background-image: url(@icon-recipe-hover-image);
+        background-position: @icon-recipe-hover-offset-x @icon-recipe-hover-offset-y;
+        background-repeat: no-repeat;
+      }
+    } 
   }
 }
 
 .dish__recipe--smoothies {
   position: relative;
-  right: 0;
-
-  margin-top: auto;
+  left: 7px;
+  margin-top: auto; 
+  text-align: center;
   a {
+    padding-top: 45px;
     font-size: 20px;
+    display: inline-block;
+
+
+    &::before{
+      background-image: url(@icon-recipe-big-image);
+      background-position: @icon-recipe-big-offset-x @icon-recipe-big-offset-y;
+      background-repeat: no-repeat;
+      width: 59px;
+      height: 46px;
+      top: 0;
+      left: 5px;
+    }
+    &:hover{
+      color: rgb(238,164,116);
+      &::before{
+        background-image: url("../img/dish-icons/icon-recipe-big-hover.png");
+        background-position: @icon-recipe-big-hover-offset-x @icon-recipe-big-hover-offset-y;
+      }
+    }
   }
 }
 
@@ -172,21 +205,25 @@
   &::before {
     position: absolute;
     content: "";
-    width: 40px;
-    height: 30px;
     top: -25px;
     left: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
+
   }
 }
 
 .dish__table-text--time::before {
-  background-image: url("../img/icon-clock--small.png")
+  left: 17px;
+  background-image: url(@icon-clock-small-image);
+  background-position: @icon-clock-small-offset-x @icon-clock-small-offset-y;
+  width: @icon-clock-small-width;
+  height: @icon-clock-small-height;
 }
 
 .dish__table-text--level::before {
-  background-image: url("../img/icon-level--easy.png");
+  background-image: url(@icon-level-easy-image);
+  background-position: @icon-level-easy-offset-x @icon-level-easy-offset-y;
+  width: @icon-level-easy-width;
+  height: @icon-level-easy-height;
 }
 
 .dish__ingredients {

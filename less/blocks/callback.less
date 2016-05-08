@@ -1,3 +1,8 @@
+
+.popup-callback {
+  display: none;
+}
+
 .calback-form {
   background-color: #ffffff;
   width: 520px;
@@ -9,8 +14,11 @@
   text-align: center;
   color: #565656;
   padding: 15px;
-  position: relative;
-  z-index:50;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150px;
+  z-index: 50;
 }
 
 .calback-form__input {
@@ -56,7 +64,7 @@
   padding: 10px;
   width: 300px;
   margin: 15px auto;
-  
+  cursor: pointer;
   &:hover {
     background-color: #fc7321;
   }

@@ -103,7 +103,7 @@ module.exports = function(grunt) {
           "build/js/personal-nav.min.js": ["build/js/personal-nav.js"],
           "build/js/kitchen-slider.min.js": ["build/js/kitchen-slider.js"],
           "build/js/basket-nav.min.js": ["build/js/basket-nav.js"],
-          "build/js/index.min.js": ["build/js/index-control.js", "build/js/index-slider.js"],
+          "build/js/index.min.js": ["build/js/index-control.js", "build/js/index-slider.js", "build/js/callback.js"],
           "build/js/personal-points.min.js": ["build/js/personal-nav.js", "build/js/gift-slider.js"],
           "build/js/personal-info.min.js": ["build/js/personal-nav.js", "build/js/personal-info-edit.js"],
           "build/js/faq.min.js": ["build/js/faq.js"],

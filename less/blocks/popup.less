@@ -157,19 +157,20 @@
   background-image: url("../img/bg-popup-dinner.jpg");
   background-position: top center;
   position: absolute;
-  top: 166px;
-  left: 110px;
+  top: 171px;
+  left: 120px;
+  z-index: 50;
   
   &::after {
     top:0;
-    left: 115px;
+    left: 130px;
     position: absolute;
     content: "";
     width: 0;
 	height: 0;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 20px solid #009036;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 25px solid @bg-green;
   }
 }
 

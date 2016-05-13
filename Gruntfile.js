@@ -133,7 +133,7 @@ module.exports = function(grunt) {
         }]
       }
     },
-    
+    //не забыть исправитть путь с ../../ на ../
     sprite:{
       index: {
         src: "img/index-icons/*.png",

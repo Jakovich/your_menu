@@ -20,8 +20,8 @@
     if (menuWeekPopup.style.display == "block") {
       menuWeekPopup.style.display = "none";
       menuWeekPopup.style.position = "absolute";
-      menuWeekPopup.style.top = "171px";
-      menuWeekPopup.style.left = "120px";
+      menuWeekPopup.style.top = "62px";
+      menuWeekPopup.style.left = "-55px";
       menuWeekPopup.classList.remove("scrollPopup");
     } else {
       menuWeekPopup.style.display = "block";
@@ -45,8 +45,8 @@
       if(menuWeekPopup.classList.contains("scrollPopup")){
         menuWeekPopup.style.display = "none";
         menuWeekPopup.style.position = "absolute";
-        menuWeekPopup.style.top = "171px";
-        menuWeekPopup.style.left = "120px";
+        menuWeekPopup.style.top = "62px";
+        menuWeekPopup.style.left = "-55px";
         menuWeekPopup.classList.remove("scrollPopup");
       }
     }

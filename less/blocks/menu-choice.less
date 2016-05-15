@@ -1,0 +1,95 @@
+.menu-choice {
+  width: 385px;
+  height: 606px;
+  padding: 25px 20px;
+  background-image: url("../img/menu-week-choice.jpg");
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+  margin-left: 8px;
+  font-family: "AnimeAce", "Arial", sans-serif;
+  
+}
+
+.menu-choice__title {
+  font-size: 22px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.menu-choice__links {
+  a {
+    font-size: 15px;
+    color: #ffe2ab;
+    text-decoration: none;
+  }
+}
+
+.menu-choice__date-title {
+  font-size: 15px;
+  color: #94e07a;
+  text-align: center;
+}
+
+.menu-choice__date-choice {
+  text-align: center;
+  
+}
+
+.menu-choice__date-variant {
+  input {
+    display: none;
+  }
+  
+  label {
+    display: block;
+    padding-left: 30px;
+    font-size: 15px;
+    color: #c1c0c0;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  input:checked~label{
+    color: #ffffff;
+    &::before {
+    position: absolute;
+      content: "";
+      background-image: url("../img/icon-check-menu.png");
+      width: 19px;
+      height: 18px;
+      left: 80px;
+    }
+  }
+}
+.menu-choice__portion {
+  text-align: center;
+}
+
+
+.menu-choice__portion-variant {
+  display: inline-block;
+  input {
+    display: none;
+  }
+  
+  label {
+  
+    padding-left: 30px;
+    font-size: 15px;
+    color: #c1c0c0;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  input:checked~label{
+    color: #ffe2ab;
+    &::before {
+    position: absolute;
+      content: "";
+      background-image: url("../img/icon-check-menu-yellow.png");
+      width: 19px;
+      height: 18px;
+      left: 0;
+    }
+  }
+}

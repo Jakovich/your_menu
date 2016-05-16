@@ -15,6 +15,18 @@
   text-align: left;
 }
 
+.add-address__select {
+  font-size: 24px;
+  color: #009036;
+  line-height: 28px;
+  text-align: left;
+  margin-bottom: 10px;
+  width: 350px;
+  option {
+    height: 80px;
+  }
+}
+
 .add-address__address-exist {
   font-size: 24px;
   color: #009036;
@@ -44,7 +56,10 @@
   margin-bottom: 10px;
   text-align: left;
   position: relative;
-  
+  border: none;
+  background-color: #e8e8e8;
+  cursor: pointer;
+  width: 100%;
   &::after {
     position: absolute;
     content: "+";

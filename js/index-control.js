@@ -88,4 +88,62 @@
     });
   }
   
+  //анимация
+  
+  var opacityElem1 = new TimelineMax();
+    opacityElem1
+    
+      .from(".index-reasons__title", 1, {opacity: 0})
+      .from(".index-reasons__item--time", 1, {opacity: 0}, '=0.4')
+      .from(".index-reasons__item--money", 1, {opacity: 0}, '=0.4')
+      .from(".index-reasons__item--capabil", 1, {opacity: 0}, '=0.4')
+      .from(".index-reasons__item--health", 1, {opacity: 0}, '=0.4')
+      
+  var controller = new ScrollMagic.Controller();
+  var scene = new ScrollMagic.Scene({
+    triggerElement: ".index-reasons",
+    reverse: false
+  })
+  .setTween(opacityElem1) // trigger a TweenMax.to tween
+  /*.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)*/
+  .addTo(controller);
+  
+  
+  var opacityElem2 = new TimelineMax();
+    opacityElem2
+    
+      .from(".index-explic__title", 1, {opacity: 0})
+      .from(".index-explic__item--dish", 1, {opacity: 0}, '=0.4')
+      .from(".index-explic__item--tel", 1, {opacity: 0}, '=0.4')
+      .from(".index-explic__item--basket", 1, {opacity: 0}, '=0.4')
+      .from(".index-explic__item--delivery", 1, {opacity: 0}, '=0.4')
+      .from(".index-explic__item--pleasure", 1, {opacity: 0}, '=0.4')
+    
+    
+  var scene2 = new ScrollMagic.Scene({
+    triggerElement: ".index-explic",
+    reverse: false
+  })
+  .setTween(opacityElem2) // trigger a TweenMax.to tween
+  /*.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)*/
+  .addTo(controller);
+  
+  var opacityElem3 = new TimelineMax();
+    opacityElem3
+    
+      .from(".index-table__link-text", 1, {opacity: 0})
+      .from(".index-table__link-arrow", 1, {opacity: 0}, '=0.4')
+      .from(".index-table__link-box", 1, {opacity: 0}, '=0.4')
+    
+  var scene3 = new ScrollMagic.Scene({
+    triggerElement: ".index-table__link",
+    reverse: false
+  })
+  .setTween(opacityElem3) // trigger a TweenMax.to tween
+  /*.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)*/
+  .addTo(controller);
+      
+    
+
+  
 })();

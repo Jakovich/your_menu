@@ -41,6 +41,14 @@ module.exports = function(grunt) {
         options: {
             spawn: false
           }
+      },
+      js: {
+        files: ["js/**/*.js"],
+        tasks: ["copy:js", "uglify"],
+        options: {
+            spawn: false
+          }
+        
       }
     },
   
@@ -81,6 +89,13 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: ["*.html"],
+          dest: "build"
+        }]
+      },
+      js: {
+        files: [{
+          expand: true,
+          src: ["js/**"],
           dest: "build"
         }]
       }

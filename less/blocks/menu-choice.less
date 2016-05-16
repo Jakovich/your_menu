@@ -24,28 +24,35 @@
   }
 }
 
+.menu-choice__date {
+  margin-bottom: 20px;
+}
+
 .menu-choice__date-title {
   font-size: 15px;
   color: #94e07a;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .menu-choice__date-choice {
-  text-align: center;
+  text-align: left;
   
 }
 
 .menu-choice__date-variant {
+  
   input {
     display: none;
   }
   
   label {
     display: block;
+    margin-left: 70px;
     padding-left: 30px;
     font-size: 15px;
     color: #c1c0c0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     position: relative;
     cursor: pointer;
   }
@@ -57,12 +64,63 @@
       background-image: url("../img/icon-check-menu.png");
       width: 19px;
       height: 18px;
-      left: 80px;
+      left: 0;
     }
   }
 }
 .menu-choice__portion {
   text-align: center;
+}
+
+
+.menu-choice__quantity {
+  text-align: center;
+  background-image: url("../img/menu-choice-axes.png");
+  background-repeat: no-repeat;
+  background-position: center 35px;
+  margin-bottom: 37px;
+  
+  .menu-choice__quantity-title {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #94e07a;
+  }
+}
+
+.menu-choice__quantity-item {
+  display: inline-block;
+  margin-right: 70px;
+  
+  &:nth-child(5n) {
+    margin-right: 0;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  label { 
+    display: block;
+    color: #ffffff;
+    padding-top: 35px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  input:checked~label::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -2px;
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/subscribe-pointer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+  }
 }
 
 
@@ -74,13 +132,15 @@
   
   label {
   
-    padding-left: 30px;
+    padding-left: 23px;
     font-size: 15px;
     color: #c1c0c0;
     margin-bottom: 10px;
     position: relative;
     cursor: pointer;
+    margin-right: 15px;
   }
+  
   input:checked~label{
     color: #ffe2ab;
     &::before {
@@ -90,6 +150,7 @@
       width: 19px;
       height: 18px;
       left: 0;
+      top: -2px;
     }
   }
 }

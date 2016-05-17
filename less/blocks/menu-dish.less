@@ -1,0 +1,147 @@
+.menu-dish {
+  width: 250px;
+  height: 335px;
+  position: relative;
+  display: flex;
+ 
+  flex-wrap: wrap;
+  
+}
+
+.menu-dish__title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 22px;
+  font-family: "Neucha", "Arial", sans-serif;
+  background-color: rgba(0,0,0,0.5);
+  padding: 4px 10px;
+  margin: 0;
+}
+
+.menu-dish__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 250px;
+  height: 335px;
+}
+.menu-dish__inner {
+
+  
+}
+.menu-dish__btn {
+  background-color: rgba(0,0,0,0.5);
+  color: #ffffff;
+  font-size: 18px;
+  display: block;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 88px;
+  margin: 0 auto;
+  
+  &:hover {
+    background-color: #ef5f00;
+  }
+}
+
+.menu-dish__descr {
+  padding: 1px 0;
+ 
+  right: 0;
+  top: 52px;
+  bottom: 0;
+  width: 65px;
+  background-color: rgba(255,255,255,0.8);
+  text-align: center;
+}
+
+.menu-dish__item {
+  color: #7a7a7a;
+  font-size: 12px;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  &::before {
+    position: absolute;
+  }
+}
+
+.menu-dish__item--time {
+  padding-top: 25px; 
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/menu-clock.png");
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.menu-dish__item--protein {
+  padding-top: 25px;
+  &::before {
+    content: "БЖУ";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #00702a;
+    font-size: 18px;
+  }
+}
+
+.menu-dish__item--level {
+  padding-top: 27px;
+  &::before {
+    content: "";
+    width: 26px;
+    height: 25px;
+    background-image: url("../img/menu-level.png");
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.menu-dish__item--calories {
+  color: #00702a;
+  font-size: 15px;
+}
+
+.menu-dish__item--recipe {
+
+  text-align: center;
+  
+  a {
+    color: #de5800;
+    font-size: 14px;
+    position: relative;
+    display: block;
+    padding-top: 35px;
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url(@icon-recipe-image);
+      background-position: @icon-recipe-offset-x @icon-recipe-offset-y;
+      background-repeat: no-repeat;
+      width: 45px;
+      height: 35px;
+      top: 0;
+      left: 10px;
+    }
+    
+    &:hover{
+      color: rgb(238,164,116);
+      &::before{
+        background-image: url(@icon-recipe-hover-image);
+        background-position: @icon-recipe-hover-offset-x @icon-recipe-hover-offset-y;
+        background-repeat: no-repeat;
+      }
+    } 
+  }
+}

@@ -17,10 +17,35 @@
 }
 
 .menu-choice__links {
-  a {
-    font-size: 15px;
-    color: #ffe2ab;
-    text-decoration: none;
+  text-align: left;
+  margin-bottom: 5px;
+  padding: 0 30px;
+  padding-top: 10px;
+}
+
+.menu-choice__links--dinner {
+  background-image: url("../img/menu-links-dinner-bg.png");
+  background-repeat: no-repeat;
+  width: 382px;
+  height: 40px;
+}
+
+.menu-choice__link {
+  font-size: 15px;
+  color: #ffe2ab;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 10px;
+  
+  &:hover{
+    color: #ffffff;
+  }
+}
+
+.menu-choice__link--active {
+  color: #94e07a;
+  &:hover {
+    color: #94e07a;
   }
 }
 
@@ -78,7 +103,7 @@
   background-image: url("../img/menu-choice-axes.png");
   background-repeat: no-repeat;
   background-position: center 35px;
-  margin-bottom: 37px;
+  margin-bottom: 27px;
   
   .menu-choice__quantity-title {
     display: block;
@@ -226,7 +251,7 @@
 .menu-choice__basket {
   text-align: right;
   padding: 0 15px;
-  
+  margin-top: -10px;
   a {
     color: #94e07a;
     font-size: 15px;

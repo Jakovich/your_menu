@@ -4,6 +4,26 @@
   position: relative;
   vertical-align: top;
   text-align: right;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 335px;
+    background-color: #29874c;
+    right: 0;
+    top: 0;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 335px;
+    background-color: #29874c;
+    left: 0;
+    top: 0;
+  }
+  
+ 
 }
 
 .menu-dish__title {

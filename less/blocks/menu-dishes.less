@@ -11,6 +11,7 @@
 }
 
 .menu-dishes__link {
+  position: relative;
   a {
     color: #848484;
     font-size: 18px;
@@ -20,6 +21,33 @@
     }
   }
   
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/menu-arrow-link.png");
+    width: 16px;
+    height: 31px;
+  }
+}
+
+
+.menu-dishes__link--prev {
+  padding-left: 17px;
+  &::before {
+    left: 0;
+    top: -5px;
+  }
+  
+}
+
+.menu-dishes__link--next {
+  padding-right: 17px;
+  &::before {
+    transform: rotate(180deg);
+    right: 0;
+    top: -5px;
+  }
+ 
 }
 .menu-dishes__intro {
   padding: 10px 35px;
@@ -28,23 +56,47 @@
   align-items: top;
 }
 
-.menu-dishes__link--prev {
+
+
+
+.menu-dishes__items {
+  
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.menu-dishes__quantity {
+  width: 1248px;
+  margin: 0 auto;
+  background-color: #e8e8e8;
+  border-radius: 15px 15px 0 0;
+  border: 1px dashed #29874c;
+  border-bottom: none;
+  font-size: 0;
+}
+
+.menu-dishes__quantity-title {
+  display: inline-block;
+  font-size: 18px;
+  color: #00702a;
+  text-align: center;
+  padding: 10px 0;
   
 }
 
-.menu-dishes__link--next {
- 
+.menu-dishes__quantity-title--3 {
+  width: 748px;
+  border-radius: 15px 15px 0 0;
+  border-right: 1px dashed #29874c;
+  background-color: #ffffff;
 }
 
-.menu-dishes__items {
-  border: 1px dashed #29874c;
-  font-size: 0;
-  text-align: center;
-  vertical-align: top;
+.menu-dishes__quantity-title--5 {
+  width: 498px;
 }
 
-.menu-dishes__item {
-  display: inline-block;
-}
+
 
 

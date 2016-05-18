@@ -13,7 +13,7 @@
   float: right;
   margin-top: 65px;
   position: relative;
-  
+  min-height: 371px;
   &::before {
     position: absolute;
     content: "";
@@ -67,22 +67,25 @@ th.basket-total__recipe {
   }
   
   select {
-  color: #a7a7a7;
-  outline: none;
-  -webkit-appearance: none;
-  padding-right: 30px;
-  background-image: url("../img/pointer--select.png");
-  background-repeat: no-repeat; 
-  background-position: 80% 19px;
-  -moz-appearance: none;
-  text-indent: 0.01px; 
-  text-overflow: '';
-  -ms-appearance: none;
-  appearance: none!important;
-  cursor: pointer;
-  border: none;
-  border: 1px solid #aeaeae;
-  border-radius: 15px;
+    color: #a7a7a7;
+    outline: none;
+    -webkit-appearance: none;
+    padding-right: 30px;
+    background-image: url("../img/pointer--select.png");
+    background-repeat: no-repeat; 
+    background-position: 80% 19px;
+    -moz-appearance: none;
+    text-indent: 0.01px; 
+    text-overflow: '';
+    -ms-appearance: none;
+    appearance: none!important;
+    cursor: pointer;
+    border: none;
+    border: 1px solid #aeaeae;
+    border-radius: 15px;
+    &::-ms-expand {
+      display: none;
+    } 
   }
 }
 
@@ -101,14 +104,13 @@ th.basket-total__recipe {
 
 .basket-total__summary {
   .clearfix();
-border-top: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
   padding-top: 6px;
 }
 
 .basket-total__summary-left {
   .clearfix();
   width: 383px;
- 
   float: left;
 }
 

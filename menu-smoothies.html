@@ -46,16 +46,16 @@
 
       <main class="page-main--menu">
        
-        <section class="menu-intro">
+        <section class="menu-intro menu-intro--smoothies">
           <div class="wrapper">
-           <div class="menu-intro__inner">
+            <div class="menu-intro__inner">
             <div class="menu-choice">
-              <form action="post" name="menu-dinner">
+              <form action="post" name="menu-smoothies">
               <h3 class="menu-choice__title">Меню недели</h3>
-              <div class="menu-choice__links menu-choice__links--dinner">
-                <a href="#" class="menu-choice__link menu-choice__link--active">Ужин</a>
+              <div class="menu-choice__links menu-choice__links--smoothies">
+                <a href="menu.html" class="menu-choice__link">Ужин</a>
                 <a href="#" class="menu-choice__link">Сэндвич-start</a>  
-                <a href="menu-smoothies.html" class="menu-choice__link">Смузи</a>
+                <a href="#" class="menu-choice__link menu-choice__link--active">Смузи</a>
               </div>
               <div class="menu-choice__date">
                 <div class="menu-choice__date-title">Дата доставки</div>
@@ -93,14 +93,7 @@
               </div>
               
               <div class="menu-choice__portion">
-                <div class="menu-choice__portion-variant">
-                    <input type="radio" name="portion" id="3dinner" value="3" checked>
-                    <label for="3dinner">3 ужина</label>
-                  </div>
-                  <div class="menu-choice__portion-variant">
-                    <input type="radio" name="portion" id="5dinner" value="5">
-                    <label for="5dinner">5 ужинов</label>
-                  </div>
+                5 смузи
               </div>
               
               <div class="menu-choice__price">
@@ -109,12 +102,12 @@
                 </div>
                 
                 <div class="menu-choice__price-content">
-                  <div class="menu-choice__price-total">        <span class="dinner-total">2800</span> руб.
+                  <div class="menu-choice__price-total">        <span class="smoothies-total">2800</span> руб.
                   </div>
                   <div class="menu-choice__price-together">если вы <span>"вместе с нами"</span></div>
                   <div class="menu-choice__price-sales">
                      <a href="together.html">Подробнее</a>
-                    <div class="menu-choice__price-sale"><span class="dinner-sale">2520 руб.</span> </div>
+                    <div class="menu-choice__price-sale"><span class="smoothies-sale">2520 руб.</span> </div>
                 </div>
               </div>
               
@@ -122,9 +115,18 @@
             </div>
             </form>
           </div>
-            <div class="menu-intro__pointer">смотреть меню</div>
-            
-          </div>
+            <div class="menu-intro__pointer menu-intro__pointer--smoothies">смотреть меню</div>
+            <div class="menu-intro__text">
+              <div class="menu-intro__text-title">Смузи</div>
+              <ul>
+                <li>5 смузи на неделю одной доставкой</li>
+                <li>заряд бодрости</li>
+                <li>полезный завтрак</li>
+                <li>замена ланча</li>
+              </ul>
+            </div>
+            <div class="menu-intro__logo"><img src="img/menu-smoothies-logo.png" alt="Смузи" width="207" height="121"></div>
+            </div>
           </div>
         </section>
         <section class="menu-dishes">

@@ -2,14 +2,23 @@
   background-image: url("../img/menu-week-bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  padding-top: 55px;
-  padding-bottom: 25px;
-  position: relative;
+  
+ 
 }
 
-.menu-intro__text {
+.menu-intro__inner {
+  position: relative;
+  padding-top: 55px;
+  padding-bottom: 5px;
+}
+
+.menu-intro--smoothies {
+  background-image: url("../img/menu-smoothies-bg.jpg");
+}
+
+.menu-intro__pointer {
   position: absolute;
-  bottom: 20px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   color: #ffffff;
@@ -17,4 +26,43 @@
   border-bottom: none;
   font-size: 24px;
   padding: 8px 40px;
+}
+
+.menu-intro__pointer--smoothies {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.menu-intro__logo {
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+.menu-intro__text {
+  padding: 25px 0;
+  position: absolute;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  background-color: rgba(0,0,0,0.4);
+  bottom: 0;
+  right: 0;
+  width: 283px;
+  font-size: 24px;
+  line-height: 24px;
+  
+  ul{
+    margin: 0;
+    padding-left: 27px;
+  }
+  
+  li{
+    margin-bottom: 8px;
+  }
+}
+
+.menu-intro__text-title {
+  text-transform: uppercase;
+  margin-left: 27px;
+  margin-bottom: 20px;
 }

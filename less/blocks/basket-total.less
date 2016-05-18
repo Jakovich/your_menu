@@ -158,23 +158,37 @@ th.basket-total__recipe {
   border: 1px solid #009036;
   border-radius: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .basket-total__btn--white {
   float: left;
   color: #009036;
+  
+  &:hover {
+    color: #13b04e;
+  }
 }
 
 .basket-total__btn--green {
- background-color:  #009036;
+  background-color:  #009036;
   float: right;
   color: #ffffff;
+  
+  &:hover {
+    background-color:  #13b04e;
+  }
 }
 
 .basket-total__clear {
   font-size: 18px;
   color: #a7a7a7;
-  display: block; 
+  display: block;
+  width: 168px;
+  
+  &:hover {
+    color: #000000;
+  }
 }
 
 .basket-total__summary-right {
@@ -198,6 +212,7 @@ th.basket-total__recipe {
   }
   
   button {
+    cursor: pointer;
     background-color: #e95d0f;
     border: none;
     color: #ffffff;
@@ -206,6 +221,10 @@ th.basket-total__recipe {
     position: absolute;
     right: 5px;
     top: 6px;
+    
+    &:hover{
+      background-color: #f28244;
+    }
   }
 }
 

@@ -65,5 +65,25 @@
       margin-left: -29px;
     }
   }
+
+.basket-nav__item--disabled {
+  cursor: auto;
+  span {
+    background-color: grey;
+    color: #ffffff;
+    border: 1px dashed grey;
+  }
+   &::before {
+      position: absolute;
+      content: "";
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 1px solid grey;
+      top: -4px;
+      left: 50%;
+      margin-left: -29px;
+    }
+}
   
   

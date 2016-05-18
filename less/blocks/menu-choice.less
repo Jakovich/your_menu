@@ -38,7 +38,7 @@
   margin-right: 10px;
   
   &:hover{
-    color: #ffffff;
+    color: #c1c0c0;
   }
 }
 
@@ -80,6 +80,9 @@
     margin-bottom: 5px;
     position: relative;
     cursor: pointer;
+    &:hover {
+      color: #ffffff;
+    }
   }
   input:checked~label{
     color: #ffffff;
@@ -167,6 +170,9 @@
     position: relative;
     cursor: pointer;
     margin-right: 15px;
+    &:hover {
+      color: #ffe2ab;
+    }
   }
   
   input:checked~label{
@@ -239,6 +245,9 @@
     float: left;
     color: #ffffff;
     font-size: 9px;
+    &:hover {
+      color:#c1c0c0;
+    }
   }
 }
 
@@ -259,6 +268,9 @@
     display: inline-block;
     padding-top: 90px;
     position: relative;
+    
+    
+    
     &::before {
       position: absolute;
       content: "";
@@ -267,6 +279,13 @@
       height: 79px;
       top: 0;
       left: 10px;
+    }
+    
+    &:hover {
+      color: #b2f9a0;
+      &::before {
+        background-image: url("../img/menu-basket-hover.png");
+      }
     }
   }
 

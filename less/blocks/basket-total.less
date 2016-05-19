@@ -1,5 +1,5 @@
 .basket-wrapper {
-  min-height: 693px;
+  min-height: 500px;
   .clearfix();
 }
 
@@ -13,7 +13,6 @@
   float: right;
   margin-top: 65px;
   position: relative;
-  min-height: 371px;
   &::before {
     position: absolute;
     content: "";
@@ -110,16 +109,22 @@ th.basket-total__recipe {
 }
 
 .basket-total__summary {
-  .clearfix();
   border-top: 1px solid #eeeeee;
   padding-top: 6px;
+  display: flex;
 }
 
 .basket-total__summary-left {
   .clearfix();
   width: 383px;
-  min-height: 209px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
   float: left;
+}
+
+.basket-total__links {
+  margin-top: auto;
 }
 
 .basket-total__gift {
@@ -132,7 +137,6 @@ th.basket-total__recipe {
   align-items: center;
   margin-bottom: 15px;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
- 
 }
 
 .basket-total__gift-image {
@@ -203,13 +207,18 @@ th.basket-total__recipe {
 .basket-total__summary-right {
   float: right;
   width: 386px;
-  min-height: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100px;
+  margin-left: auto;
 }
 
 .basket-total__promo {
   position: relative;
   display: inline-block;
-  width: 290;
+  width: 295px;
+  margin-bottom: 15px;
   
   input {
     border-radius: 25px;
@@ -229,7 +238,7 @@ th.basket-total__recipe {
     padding: 5px 15px;
     border-radius: 25px;
     position: absolute;
-    right: 5px;
+    right: 25px;
     top: 6px;
     
     &:hover{
@@ -242,8 +251,8 @@ th.basket-total__recipe {
   background-color: #ffffff;
   border: 1px solid #a2a2a2;
   border-radius: 10px;
-  margin-top: 15px;
   padding: 14px;
+  margin-top: auto;
 }
 
 .basket-total__full-cost {
@@ -261,6 +270,7 @@ th.basket-total__recipe {
   font-weight: bold;
   color: #737373;
   margin-bottom: 15px;
+  
   span {
     color: #e95d0f;
   }
@@ -274,6 +284,7 @@ th.basket-total__recipe {
   display: inline-block;
   padding-right: 28px;
   position: relative;
+ 
   
   &::after {
     position: absolute;

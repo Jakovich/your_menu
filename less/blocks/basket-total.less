@@ -67,10 +67,13 @@ th.basket-total__recipe {
   }
   
   select {
+
     color: #a7a7a7;
     outline: none;
     -webkit-appearance: none;
-    padding-right: 30px;
+    padding-right: 25px;
+    padding-left: 10px;
+    width: 65px;
     background-image: url("../img/pointer--select.png");
     background-repeat: no-repeat; 
     background-position: 80% 19px;
@@ -85,7 +88,11 @@ th.basket-total__recipe {
     border-radius: 15px;
     &::-ms-expand {
       display: none;
-    } 
+    }
+    
+    option {
+      text-align: center;
+    }
   }
 }
 
@@ -111,6 +118,7 @@ th.basket-total__recipe {
 .basket-total__summary-left {
   .clearfix();
   width: 383px;
+  min-height: 209px;
   float: left;
 }
 
@@ -124,6 +132,7 @@ th.basket-total__recipe {
   align-items: center;
   margin-bottom: 15px;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+ 
 }
 
 .basket-total__gift-image {
@@ -194,6 +203,7 @@ th.basket-total__recipe {
 .basket-total__summary-right {
   float: right;
   width: 386px;
+  min-height: 209px;
 }
 
 .basket-total__promo {

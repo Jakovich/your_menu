@@ -150,6 +150,7 @@
   font-family: "Neucha";
   padding-left: 25px;
   padding-right: 25px;
+  min-height: 175px;
 }
 
 .dish__text--smoothies {
@@ -212,7 +213,8 @@
 }
 
 .dish__table-text--time::before {
-  left: 17px;
+  left: 50%;
+  transform: translateX(-50%);
   background-image: url(@icon-clock-small-image);
   background-position: @icon-clock-small-offset-x @icon-clock-small-offset-y;
   width: @icon-clock-small-width;
@@ -220,6 +222,8 @@
 }
 
 .dish__table-text--level::before {
+  left: 50%;
+  transform: translateX(-50%);
   background-image: url(@icon-level-easy-image);
   background-position: @icon-level-easy-offset-x @icon-level-easy-offset-y;
   width: @icon-level-easy-width;
@@ -275,7 +279,13 @@
 
 .dish__ingredients-img {
   float: left;
-  width: 515px;  
+  width: 515px;
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
 }
 
 .dish__ingredients-text {
@@ -292,6 +302,7 @@
   float: right;
   width: 335px;
   padding-top: 8px;
+  
 }
 
 .dish__ingredients-table {

@@ -8,6 +8,7 @@
   padding-top: 22px;
   padding-bottom: 0;
   padding-right: 5px;
+  
   background-color: #ffffff;
   border: 1px solid #dadada;
   border-bottom: 0;
@@ -139,6 +140,10 @@
 .dish__text{
   float: right;
   width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 420px;
 }
 
 .dish__title {
@@ -150,7 +155,7 @@
   font-family: "Neucha";
   padding-left: 25px;
   padding-right: 25px;
-  min-height: 175px;
+  
 }
 
 .dish__text--smoothies {
@@ -168,10 +173,10 @@
 }
 
 .dish__table {
-  padding-top: 55px;
+  padding-top: 10px;
   margin-left: 10px;
   margin-right: 13px;
-  margin-bottom: 10px;
+  
 }
 
 .dish__table-wrap {
@@ -212,22 +217,26 @@
   }
 }
 
-.dish__table-text--time::before {
-  left: 50%;
-  transform: translateX(-50%);
-  background-image: url(@icon-clock-small-image);
-  background-position: @icon-clock-small-offset-x @icon-clock-small-offset-y;
-  width: @icon-clock-small-width;
-  height: @icon-clock-small-height;
+.dish__table-text--time {
+  &::before {
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(@icon-clock-small-image);
+    background-position: @icon-clock-small-offset-x @icon-clock-small-offset-y;
+    width: @icon-clock-small-width;
+    height: @icon-clock-small-height;
+  }
 }
 
-.dish__table-text--level::before {
-  left: 50%;
-  transform: translateX(-50%);
-  background-image: url(@icon-level-easy-image);
-  background-position: @icon-level-easy-offset-x @icon-level-easy-offset-y;
-  width: @icon-level-easy-width;
-  height: @icon-level-easy-height;
+.dish__table-text--level {
+  &::before {
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(@icon-level-easy-image);
+    background-position: @icon-level-easy-offset-x @icon-level-easy-offset-y;
+    width: @icon-level-easy-width;
+    height: @icon-level-easy-height;
+  }
 }
 
 .dish__ingredients {

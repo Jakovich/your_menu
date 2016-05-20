@@ -123,7 +123,8 @@ module.exports = function(grunt) {
           "build/js/personal-info.min.js": ["build/js/personal-nav.js", "build/js/personal-info-edit.js"],
           "build/js/faq.min.js": ["build/js/faq.js"],
           "build/js/personal-subscribe.min.js": ["build/js/personal-nav.js",  "build/js/subscribe-popup.js", "build/js/subscribe-counter.js"],
-          "build/js/together.min.js": ["build/js/gift-slider.js",  "build/js/together.js"]
+          "build/js/together.min.js": ["build/js/gift-slider.js",  "build/js/together.js"],
+          "build/js/menu.min.js": ["build/js/menu.js"]
         }
       }
     },

@@ -71,25 +71,36 @@
   align-items: top;
 }
 
-
-
-
 .menu-dishes__items {
-  
   font-size: 0;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: flex-start;
+  padding: 0 15px;
+}
+
+.menu-dishes__items--popup {
+  justify-content: center;
+  padding: 0;
+  flex-wrap: nowrap;
 }
 
 .menu-dishes__quantity {
   width: 1248px;
-  margin: 0 auto;
-  background-color: #e8e8e8;
+  margin-left: 15px;
+  
   border-radius: 15px 15px 0 0;
   border: 1px dashed #29874c;
   border-bottom: none;
   font-size: 0;
+  
+  &[disabled="disabled"] {
+    background-color: #e8e8e8;
+    .menu-dishes__quantity-title--5 {
+      color: #858585;
+    }
+  }
 }
 
 .menu-dishes__quantity-title {
@@ -110,6 +121,10 @@
 
 .menu-dishes__quantity-title--5 {
   width: 498px;
+}
+
+.menu-dishes__item {
+  margin-bottom: 20px;
 }
 
 

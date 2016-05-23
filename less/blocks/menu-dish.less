@@ -9,7 +9,7 @@
   align-items: flex-end;
 }
 
-.menu-dishes__items [disabled="disabled"] {
+.menu-dishes__item[disabled="disabled"] {
   opacity: 0.3;
   
   .menu-dish {
@@ -34,6 +34,36 @@
       top: 0;
       opacity: 1;
     }
+  }
+  
+  .menu-dish__title:hover {
+    color: #ffffff;
+    cursor: auto;
+  }
+  
+  .menu-dish__btn:hover {
+    background-color: rgba(0,0,0,0.5);
+    cursor: auto;
+  }
+  
+  .menu-dish__item--recipe {
+    a:hover{
+      color: #de5800;
+      cursor: auto;
+      &::before{
+        background-image: url(@icon-recipe-image);
+        background-position: @icon-recipe-offset-x @icon-recipe-offset-y;
+        background-repeat: no-repeat;
+      }
+    } 
+  }
+  
+  .menu-ingredient__title {
+    cursor: auto;
+    &:hover {
+      color: #6e6e6e;
+    }
+    
   }
 }
 

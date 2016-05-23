@@ -47,10 +47,10 @@
     <main class="page-main--menu">
        
       <section class="menu-intro">
-          <div class="wrapper">
-           <div class="menu-intro__inner">
+        <div class="wrapper">
+          <div class="menu-intro__inner">
             <div class="menu-choice">
-              <form action="post" name="menu-dinner">
+              <form action="post" name="menu-dinner" class="menu-intro__form">
               <h3 class="menu-choice__title">Меню недели</h3>
               <div class="menu-choice__links menu-choice__links--dinner">
                 <a href="#" class="menu-choice__link menu-choice__link--active">Ужин</a>
@@ -122,91 +122,122 @@
             </div>
             </form>
           </div>
-            <div class="menu-intro__pointer">смотреть меню</div>
+          <div class="menu-intro__pointer">смотреть меню</div>
             
           </div>
-          </div>
-        </section>
+        </div>
+      </section>
       <section class="menu-dishes">
-          <div class="wrapper--index">
-            <div class="menu-dishes__intro">
-              <div class="menu-dishes__link menu-dishes__link--prev"><a href="#">Предыдущая неделя</a></div>
-              <h2 class="menu-dishes__title">Ужин</h2>
-              <div class="menu-dishes__link menu-dishes__link--next"><a href="#">Следующая неделя</a></div>
-            </div>
-            <div class="menu-dishes__quantity" disabled="disabled">
-              <div class="menu-dishes__quantity-title menu-dishes__quantity-title--3">3 ужина</div>
-              <div class="menu-dishes__quantity-title menu-dishes__quantity-title--5">5 ужинов</div>
-            </div>
-            <div class="menu-dishes__items">
+        <div class="wrapper--index">
+          <div class="menu-dishes__intro">
+            <div class="menu-dishes__link menu-dishes__link--prev"><a href="#">Предыдущая неделя</a></div>
+            <h2 class="menu-dishes__title">Ужин</h2>
+            <div class="menu-dishes__link menu-dishes__link--next"><a href="#">Следующая неделя</a></div>
+          </div>
+          <div class="menu-dishes__quantity">
+            <div class="menu-dishes__quantity-title menu-dishes__quantity-title--3">3 ужина</div>
+            <div class="menu-dishes__quantity-title menu-dishes__quantity-title--5">5 ужинов</div>
+          </div>
+          <div class="menu-dishes__items">
               
             
-              <div class="menu-dishes__item">
-                <article class="menu-dish">
-                  <img src="img/menu-beef.jpg" alt="" class="menu-dish__img" width="250" height="335">
-                  <h3 class="menu-dish__title">Говядина в соусе Бешамель</h3>
+            <div class="menu-dishes__item">
+              <article class="menu-dish">
+                <img src="img/menu-beef.jpg" alt="" class="menu-dish__img" width="250" height="335">
+                <h3 class="menu-dish__title">Говядина в соусе Бешамель</h3>
         
-                  <div class="menu-dish__descr">
-                    <div class="menu-dish__item menu-dish__item--time">1 час</div>
-                    <div class="menu-dish__item menu-dish__item--protein">53/71/139</div>
-                    <div class="menu-dish__item menu-dish__item--level">легко</div>
-                    <div class="menu-dish__item menu-dish__item--calories">330ккал</div>
-                    <div class="menu-dish__item menu-dish__item--recipe"><a href="#">рецепт</a></div>
+                <div class="menu-dish__descr">
+                  <div class="menu-dish__item menu-dish__item--time">1 час</div>
+                  <div class="menu-dish__item menu-dish__item--protein">53/71/139</div>
+                  <div class="menu-dish__item menu-dish__item--level">легко</div>
+                  <div class="menu-dish__item menu-dish__item--calories">330ккал</div>
+                  <div class="menu-dish__item menu-dish__item--recipe"><a href="#">рецепт</a></div>
 
-                  </div>
-                  <div class="menu-dish__btn">заменить</div>
+                </div>
+                <div class="menu-dish__btn">заменить</div>
                 
-                </article>
-                <div class="menu-ingredient">
-                  <div class="menu-ingredient__title">ингредиенты</div>
-                  <div class="menu-ingredient__inner">
-                    <img src="img/menu-ingred.jpg" alt="" width="250" height="130">
-                    <div class="menu-ingredient__descr">
-                      <p class="menu-ingredient__product">куриное филе....400г</p>
-                      <p class="menu-ingredient__product">картофель....4шт</p>
-                      <p class="menu-ingredient__product">брокколи....200г</p>
-                      <p class="menu-ingredient__product">сыр....100г</p>
-                      <p class="menu-ingredient__product">масло сливочное....50г</p>
-                      <p class="menu-ingredient__product">мука....2ст.л</p>
-                    </div>
+              </article>
+              <div class="menu-ingredient">
+                <div class="menu-ingredient__title">ингредиенты</div>
+                <div class="menu-ingredient__inner">
+                  <img src="img/menu-ingred.jpg" alt="" width="250" height="130">
+                  <div class="menu-ingredient__descr">
+                    <p class="menu-ingredient__product">куриное филе....400г</p>
+                    <p class="menu-ingredient__product">картофель....4шт</p>
+                    <p class="menu-ingredient__product">брокколи....200г</p>
+                    <p class="menu-ingredient__product">сыр....100г</p>
+                    <p class="menu-ingredient__product">масло сливочное....50г</p>
+                    <p class="menu-ingredient__product">мука....2ст.л</p>
                   </div>
                 </div>
               </div>
-              <div class="menu-dishes__item">
-                <article class="menu-dish">
-                  <img src="img/menu-turkey.jpg" alt="" class="menu-dish__img" width="250" height="335">
-                  <h3 class="menu-dish__title">Голень индейки по-мексикански</h3>
+            </div>
+            <div class="menu-dishes__item">
+              <article class="menu-dish">
+                <img src="img/menu-turkey.jpg" alt="" class="menu-dish__img" width="250" height="335">
+                <h3 class="menu-dish__title">Голень индейки по-мексикански</h3>
                   
-                  <div class="menu-dish__descr">
-                    <div class="menu-dish__item menu-dish__item--time">1 час</div>
-                    <div class="menu-dish__item menu-dish__item--protein">53/71/139</div>
-                    <div class="menu-dish__item menu-dish__item--level">легко</div>
-                    <div class="menu-dish__item menu-dish__item--calories">330ккал</div>
-                    <div class="menu-dish__item menu-dish__item--recipe"><a href="#">рецепт</a></div>
+                <div class="menu-dish__descr">
+                  <div class="menu-dish__item menu-dish__item--time">1 час</div>
+                  <div class="menu-dish__item menu-dish__item--protein">53/71/139</div>
+                  <div class="menu-dish__item menu-dish__item--level">легко</div>
+                  <div class="menu-dish__item menu-dish__item--calories">330ккал</div>
+                  <div class="menu-dish__item menu-dish__item--recipe"><a href="#">рецепт</a></div>
 
-                  </div>
-                  <div class="menu-dish__btn">заменить</div>
+                </div>
+                <div class="menu-dish__btn">заменить</div>
                 
-                </article>
-                <div class="menu-ingredient">
-                  <div class="menu-ingredient__title">ингредиенты</div>
-                  <div class="menu-ingredient__inner">
-                    <img src="img/menu-ingred.jpg" alt="" width="250" height="130">
-                    <div class="menu-ingredient__descr">
-                      <p class="menu-ingredient__product">куриное филе....400г</p>
-                      <p class="menu-ingredient__product">картофель....4шт</p>
-                      <p class="menu-ingredient__product">брокколи....200г</p>
-                      <p class="menu-ingredient__product">сыр....100г</p>
-                      <p class="menu-ingredient__product">масло сливочное....50г</p>
-                      <p class="menu-ingredient__product">мука....2ст.л</p>
-                    </div>
+              </article>
+              <div class="menu-ingredient">
+                <div class="menu-ingredient__title">ингредиенты</div>
+                <div class="menu-ingredient__inner">
+                  <img src="img/menu-ingred.jpg" alt="" width="250" height="130">
+                  <div class="menu-ingredient__descr">
+                    <p class="menu-ingredient__product">куриное филе....400г</p>
+                    <p class="menu-ingredient__product">картофель....4шт</p>
+                    <p class="menu-ingredient__product">брокколи....200г</p>
+                    <p class="menu-ingredient__product">сыр....100г</p>
+                    <p class="menu-ingredient__product">масло сливочное....50г</p>
+                    <p class="menu-ingredient__product">мука....2ст.л</p>
                   </div>
                 </div>
               </div>
-              <div class="menu-dishes__item">
-                <article class="menu-dish">
+            </div>
+            <div class="menu-dishes__item">
+              <article class="menu-dish">
                 <img src="img/menu-chicken.jpg" alt="" class="menu-dish__img" width="250" height="335">
                 <h3 class="menu-dish__title">Запеченная курица и&nbsp;пипаф из булгура</h3>
+
+                <div class="menu-dish__descr">
+                  <div class="menu-dish__item menu-dish__item--time">1 час</div>
+                  <div class="menu-dish__item menu-dish__item--protein">53/71/139</div>
+                  <div class="menu-dish__item menu-dish__item--level">легко</div>
+                  <div class="menu-dish__item menu-dish__item--calories">330ккал</div>
+                  <div class="menu-dish__item menu-dish__item--recipe"><a href="#">рецепт</a></div>
+
+                </div>
+                <div class="menu-dish__btn">заменить</div>
+                
+              </article>
+              <div class="menu-ingredient">
+                <div class="menu-ingredient__title">ингредиенты</div>
+                <div class="menu-ingredient__inner">
+                  <img src="img/menu-ingred.jpg" alt="" width="250" height="130">
+                  <div class="menu-ingredient__descr">
+                    <p class="menu-ingredient__product">куриное филе....400г</p>
+                    <p class="menu-ingredient__product">картофель....4шт</p>
+                    <p class="menu-ingredient__product">брокколи....200г</p>
+                    <p class="menu-ingredient__product">сыр....100г</p>
+                    <p class="menu-ingredient__product">масло сливочное....50г</p>
+                    <p class="menu-ingredient__product">мука....2ст.л</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-dishes__item">
+              <article class="menu-dish">
+                <img src="img/menu-lasagna.jpg" alt="" class="menu-dish__img" width="250" height="335">
+                <h3 class="menu-dish__title">Мясная лазанья</h3>
                 
                 <div class="menu-dish__descr">
                   <div class="menu-dish__item menu-dish__item--time">1 час</div>
@@ -219,149 +250,118 @@
                 <div class="menu-dish__btn">заменить</div>
                 
               </article>
-                <div class="menu-ingredient">
-                  <div class="menu-ingredient__title">ингредиенты</div>
-                  <div class="menu-ingredient__inner">
-                    <img src="img/menu-ingred.jpg" alt="" width="250" height="130">
-                    <div class="menu-ingredient__descr">
-                      <p class="menu-ingredient__product">куриное филе....400г</p>
-                      <p class="menu-ingredient__product">картофель....4шт</p>
-                      <p class="menu-ingredient__product">брокколи....200г</p>
-                      <p class="menu-ingredient__product">сыр....100г</p>
-                      <p class="menu-ingredient__product">масло сливочное....50г</p>
-                      <p class="menu-ingredient__product">мука....2ст.л</p>
-                    </div>
+              <div class="menu-ingredient">
+                <div class="menu-ingredient__title">ингредиенты</div>
+                <div class="menu-ingredient__inner">
+                  <img src="img/menu-ingred.jpg" alt="" width="250" height="130">
+                  <div class="menu-ingredient__descr">
+                    <p class="menu-ingredient__product">куриное филе....400г</p>
+                    <p class="menu-ingredient__product">картофель....4шт</p>
+                    <p class="menu-ingredient__product">брокколи....200г</p>
+                    <p class="menu-ingredient__product">сыр....100г</p>
+                    <p class="menu-ingredient__product">масло сливочное....50г</p>
+                    <p class="menu-ingredient__product">мука....2ст.л</p>
                   </div>
                 </div>
               </div>
-              <div class="menu-dishes__item" disabled="disabled">
-                <article class="menu-dish">
-                  <img src="img/menu-lasagna.jpg" alt="" class="menu-dish__img" width="250" height="335">
-                  <h3 class="menu-dish__title">Мясная лазанья</h3>
-                
-                  <div class="menu-dish__descr">
-                    <div class="menu-dish__item menu-dish__item--time">1 час</div>
-                    <div class="menu-dish__item menu-dish__item--protein">53/71/139</div>
-                    <div class="menu-dish__item menu-dish__item--level">легко</div>
-                    <div class="menu-dish__item menu-dish__item--calories">330ккал</div>
-                    <div class="menu-dish__item menu-dish__item--recipe"><a href="#">рецепт</a></div>
-
-                  </div>
-                  <div class="menu-dish__btn">заменить</div>
-                
-                </article>
-                <div class="menu-ingredient">
-                  <div class="menu-ingredient__title">ингредиенты</div>
-                  <div class="menu-ingredient__inner">
-                    <img src="img/menu-ingred.jpg" alt="" width="250" height="130">
-                    <div class="menu-ingredient__descr">
-                      <p class="menu-ingredient__product">куриное филе....400г</p>
-                      <p class="menu-ingredient__product">картофель....4шт</p>
-                      <p class="menu-ingredient__product">брокколи....200г</p>
-                      <p class="menu-ingredient__product">сыр....100г</p>
-                      <p class="menu-ingredient__product">масло сливочное....50г</p>
-                      <p class="menu-ingredient__product">мука....2ст.л</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="menu-dishes__item" disabled="disabled">
-                <article class="menu-dish menu-dish--inactive">
-                  <img src="img/menu-curri.jpg" alt="" class="menu-dish__img" width="250" height="335">
-                  <h3 class="menu-dish__title">Паста карри</h3>
-                  
-                  <div class="menu-dish__descr">
-                    <div class="menu-dish__item menu-dish__item--time">1 час</div>
-                    <div class="menu-dish__item menu-dish__item--protein">53/71/139</div>
-                    <div class="menu-dish__item menu-dish__item--level">легко</div>
-                    <div class="menu-dish__item menu-dish__item--calories">330ккал</div>
-                    <div class="menu-dish__item menu-dish__item--recipe"><a href="#">рецепт</a></div>
-
-                  </div>
-                  <div class="menu-dish__btn">заменить</div>
-                  
-                </article>
-                <div class="menu-ingredient">
-                  <div class="menu-ingredient__title">ингредиенты</div>
-                  <div class="menu-ingredient__inner" style="display: none">
-                    <img src="img/menu-ingred.jpg" alt="" width="250" height="130">
-                    <div class="menu-ingredient__descr">
-                      <p class="menu-ingredient__product">куриное филе....400г</p>
-                      <p class="menu-ingredient__product">картофель....4шт</p>
-                      <p class="menu-ingredient__product">брокколи....200г</p>
-                      <p class="menu-ingredient__product">сыр....100г</p>
-                      <p class="menu-ingredient__product">масло сливочное....50г</p>
-                      <p class="menu-ingredient__product">мука....2ст.л</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="menu-dishes__item" disabled="disabled">
-                <article class="menu-dish">
-                  <img src="img/menu-curri.jpg" alt="" class="menu-dish__img" width="250" height="335">
-                  <h3 class="menu-dish__title">Паста карри</h3>
-                  
-                  <div class="menu-dish__descr">
-                    <div class="menu-dish__item menu-dish__item--time">1 час</div>
-                    <div class="menu-dish__item menu-dish__item--protein">53/71/139</div>
-                    <div class="menu-dish__item menu-dish__item--level">легко</div>
-                    <div class="menu-dish__item menu-dish__item--calories">330ккал</div>
-                    <div class="menu-dish__item menu-dish__item--recipe"><a href="#">рецепт</a></div>
-
-                  </div>
-                  <div class="menu-dish__btn">заменить</div>
-                  
-                </article>
-                <div class="menu-ingredient">
-                  <div class="menu-ingredient__title">ингредиенты</div>
-                  <div class="menu-ingredient__inner" style="display: none">
-                    <img src="img/menu-ingred.jpg" alt="" width="250" height="130">
-                    <div class="menu-ingredient__descr">
-                      <p class="menu-ingredient__product">куриное филе....400г</p>
-                      <p class="menu-ingredient__product">картофель....4шт</p>
-                      <p class="menu-ingredient__product">брокколи....200г</p>
-                      <p class="menu-ingredient__product">сыр....100г</p>
-                      <p class="menu-ingredient__product">масло сливочное....50г</p>
-                      <p class="menu-ingredient__product">мука....2ст.л</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="menu-dishes__item" disabled="disabled">
-                <article class="menu-dish menu-dish--inactive">
-                  <img src="img/menu-curri.jpg" alt="" class="menu-dish__img" width="250" height="335">
-                  <h3 class="menu-dish__title">Паста карри</h3>
-                  
-                  <div class="menu-dish__descr">
-                    <div class="menu-dish__item menu-dish__item--time">1 час</div>
-                    <div class="menu-dish__item menu-dish__item--protein">53/71/139</div>
-                    <div class="menu-dish__item menu-dish__item--level">легко</div>
-                    <div class="menu-dish__item menu-dish__item--calories">330ккал</div>
-                    <div class="menu-dish__item menu-dish__item--recipe"><a href="#">рецепт</a></div>
-
-                  </div>
-                  <div class="menu-dish__btn">заменить</div>
-                  
-                </article>
-                <div class="menu-ingredient">
-                  <div class="menu-ingredient__title">ингредиенты</div>
-                  <div class="menu-ingredient__inner" style="display: none">
-                    <img src="img/menu-ingred.jpg" alt="" width="250" height="130">
-                    <div class="menu-ingredient__descr">
-                      <p class="menu-ingredient__product">куриное филе....400г</p>
-                      <p class="menu-ingredient__product">картофель....4шт</p>
-                      <p class="menu-ingredient__product">брокколи....200г</p>
-                      <p class="menu-ingredient__product">сыр....100г</p>
-                      <p class="menu-ingredient__product">масло сливочное....50г</p>
-                      <p class="menu-ingredient__product">мука....2ст.л</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
             </div>
+            <div class="menu-dishes__item">
+              <article class="menu-dish menu-dish--inactive">
+                <img src="img/menu-curri.jpg" alt="" class="menu-dish__img" width="250" height="335">
+                <h3 class="menu-dish__title">Паста карри</h3>
+                  
+                <div class="menu-dish__descr">
+                  <div class="menu-dish__item menu-dish__item--time">1 час</div>
+                  <div class="menu-dish__item menu-dish__item--protein">53/71/139</div>
+                  <div class="menu-dish__item menu-dish__item--level">легко</div>
+                  <div class="menu-dish__item menu-dish__item--calories">330ккал</div>
+                  <div class="menu-dish__item menu-dish__item--recipe"><a href="#">рецепт</a></div>
+
+                </div>
+                <div class="menu-dish__btn">заменить</div>
+                  
+              </article>
+              <div class="menu-ingredient">
+                <div class="menu-ingredient__title">ингредиенты</div>
+                <div class="menu-ingredient__inner" style="display: none">
+                  <img src="img/menu-ingred.jpg" alt="" width="250" height="130">
+                  <div class="menu-ingredient__descr">
+                    <p class="menu-ingredient__product">куриное филе....400г</p>
+                    <p class="menu-ingredient__product">картофель....4шт</p>
+                    <p class="menu-ingredient__product">брокколи....200г</p>
+                    <p class="menu-ingredient__product">сыр....100г</p>
+                    <p class="menu-ingredient__product">масло сливочное....50г</p>
+                    <p class="menu-ingredient__product">мука....2ст.л</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-dishes__item">
+              <article class="menu-dish">
+                <img src="img/menu-curri.jpg" alt="" class="menu-dish__img" width="250" height="335">
+                <h3 class="menu-dish__title">Паста карри</h3>
+                  
+                <div class="menu-dish__descr">
+                  <div class="menu-dish__item menu-dish__item--time">1 час</div>
+                  <div class="menu-dish__item menu-dish__item--protein">53/71/139</div>
+                  <div class="menu-dish__item menu-dish__item--level">легко</div>
+                  <div class="menu-dish__item menu-dish__item--calories">330ккал</div>
+                  <div class="menu-dish__item menu-dish__item--recipe"><a href="#">рецепт</a></div>
+
+                </div>
+                <div class="menu-dish__btn">заменить</div>
+                  
+              </article>
+              <div class="menu-ingredient">
+                <div class="menu-ingredient__title">ингредиенты</div>
+                <div class="menu-ingredient__inner" style="display: none">
+                  <img src="img/menu-ingred.jpg" alt="" width="250" height="130">
+                  <div class="menu-ingredient__descr">
+                    <p class="menu-ingredient__product">куриное филе....400г</p>
+                    <p class="menu-ingredient__product">картофель....4шт</p>
+                    <p class="menu-ingredient__product">брокколи....200г</p>
+                    <p class="menu-ingredient__product">сыр....100г</p>
+                    <p class="menu-ingredient__product">масло сливочное....50г</p>
+                    <p class="menu-ingredient__product">мука....2ст.л</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-dishes__item">
+              <article class="menu-dish menu-dish--inactive">
+                <img src="img/menu-curri.jpg" alt="" class="menu-dish__img" width="250" height="335">
+                <h3 class="menu-dish__title">Паста карри</h3>
+                  
+                <div class="menu-dish__descr">
+                  <div class="menu-dish__item menu-dish__item--time">1 час</div>
+                  <div class="menu-dish__item menu-dish__item--protein">53/71/139</div>
+                  <div class="menu-dish__item menu-dish__item--level">легко</div>
+                  <div class="menu-dish__item menu-dish__item--calories">330ккал</div>
+                  <div class="menu-dish__item menu-dish__item--recipe"><a href="#">рецепт</a></div>
+
+                </div>
+                <div class="menu-dish__btn">заменить</div>
+                  
+              </article>
+              <div class="menu-ingredient">
+                <div class="menu-ingredient__title">ингредиенты</div>
+                <div class="menu-ingredient__inner" style="display: none">
+                  <img src="img/menu-ingred.jpg" alt="" width="250" height="130">
+                  <div class="menu-ingredient__descr">
+                    <p class="menu-ingredient__product">куриное филе....400г</p>
+                    <p class="menu-ingredient__product">картофель....4шт</p>
+                    <p class="menu-ingredient__product">брокколи....200г</p>
+                    <p class="menu-ingredient__product">сыр....100г</p>
+                    <p class="menu-ingredient__product">масло сливочное....50г</p>
+                    <p class="menu-ingredient__product">мука....2ст.л</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-        </section>
+        </div>
+      </section>
     </main>
 
 

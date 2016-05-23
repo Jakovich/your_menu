@@ -11,6 +11,8 @@
   var menuItems = menuSection.querySelectorAll(".menu-dishes__item");
   var dinnerTitle = document.querySelector(".menu-dishes__quantity");
   var dinnerCheck = document.querySelectorAll(".menu-choice__portion-variant input");
+  var currentItemForChange;
+  var linksPopup;
 
   menuPopup.style.display = "none";
 
@@ -42,49 +44,71 @@
 
   //заполнение и открытие попапа "заменить блюдо"
   
-  var popupItemContainer = document.querySelector(".menu-dishes__items--popup");
-
-  for (var i = 0; i < menuChangeLinks.length; i++) {
-    menuChangeLinks[i].addEventListener("click", function(){
-      var currentItem = this.parentNode.parentNode;
-      if (!currentItem.hasAttribute("disabled")) {
-        if (menuPopup.style.display === "none") {
-          popupItemContainer.innerHTML="";
-          for (var i = 0; i < menuItems.length; i++) {
-            if (menuItems[i].hasAttribute("disabled")) {
-              var toClone = menuItems[i].cloneNode(true);
-              toClone.removeAttribute("disabled");
-              popupItemContainer.appendChild(toClone);
-              
-            }
-          }
-          menuPopup.style.display = "block";
-          for (var i = 0; i < menuItems.length; i++) {
+  var copy = function() {
+    
+  if (!(menuPopup.style.display === "none")) {
+    for (var j = 0; j < linksPopup.length; j++) {
+      linksPopup[j].addEventListener("click", function(){
+        var itemForReplace = this.parentNode.parentNode;
+        var cloneItem = itemForReplace.innerHTML;
+        currentItemForChange.innerHTML = cloneItem;
+        menuPopup.style.display = "none";
+        for (var i = 0; i < menuItems.length; i++) {
             if (menuItems[i].hasAttribute("disabled")) {
               menuItems[i].removeAttribute("disabled")
             } else {
               menuItems[i].setAttribute("disabled", "disabled");
             }
           }
-        }
+        })
       }
-      showIngred();
-      copy(currentItem);
-    
-    });
+    }
+  };
+  
+
+  var popupShow = function() {
+    var popupItemContainer = document.querySelector(".menu-dishes__items--popup");
+    for (var i = 0; i < menuChangeLinks.length; i++) {
+      menuChangeLinks[i].addEventListener("click", function(){
+        currentItemForChange = this.parentNode.parentNode;
+        if (!currentItemForChange.hasAttribute("disabled")) {
+          if (menuPopup.style.display === "none") {
+            popupItemContainer.innerHTML="";
+            for (var i = 0; i < menuItems.length; i++) {
+              if (menuItems[i].hasAttribute("disabled")) {
+                var toClone = menuItems[i].cloneNode(true);
+                toClone.removeAttribute("disabled");
+                popupItemContainer.appendChild(toClone);
+
+              }
+            }
+            menuPopup.style.display = "block";
+            linksPopup = menuPopup.querySelectorAll(".menu-dish__btn");
+            copy();
+            for (var i = 0; i < menuItems.length; i++) {
+              if (menuItems[i].hasAttribute("disabled")) {
+                menuItems[i].removeAttribute("disabled")
+              } else {
+                menuItems[i].setAttribute("disabled", "disabled");
+              }
+            }
+          }
+        }
+        showIngred();
+        
+        
+        
+
+      });
+    }
+   
   }
   
-  var copy = function(elem) {
-    var linksPopup = menuPopup.querySelector(".menu-dish__btn");
-      for (var i = 0; i < linksPopup.length; i++) {
-        linksPopup[i].addEventListener("click", function(){
-          var itemForReplace = this.parentNode.parentNode;
-          var cloneItem = itemForReplace.cloneNode(true);
-          elem.innerHtml = cloneItem;
-          menuPopup.style.display = "none";
-      })
-    }
-  }
+  popupShow();
+ 
+
+  
+
 
 
 
@@ -103,23 +127,7 @@
       }
     }
   });
-
-  //закрытие попапа по клику вне
-
-  /*$("body").click(function(e) {
-
-    if($(e.target).closest(".menu-dish__popup").length==0) { $(".menu-dish__popup").css("display","none");
-    for (var i = 0; i < menuItems.length; i++) {
-            if (menuItems[i].hasAttribute("disabled")) {
-              menuItems[i].removeAttribute("disabled")
-            } else {
-              menuItems[i].setAttribute("disabled", "disabled");
-            }
-          }
-    }
-
-  });*/
-
+  
 
   var clearAttributes = function() {
     dinnerTitle.removeAttribute("disabled");

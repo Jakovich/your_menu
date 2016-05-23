@@ -2,7 +2,6 @@
 (function(){
 
   var ingreds = document.querySelectorAll(".menu-ingredient__inner");
-  var linkTitle = document.querySelectorAll(".menu-ingredient__title");
   var menuSection = document.querySelector(".menu-dishes");
   var menuPopup = document.querySelector(".menu-dish__popup");
   var menuChangeLinks = menuSection.querySelectorAll(".menu-dish__btn");
@@ -21,6 +20,7 @@
   }
 
   var showIngred = function() {
+    var linkTitle = document.querySelectorAll(".menu-ingredient__title");
     for (var i = 0; i < linkTitle.length; i++) {
       linkTitle[i].addEventListener("click", function(){
         var currentItem = this.parentNode.parentNode;
@@ -37,14 +37,27 @@
   };
 
   showIngred();
+  
+  
 
-  //открытие попапа "заменить блюдо"
+  //заполнение и открытие попапа "заменить блюдо"
+  
+  var popupItemContainer = document.querySelector(".menu-dishes__items--popup");
 
   for (var i = 0; i < menuChangeLinks.length; i++) {
     menuChangeLinks[i].addEventListener("click", function(){
       var currentItem = this.parentNode.parentNode;
       if (!currentItem.hasAttribute("disabled")) {
         if (menuPopup.style.display === "none") {
+          popupItemContainer.innerHTML="";
+          for (var i = 0; i < menuItems.length; i++) {
+            if (menuItems[i].hasAttribute("disabled")) {
+              var toClone = menuItems[i].cloneNode(true);
+              toClone.removeAttribute("disabled");
+              popupItemContainer.appendChild(toClone);
+              
+            }
+          }
           menuPopup.style.display = "block";
           for (var i = 0; i < menuItems.length; i++) {
             if (menuItems[i].hasAttribute("disabled")) {
@@ -55,9 +68,24 @@
           }
         }
       }
-
+      showIngred();
+      copy(currentItem);
+    
     });
   }
+  
+  var copy = function(elem) {
+    var linksPopup = menuPopup.querySelector(".menu-dish__btn");
+      for (var i = 0; i < linksPopup.length; i++) {
+        linksPopup[i].addEventListener("click", function(){
+          var itemForReplace = this.parentNode.parentNode;
+          var cloneItem = itemForReplace.cloneNode(true);
+          elem.innerHtml = cloneItem;
+          menuPopup.style.display = "none";
+      })
+    }
+  }
+
 
 
   //закрытие попапа "заменить блюдо"

@@ -47,12 +47,12 @@
   background-color: rgba(0,0,0,0.5);
   padding: 4px 10px;
   margin: 0;
-  flex-basis: 45px;
+  min-height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 230px;
-  flex-grow:1;
+  
   
   &:hover {
     color: rgba(255,255,255,0.8);
@@ -67,9 +67,7 @@
   width: 250px;
   height: 335px;
 }
-.menu-dish__inner {
-  flex-grow:5;
-}
+
 
 .menu-dish__btn {
   position: absolute;
@@ -92,11 +90,12 @@
 }
 
 .menu-dish__descr {
+  flex-grow:4;
   padding: 1px 0;
   right: 0;
   bottom: 0;
   width: 65px;
-  height: 100%;
+  
   background-color: rgba(255,255,255,0.8);
   text-align: center;
   display: flex;

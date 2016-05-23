@@ -42,8 +42,8 @@
   
   
 
-  //заполнение и открытие попапа "заменить блюдо"
   
+  //функция замены выбранного блюда
   var copy = function() {
     
   if (!(menuPopup.style.display === "none")) {
@@ -66,12 +66,14 @@
               menuItems[i].removeAttribute("disabled");
             }
           }
+         menuChangeLinks = menuSection.querySelectorAll(".menu-dish__btn");
+          popupShow();
         })
       }
     }
   };
   
-
+//заполнение и открытие попапа "заменить блюдо"
   var popupShow = function() {
     var popupItemContainer = document.querySelector(".menu-dishes__items--popup");
     for (var i = 0; i < menuChangeLinks.length; i++) {
@@ -91,6 +93,7 @@
             menuPopup.style.display = "block";
             linksPopup = menuPopup.querySelectorAll(".menu-dish__btn");
             copy();
+            
             for (var i = 0; i < menuItems.length; i++) {
               if (menuItems[i].hasAttribute("disabled")) {
                 menuItems[i].removeAttribute("disabled")
@@ -101,10 +104,6 @@
           }
         }
         showIngred();
-        
-        
-        
-
       });
     }
    
@@ -134,13 +133,15 @@
     }
   });
   
-
+//функция удаления аттрибута disabled
   var clearAttributes = function() {
     dinnerTitle.removeAttribute("disabled");
     for (var i = 0; i < menuItems.length; i++) {
         menuItems[i].removeAttribute("disabled", "disabled");
       }
   }; 
+  
+//установка аттрибутов disabled в зависимости от выбранного кол-ва ужинов
 
   var hideDinner = function(value) {
     if (value === 3) {
@@ -158,7 +159,7 @@
 
   clearAttributes();
   hideDinner(dinnerValue);
-
+//реагирование на изменения выбранного кол-ва ужинов
   var dinamicValue = function() {
       for (var i = 0; i < dinnerCheck.length; i++) {
         dinnerCheck[i].onclick = function() {
@@ -169,5 +170,7 @@
     }
   }
   dinamicValue();
+  
+  
 
 })();

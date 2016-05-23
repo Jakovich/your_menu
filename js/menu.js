@@ -1,9 +1,16 @@
 var ingreds = document.querySelectorAll(".menu-ingredient__inner");
 var linkTitle = document.querySelectorAll(".menu-ingredient__title");
+var menuSection = document.querySelector(".menu-dishes");
 var menuPopup = document.querySelector(".menu-dish__popup");
-var menuChangeLinks = document.querySelectorAll(".menu-dish__btn");
+var menuChangeLinks = menuSection.querySelectorAll(".menu-dish__btn");
+var choiceMenu = document.querySelector(".menu-intro__form");
+var dinnerQuantity = choiceMenu["portion"];
+var dinnerValue = parseInt(dinnerQuantity.value, 10);
+var menuItems = menuSection.querySelectorAll(".menu-dishes__item");
+var dinnerTitle = document.querySelector(".menu-dishes__quantity");
+var dinnerCheck = document.querySelectorAll(".menu-choice__portion-variant input");
 
-
+menuPopup.style.display = "none";
 
 //скрытие и показ ингредиентов
 for (var i = 0; i < ingreds.length; i++) {
@@ -14,9 +21,8 @@ var showIngred = function() {
   for (var i = 0; i < linkTitle.length; i++) {
     linkTitle[i].addEventListener("click", function(){
       var currentItem = this.parentNode.parentNode;
-      var currentMenuItem = currentItem.parentNode;
       var currentIngred = currentItem.querySelector(".menu-ingredient__inner");
-      if (!currentMenuItem.hasAttribute("disabled")) {
+      if (!currentItem.hasAttribute("disabled")) {
         if (currentIngred.style.display === "none") {
           currentIngred.style.display = "block";
         } else {
@@ -33,8 +39,18 @@ showIngred();
 
 for (var i = 0; i < menuChangeLinks.length; i++) {
   menuChangeLinks[i].addEventListener("click", function(){
-    if (menuPopup.style.display === "none") {
-      menuPopup.style.display = "block";
+    var currentItem = this.parentNode.parentNode;
+    if (!currentItem.hasAttribute("disabled")) {
+      if (menuPopup.style.display === "none") {
+        menuPopup.style.display = "block";
+        for (var i = 0; i < menuItems.length; i++) {
+          if (menuItems[i].hasAttribute("disabled")) {
+            menuItems[i].removeAttribute("disabled")
+          } else {
+            menuItems[i].setAttribute("disabled", "disabled");
+          }
+        }
+      }
     }
    
   })
@@ -46,6 +62,13 @@ window.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {
     if (!(menuPopup.style.display === "none")) {
       menuPopup.style.display = "none"
+      for (var i = 0; i < menuItems.length; i++) {
+          if (menuItems[i].hasAttribute("disabled")) {
+            menuItems[i].removeAttribute("disabled")
+          } else {
+            menuItems[i].setAttribute("disabled", "disabled");
+          }
+        }
     }
   }
 });
@@ -54,17 +77,19 @@ window.addEventListener("keydown", function (event) {
 
 /*$("body").click(function(e) {
 
-  if($(e.target).closest(".menu-dish__popup").length==0) $(".menu-dish__popup").css("display","none");
+  if($(e.target).closest(".menu-dish__popup").length==0) { $(".menu-dish__popup").css("display","none");
+  for (var i = 0; i < menuItems.length; i++) {
+          if (menuItems[i].hasAttribute("disabled")) {
+            menuItems[i].removeAttribute("disabled")
+          } else {
+            menuItems[i].setAttribute("disabled", "disabled");
+          }
+        }
+  }
 
 });*/
 
-var choiceMenu = document.querySelector(".menu-intro__form");
-var dinnerQuantity = choiceMenu["portion"];
-var dinnerValue = parseInt(dinnerQuantity.value, 10);
-var menuSection = document.querySelector(".menu-dishes");
-var menuItems = menuSection.querySelectorAll(".menu-dishes__item");
-var dinnerTitle = document.querySelector(".menu-dishes__quantity");
-var dinnerCheck = document.querySelectorAll(".menu-choice__portion-variant input");
+
 var clearAttributes = function() {
   dinnerTitle.removeAttribute("disabled");
   for (var i = 0; i < menuItems.length; i++) {
@@ -72,13 +97,13 @@ var clearAttributes = function() {
     }
 }; 
 
-var hideDinner = function() {
-  if (dinnerValue === 3) {
+var hideDinner = function(value) {
+  if (value === 3) {
     dinnerTitle.setAttribute("disabled", "disabled");
     for (var i = 3; i < menuItems.length; i++) {
       menuItems[i].setAttribute("disabled", "disabled");
     }
-  } else if (dinnerValue === 5) {
+  } else if (value === 5) {
     
     for (var i = 5; i < menuItems.length; i++) {
       menuItems[i].setAttribute("disabled", "disabled");
@@ -87,14 +112,14 @@ var hideDinner = function() {
 }
 
 clearAttributes();
-hideDinner();
+hideDinner(dinnerValue);
 
 var dinamicValue = function() {
     for (var i = 0; i < dinnerCheck.length; i++) {
       dinnerCheck[i].onclick = function() {
-        var dinnerValue = parseInt(this.value, 10);
+        var newDinnerValue = parseInt(this.value, 10);
         clearAttributes();
-        hideDinner();
+        hideDinner(newDinnerValue);
     };
   }
 }

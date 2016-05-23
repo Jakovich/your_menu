@@ -9,6 +9,7 @@
   align-items: flex-end;
 }
 
+//стили для недоступных блюд
 .menu-dishes__item[disabled="disabled"] {
   opacity: 0.3;
   
@@ -36,9 +37,11 @@
     }
   }
   
-  .menu-dish__title:hover {
-    color: #ffffff;
-    cursor: auto;
+  .menu-dish__title {
+    a:hover {
+      color: #ffffff;
+      cursor: text;
+    }
   }
   
   .menu-dish__btn:hover {
@@ -49,7 +52,7 @@
   .menu-dish__item--recipe {
     a:hover{
       color: #de5800;
-      cursor: auto;
+      cursor: text;
       &::before{
         background-image: url(@icon-recipe-image);
         background-position: @icon-recipe-offset-x @icon-recipe-offset-y;
@@ -68,24 +71,27 @@
 }
 
 .menu-dish__title {
-  cursor: pointer;
-  text-align: center;
-  color: #ffffff;
-  font-size: 24px;
-  line-height: 22px;
-  font-family: "Neucha", "Arial", sans-serif;
-  background-color: rgba(0,0,0,0.5);
-  padding: 4px 10px;
-  margin: 0;
-  min-height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 230px;
-  
-  
-  &:hover {
-    color: rgba(255,255,255,0.8);
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 22px;
+    font-family: "Neucha", "Arial", sans-serif;
+    background-color: rgba(0,0,0,0.5);
+    padding: 4px 10px;
+    margin: 0;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+
+
+    &:hover {
+      color: rgba(255,255,255,0.8);
+    }
   }
 }
 

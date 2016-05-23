@@ -51,13 +51,19 @@
       linksPopup[j].addEventListener("click", function(){
         var itemForReplace = this.parentNode.parentNode;
         var cloneItem = itemForReplace.innerHTML;
+        var replacedItem = currentItemForChange.cloneNode(true);
         currentItemForChange.innerHTML = cloneItem;
         menuPopup.style.display = "none";
         for (var i = 0; i < menuItems.length; i++) {
-            if (menuItems[i].hasAttribute("disabled")) {
-              menuItems[i].removeAttribute("disabled")
-            } else {
+          
+            if (!menuItems[i].hasAttribute("disabled")) {
+              if (menuItems[i].innerHTML === cloneItem) {
+                menuItems[i].innerHTML = replacedItem.innerHTML;
+              }
               menuItems[i].setAttribute("disabled", "disabled");
+            } else {
+              
+              menuItems[i].removeAttribute("disabled");
             }
           }
         })

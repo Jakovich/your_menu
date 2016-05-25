@@ -115,40 +115,30 @@
   }
   
   popupShow();
- 
-
-  
-
-
-
 
   //функция закрытия попапа "заменить блюдо"
+  
+  var hidePopup = function() {
+    if (!(menuPopup.style.display === "none")) {
+      menuPopup.style.display = "none"
+      for (var i = 0; i < menuItems.length; i++) {
+        if (menuItems[i].hasAttribute("disabled")) {
+          menuItems[i].removeAttribute("disabled")
+        } else {
+          menuItems[i].setAttribute("disabled", "disabled");
+        }
+      }
+    }
+  };
+  
   window.addEventListener("keydown", function (event) {
     if (event.keyCode === 27) {
-      if (!(menuPopup.style.display === "none")) {
-        menuPopup.style.display = "none"
-        for (var i = 0; i < menuItems.length; i++) {
-            if (menuItems[i].hasAttribute("disabled")) {
-              menuItems[i].removeAttribute("disabled")
-            } else {
-              menuItems[i].setAttribute("disabled", "disabled");
-            }
-          }
-      }
+      hidePopup();
     }
   });
   
   menuPopupClose.addEventListener("click", function() {
-    if (!(menuPopup.style.display === "none")) {
-        menuPopup.style.display = "none"
-        for (var i = 0; i < menuItems.length; i++) {
-            if (menuItems[i].hasAttribute("disabled")) {
-              menuItems[i].removeAttribute("disabled")
-            } else {
-              menuItems[i].setAttribute("disabled", "disabled");
-            }
-          }
-      }
+    hidePopup();
   });
   
 //функция удаления аттрибута disabled

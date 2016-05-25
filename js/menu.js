@@ -11,6 +11,7 @@
   var menuItems = menuSection.querySelectorAll(".menu-dishes__item");
   var dinnerTitle = document.querySelector(".menu-dishes__quantity");
   var dinnerCheck = document.querySelectorAll(".menu-choice__portion-variant input");
+  var menuPopupClose = menuPopup.querySelector(".menu-dish__popup-close");
   var currentItemForChange;
   var linksPopup;
 
@@ -121,7 +122,7 @@
 
 
 
-  //закрытие попапа "заменить блюдо"
+  //функция закрытия попапа "заменить блюдо"
   window.addEventListener("keydown", function (event) {
     if (event.keyCode === 27) {
       if (!(menuPopup.style.display === "none")) {
@@ -135,6 +136,19 @@
           }
       }
     }
+  });
+  
+  menuPopupClose.addEventListener("click", function() {
+    if (!(menuPopup.style.display === "none")) {
+        menuPopup.style.display = "none"
+        for (var i = 0; i < menuItems.length; i++) {
+            if (menuItems[i].hasAttribute("disabled")) {
+              menuItems[i].removeAttribute("disabled")
+            } else {
+              menuItems[i].setAttribute("disabled", "disabled");
+            }
+          }
+      }
   });
   
 //функция удаления аттрибута disabled

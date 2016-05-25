@@ -50,6 +50,8 @@
     for (var j = 0; j < linksPopup.length; j++) {
       linksPopup[j].addEventListener("click", function(){
         var itemForReplace = this.parentNode.parentNode;
+        var currentBtn = itemForReplace.querySelector(".menu-dish__btn");
+        currentBtn.innerHTML = "заменить";
         var cloneItem = itemForReplace.innerHTML;
         var replacedItem = currentItemForChange.cloneNode(true);
         currentItemForChange.innerHTML = cloneItem;
@@ -86,6 +88,8 @@
               if (menuItems[i].hasAttribute("disabled")) {
                 var toClone = menuItems[i].cloneNode(true);
                 toClone.removeAttribute("disabled");
+                var currentBtn = toClone.querySelector(".menu-dish__btn");
+                currentBtn.innerHTML = "выбрать";
                 popupItemContainer.appendChild(toClone);
 
               }

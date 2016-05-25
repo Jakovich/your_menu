@@ -185,7 +185,6 @@
   
     dinnerTitleFive.addEventListener("click", function(){
       if (dinnerQuantity.value == 3) {
-        console.log("yes");
         dinnerQuantity.value = 5;
         clearAttributes();
         hideDinner(5);

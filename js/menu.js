@@ -193,5 +193,43 @@
   };
   
   changeByTitle();
+  
+  //изменение стоимости заказа в завивсимости от кол-ва порций
+  
+  var subscribeFormQuantity = document.querySelectorAll(".subscribe-variant__input");
+  var PRICE = 700;
+  var form = document.querySelector(".menu-intro__form");
+  var totalSumContainer = document.querySelector(".dinner-total");
+  var totalSumSaleContainer = document.querySelector(".dinner-sale");
+  
+  
+  //установка изначальный значений
+   var initiValue = function(elem) {
+    var initSubscribeQuantity = form[elem];
+     var initsubscribeValue = parseInt(initSubscribeQuantity.value, 10);
+     var inittotalSum = initsubscribeValue * PRICE;
+     var inittotalSumSale = Math.floor(inittotalSum * 0.7) + " " + "руб.";
+     totalSumContainer.innerHTML = inittotalSum;
+     totalSumSaleContainer.innerHTML = inittotalSumSale;
+   };
+  
+  initiValue("subscribe-3dinner");
+  
+  
+   
+    //реагирование на изменения
+  var dinamicValue = function() {
+    for (var i = 0; i < subscribeFormQuantity.length; i++) {
+      subscribeFormQuantity[i].onclick = function() {
+        var subscribeFormValue = parseInt(this.value, 10); 
+        var totalSum = subscribeFormValue * PRICE;
+        totalSumContainer.innerHTML = totalSum;
+        var totalSumSale = Math.floor(totalSum * 0.7) + " " + "руб.";
+        totalSumContainer.innerHTML = totalSum;
+        totalSumSaleContainer.innerHTML = totalSumSale;
+      };
+    }
+  };
+  dinamicValue();
 
 })();

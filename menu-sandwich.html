@@ -32,11 +32,27 @@
             <div class="wrapper">
               <div class="service-nav">
                 <ul class="service-nav__items">
-                  <li class="service-nav__item"><a href="#">Меню<br>недели</a></li>
+                  <li class="service-nav__item"><a href="#" class="service-nav__menu-week">Меню<br>недели</a></li>
                   <li class="service-nav__item"><a href="#">Товары<br>для кухни</a></li>
                   <li class="service-nav__item"><a href="delivery.html">Доставка<br>и оплата</a></li>
                   <li class="service-nav__item"><a href="#">Вместе<br>c нами</a></li>
                 </ul>
+                <div class="popup-dinner">
+                  <div class="popup-dinner__item popup-dinner__item--dinner">
+                    <div class="popup-dinner__title">Ужины</div>
+                    <a href="#" class="popup-dinner__link">с 29 февраля по 4 марта</a>
+                    <a href="#" class="popup-dinner__link">с 7 марта по 11 марта</a>
+                  </div>
+                  <div class="popup-dinner__item popup-dinner__item--smoothies">
+                    <div class="popup-dinner__title">Смузи</div>
+                      <a href="#" class="popup-dinner__link">с 29 февраля по 4 марта</a>
+                  </div>
+                  <div class="popup-dinner__item popup-dinner__item--sandwich">
+                    <div class="popup-dinner__title">Сэндвич-start</div>
+                    <a href="#" class="popup-dinner__link">с 29 февраля по 4 марта</a>
+                  </div>
+            
+                </div>
               </div>
             </div>
           </div>     
@@ -50,7 +66,7 @@
           <div class="wrapper">
             <div class="menu-intro__inner">
             <div class="menu-choice">
-              <form action="post" name="menu-smoothies">
+              <form action="post" name="menu-sandwiches" class="menu-intro__form">
               <h3 class="menu-choice__title">Меню недели</h3>
               <div class="menu-choice__links menu-choice__links--sandwich">
                 <a href="menu.html" class="menu-choice__link">Ужин</a>
@@ -74,19 +90,19 @@
               <div class="menu-choice__quantity">
                 <div class="menu-choice__quantity-title">количество порций</div>
                 <div class="menu-choice__quantity-item">
-                  <input type="radio" name="subscribe-3dinner" class="subscribe-variant__input" id="3dinnerx2" value="2">
+                  <input type="radio" name="subscribe-3dinner" class="subscribe-variant__input" id="3dinnerx2" value="2" checked>
                     <label for="3dinnerx2">x2</label>
                 </div>
                 <div class="menu-choice__quantity-item">
-                  <input type="radio" name="subscribe-3dinner"  id="3dinnerx4" value="4" checked>
+                  <input type="radio" name="subscribe-3dinner"  id="3dinnerx4" value="4" class="subscribe-variant__input">
                   <label for="3dinnerx4">x4</label>
                 </div>
                 <div class="menu-choice__quantity-item">
-                  <input type="radio" name="subscribe-3dinner"  id="3dinnerx6" value="6">
+                  <input type="radio" name="subscribe-3dinner"  id="3dinnerx6" value="6" class="subscribe-variant__input">
                   <label for="3dinnerx6">x6</label>
                 </div>
                 <div class="menu-choice__quantity-item">
-                  <input type="radio" name="subscribe-3dinner"  id="3dinnerx8" value="8">
+                  <input type="radio" name="subscribe-3dinner"  id="3dinnerx8" value="8" class="subscribe-variant__input">
                   <label for="3dinnerx8">x8</label>
                 </div>
  
@@ -102,12 +118,12 @@
                 </div>
                 
                 <div class="menu-choice__price-content">
-                  <div class="menu-choice__price-total">        <span class="smoothies-total">2800</span> руб.
+                  <div class="menu-choice__price-total">        <span class="total-sum">2800</span> руб.
                   </div>
                   <div class="menu-choice__price-together">если вы <span>"вместе с нами"</span></div>
                   <div class="menu-choice__price-sales">
                      <a href="together.html">Подробнее</a>
-                    <div class="menu-choice__price-sale"><span class="smoothies-sale">2520 руб.</span> </div>
+                    <div class="menu-choice__price-sale"><span class="total-sum-sale">2520</span> руб. </div>
                 </div>
               </div>
               
@@ -224,7 +240,7 @@
         </div>
     </footer>
     
-    
-
+    <script src="js/menu-counter.js"></script>
+    <script src="js/menu-week-popup.js"></script>
   </body>
 </html>

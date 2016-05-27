@@ -7,7 +7,7 @@
   list-style: none;
   text-align: right;
   margin: 0;
-  padding: 8px 0;
+  padding: 0 0;
 }
 
 .service-nav__item {
@@ -17,6 +17,7 @@
   line-height: 24px;
   margin: 0 30px;
   vertical-align: middle;
+  padding: 8px 0;
 }
 
 .main-nav__service {
@@ -29,6 +30,10 @@
 
 .service-nav__item a:hover {
   color: rgba(255,255,255,0.8);
+}
+
+.service-nav__item--withchildren:hover .popup-dinner {
+  display: block;
 }
 
 .service-nav__index {
@@ -71,3 +76,97 @@
     top: -12px;
   }
 }
+
+/*модальное окно главная страница - меню недели*/
+.popup-dinner {
+  display: none;
+  background-color: #000000;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  width: 355px;
+  background-image: url("../img/bg-popup-dinner.jpg");
+  background-position: top center;
+  position: absolute;
+  top: 62px;
+  left: 420px;
+  z-index: 50;
+  
+  &::after {
+    top:0;
+    left: 130px;
+    position: absolute;
+    content: "";
+    width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 25px solid @bg-green;
+  }
+}
+
+.popup-dinner__index {
+  top: 62px;
+  left: -55px;
+}
+
+.popup-dinner__item {
+  font-family: "Neucha", "Arial", sans-serif;
+  font-size: 22px;
+  margin-bottom: 30px;
+  padding-left: 128px;
+  position: relative;
+  
+  &:hover {
+    color: rgba(255,255,255,0.4);
+  }
+  
+  &::before {
+    position: absolute;
+    content: "";
+    top:0;
+    left: 10px;
+    background-repeat: no-repeat;
+  }
+}
+
+.popup-dinner__link {
+  &:hover {
+    color: rgba(255,255,255,0.6);
+  }
+}
+.popup-dinner__item--dinner {
+  &::before {
+    background-image: url("../img/icon-dish-popup.png");
+    width: 116px;
+    height: 66px;
+  }
+}
+
+.popup-dinner__item--smoothies {
+  &::before {
+    background-image: url("../img/logo-smoothies-popup.png");
+    left: 35px;
+    width: 54px;
+    height: 66px;
+  }
+}
+
+.popup-dinner__item--sandwich {
+  &::before {
+    background-image: url("../img/icon-sandwich-popup.png");
+    left: 15px;
+    width: 96px;
+    height: 79px;
+  }
+}
+
+.popup-dinner__title {
+  color: #ffb58c;
+}
+
+.popup-dinner__link {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+

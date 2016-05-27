@@ -6,7 +6,7 @@
   var subscribeFormQuantity = document.querySelectorAll(".subscribe-variant__input");
   var PRICE = 700;
   var form = document.querySelector(".menu-intro__form");
-  var initSubscribeQuantity = form["subscribe-3dinner"];
+  var initSubscribeQuantity = form["subscribe-quantity"];
   var totalSumContainer = document.querySelector(".total-sum");
   var totalSumSaleContainer = document.querySelector(".total-sum-sale");
   

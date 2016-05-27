@@ -3,52 +3,17 @@
   var menuWeekLink = document.querySelector(".service-nav__menu-week");
   var menuWeekLinkScroll = document.querySelector(".service-nav__menu-week--scroll");
   
-  var menuWeekPopup = document.querySelector(".popup-dinner");
+  var menuWeekPopup = document.querySelector(".popup-dinner__menu");
   var menuPopup = document.querySelector(".popup-menu");
   
-  menuWeekLink.onclick = function(event) {
-    event.preventDefault();
-    if (menuWeekPopup.style.display == "block") {
-      menuWeekPopup.style.display = "none";
-    } else {
-      menuWeekPopup.style.display = "block";
-    }
-  };
-  
-  menuWeekLinkScroll.onclick = function(event) {
-    event.preventDefault();
-    if (menuWeekPopup.style.display == "block") {
-      menuWeekPopup.style.display = "none";
-      menuWeekPopup.style.position = "absolute";
-      menuWeekPopup.style.top = "62px";
-      menuWeekPopup.style.left = "-55px";
-      menuWeekPopup.classList.remove("scrollPopup");
-    } else {
-      menuWeekPopup.style.display = "block";
-      menuWeekPopup.style.position = "fixed";
-      menuWeekPopup.style.top = "65px";
-      menuWeekPopup.style.left = "250px";
-      menuWeekPopup.classList.add("scrollPopup");
-    }
-  };
-  
+ 
   window.onscroll = function() {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if (scrolled > 250) {
       menuPopup.style.top = "0";
-      if(!(menuWeekPopup.classList.contains("scrollPopup"))){
-      menuWeekPopup.style.display = "none";
-      }
-         
     } else {
       menuPopup.style.top = "-105px";
-      if(menuWeekPopup.classList.contains("scrollPopup")){
-        menuWeekPopup.style.display = "none";
-        menuWeekPopup.style.position = "absolute";
-        menuWeekPopup.style.top = "62px";
-        menuWeekPopup.style.left = "-55px";
-        menuWeekPopup.classList.remove("scrollPopup");
-      }
+     
     }
   }
   

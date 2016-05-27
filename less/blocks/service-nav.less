@@ -56,9 +56,15 @@
   font-family: "Comfortaa", "Arial", sans-serif;
   display: inline-block;
   margin-left: 160px;
+  
+  .service-nav__items {
+    height: 100%;
+  }
 
    .service-nav__item {
      margin: 0 15px;
+     padding: 17px 0;
+    
    }
   
   .service-nav__item a {
@@ -108,6 +114,15 @@
 .popup-dinner__index {
   top: 62px;
   left: -55px;
+}
+
+.popup-dinner--menu {
+  padding-top: 30px;
+  &::after {
+    display: none;
+  }
+  top: 82px;
+  left: -145px;
 }
 
 .popup-dinner__item {
@@ -169,5 +184,12 @@
   text-decoration: none;
   color: #ffffff;
   display: block;
+}
+
+.popup-dinner--menu a.popup-dinner__link{
+  color: #ffffff;
+  &:hover {
+    color: rgba(255,255,255,0.6);
+  }
 }
 

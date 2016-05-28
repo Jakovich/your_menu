@@ -12,6 +12,7 @@
   var dinnerTitle = document.querySelector(".menu-dishes__quantity");
   var dinnerCheck = document.querySelectorAll(".menu-choice__portion-variant input");
   var menuPopupClose = menuPopup.querySelector(".menu-dish__popup-close");
+  var dinnerTitleThree = document.querySelector(".menu-dishes__quantity-title--3");
   var dinnerTitleFive = document.querySelector(".menu-dishes__quantity-title--5");
   var currentItemForChange;
   var linksPopup;
@@ -180,7 +181,7 @@
   }
   dinamicValue();
   
-  //реагирование на клик по заголовку "5 ужинов"
+  //реагирование на клик по заголовку "3 ужина" и "5 ужинов"
   var changeByTitle = function () {
   
     dinnerTitleFive.addEventListener("click", function(){
@@ -190,7 +191,17 @@
         hideDinner(5);
       }
     });
+    
+    dinnerTitleThree.addEventListener("click", function(){
+      if (dinnerQuantity.value == 5) {
+        dinnerQuantity.value = 3;
+        clearAttributes();
+        hideDinner(3);
+      }
+    });
   };
+  
+  
   
   changeByTitle();
  

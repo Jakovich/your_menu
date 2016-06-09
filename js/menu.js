@@ -73,9 +73,11 @@
           }
          menuChangeLinks = menuSection.querySelectorAll(".menu-dish__btn");
           popupShow();
+          showIngred();
         })
       }
     }
+    
   };
   
 //заполнение и открытие попапа "заменить блюдо"
@@ -97,6 +99,7 @@
 
               }
             }
+            showIngred();
             menuPopup.style.display = "block";
             linksPopup = menuPopup.querySelectorAll(".menu-dish__btn");
             copy();
@@ -109,6 +112,7 @@
               }
             }
           }
+        
         }
         showIngred();
       });

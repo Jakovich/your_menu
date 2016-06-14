@@ -93,10 +93,12 @@
               <div class="personal-cards__item">
                 <input type="radio" name="card" value="card1" id="card1" checked>
                 <label for="card1">карта Visa 5550 0000 0000 9999</label>
+                <div class="personal-cards__remove">x</div>
               </div>
               <div class="personal-cards__item">
                 <input type="radio" name="card" value="card2" id="card2">
                 <label for="card2">карта Visa 5550 0000 0000 9999</label>
+                <div class="personal-cards__remove">x</div>
               </div>
             </div>
           
@@ -133,7 +135,8 @@
                   <option value="2027">27</option>
                 </select>
                 <input class="add-cart__item add-cart__item--css" type="text" placeholder="CV2" title="Введите три цифры, расположенные на оборотной стороне вашей банковской карты">
-                <input class="add-cart__item add-cart__item--name" type="text" name="card-name" placeholder="Имя держателя" id="card-name">
+                <input class="add-cart__item add-cart__item--name" type="text" name="card-name" placeholder="Имя держателя*" id="card-name">
+                <div class="add-cart__explic">*Заполните это поле в точности как на карте</div>
               </div>
           
               <button type="submit">Привязать карту</button>

@@ -46,7 +46,7 @@
   position: relative;
 }
   
-.personal-info__data{ 
+.personal-info__data { 
   
   div {
     border: 1px dashed  #dadada;
@@ -58,6 +58,11 @@
     width: 86%;
   }
   
+}
+
+.personal-info__data--check {
+  font-size: 16px;
+  padding-left: 40px;
 }
 
 .personal-info__input {
@@ -113,7 +118,7 @@
   font-weight: normal;
   color: #868686;
   text-align: left;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   display: flex;
   align-items: flex-start;
   width: 570px;
@@ -175,5 +180,25 @@
   left: 52px;
   color: #ffffff;
   top: -12px;
+}
+
+.personal-info__submit {
+  background-color: #e95d0f;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 10px;
+  outline:none;
+  padding: 8px 15px;
+  width: 350px;
+  cursor: pointer;
+  display: block;
+  margin-left: 138px;
+  margin-bottom: 30px;
+  
+  &:hover {
+    background-color: #fc7321;
+  }
 }
 

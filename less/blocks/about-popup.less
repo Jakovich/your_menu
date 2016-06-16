@@ -1,8 +1,9 @@
 .about-popup {
+  display: none;
   position: fixed;
   width: 470px;
   padding: 10px 55px;
-  top: 250px;
+  top: 150px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #ffffff;
@@ -49,7 +50,7 @@
   font-size: 18px;
   color: #707070;
   margin-bottom: 5px;
-  
+  position: relative;
 }
 
 .about-popup__comment {
@@ -70,6 +71,11 @@
   &:hover {
     color: #13a64d;
   }
+}
+
+input[type='file'] {
+  color: #707070;
+  border-radius: 10px;
 }
 
 .about-popup__btn {
@@ -93,8 +99,11 @@
 }
 
 .about-popup__btn--small {
-  display: inline-block;
+  position: absolute;
+  right: 5px; 
+  top: 5px;
   font-size: 18px;
+  padding: 3px 10px;
   width: auto;
   margin-bottom: 0;
 }

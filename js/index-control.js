@@ -6,7 +6,10 @@
   var menuWeekPopup = document.querySelector(".popup-dinner__menu");
   var menuPopup = document.querySelector(".popup-menu");
   
- 
+  
+    menuPopup.style.top = "-105px";
+  
+  
   window.onscroll = function() {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if (scrolled > 250) {

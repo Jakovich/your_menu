@@ -37,7 +37,8 @@
 .about-popup__input {
   display: block;
   border-radius: 20px;
-  width: 93%;
+  width: 425px;
+  margin: 0 auto;
   border: 1.5px solid #a2a2a2;
   outline: none;
   font-size: 24px;
@@ -51,13 +52,18 @@
   color: #707070;
   margin-bottom: 5px;
   position: relative;
+  display: flex;
+  width: 445px;
+  padding: 6px 5px;
 }
 
 .about-popup__comment {
   border: 1.5px solid #a2a2a2;
   border-radius: 20px;
   padding: 6px 15px;
-  width: 93%;
+  width: 425px;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 15px;
 }
 
@@ -103,26 +109,29 @@ input[type='file'] {
   right: 5px; 
   top: 5px;
   font-size: 18px;
-  padding: 3px 10px;
+  padding: 5px 10px;
   width: auto;
   margin-bottom: 0;
+  
 }
-
 
 .filename {
   background: #fff;
   border: 0;
+  display: inline-block;
+  line-height: 10px;
+  margin-left: 10px;
 }
 
 .file-upload {
   position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
   overflow: hidden; /* Все что выходит за пределы - скрываем */
-  width: 20%; /* Задаем ширину кнопки выбора файла */
+  width: 90px; /* Задаем ширину кнопки выбора файла */
   height: 20px; /* Задаем высоту кнопки выбора файла */ 
   background-color: #dddddd;
   border: 1.5px solid #a2a2a2;
   border-radius: 15px;
-  padding: 8px 4px;
+  padding: 6px 4px;
   color: #707070;
   font-size: 18px;
   text-align: center;
@@ -148,5 +157,7 @@ input[type='file'] {
 }
 
 .file-upload span {
-  line-height: 36px; /* Делаем вертикальное выравнивание текста, который написан на кнопке */
+  line-height: 34px; /* Делаем вертикальное выравнивание текста, который написан на кнопке */
 }
+
+

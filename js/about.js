@@ -30,8 +30,9 @@
     
 })();
 
+//функция показа пути загруженного файла
 $(document).ready( function() {
-    $(".file-upload input[type=file]").change(function(){
+    $(".about-popup__file-upload input[type=file]").change(function(){
          var filename = $(this).val().replace(/.*\\/, "");
          $("#filename").val(filename);
     });

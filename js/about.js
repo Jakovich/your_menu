@@ -11,15 +11,12 @@
     if (!(popupCv.style.display === 'block')) {
       popupCv.style.display = 'block'
     }
-  
   })
   
-  popupClose.addEventListener('click', function(){
-    
+  popupClose.addEventListener('click', function(){  
     if (popupCv.style.display === 'block') {
       popupCv.style.display = 'none'
     }
-  
   })
   
   
@@ -30,8 +27,12 @@
       }
     }
   });
-  
-  
-  
-  
+    
 })();
+
+$(document).ready( function() {
+    $(".file-upload input[type=file]").change(function(){
+         var filename = $(this).val().replace(/.*\\/, "");
+         $("#filename").val(filename);
+    });
+});

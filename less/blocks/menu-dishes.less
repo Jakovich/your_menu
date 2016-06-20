@@ -159,12 +159,44 @@
 }
 
 .menu-dishes__select::before {
-    background-image: url("../img/dot.png");
-    content: "";
-    height: 6px;
+  background-image: url("../img/dot.png");
+  content: "";
+  height: 6px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.menu-dishes__basket {
+  background-color: #e95d0f;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 30px;
+  margin: 10px auto;
+  outline: medium none;
+  padding: 8px 15px;
+  width: 450px;
+  position: relative;
+  margin-bottom: 25px;
+  
+  &::after {
+    content: '';
     position: absolute;
-    top: 0;
-    width: 100%;
+    width: 27px;
+    height: 28px;
+    background-image: url('../img/basket__white.png');
+    background-repeat: no-repeat;
+    right: 37px;
+    top: 12px;
+  }
+  
+  &:hover {
+    background-color: #fc7321;
+  }
+
 }
 
 

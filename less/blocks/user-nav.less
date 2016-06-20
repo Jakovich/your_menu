@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 8px;
   padding-bottom: 0;
+  //margin-right: 100px;
 }
 
 .page-header__logo {
@@ -138,12 +139,38 @@
   }
 }
 
-.user-nav__item--basket-active, .user-nav__item--basket-active:hover {
+
+.user-nav__item--basket-active {
   a {
     &::before {
       background-position: @icon-basket-orange-offset-x @icon-basket-orange-offset-y;
     }
+     
   }
+}
+
+.user-nav__item--basket-active:hover {
+  a {
+    color: #040404;
+    
+    &::before {
+      background-image: url('../img/basket-orange-hover.png');
+    }
+    
+    
+  }
+  
+  .user-nav__basket-total {
+      color: #f48857;
+    }
+}
+
+.user-nav__basket-total {
+  color: #ec7037;
+  margin-left: 10px;
+  //position: absolute;
+  text-align: left;
+  //width: 120px;
 }
 
 

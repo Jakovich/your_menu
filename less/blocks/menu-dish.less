@@ -8,6 +8,18 @@
   flex-direction:column;
   align-items: flex-end;
   overflow: hidden;
+  
+  &:hover {
+    .menu-dish__descr {
+      display: none;
+    }
+    
+    .menu-dish__btn {
+      left: 60px;
+    }
+  }
+  
+
 }
 
 //стили для недоступных блюд
@@ -36,7 +48,17 @@
       top: 0;
       opacity: 1;
     }
+    
+    &:hover {
+      .menu-dish__descr {
+        display: flex;
+      }
+      .menu-dish__btn {
+        left: 27px;
+      }
+    }
   }
+  //<ul class="user-navitems">
   
   .menu-dish__title {
     a:hover {

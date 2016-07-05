@@ -165,7 +165,7 @@
                 <div class="basket-entry__title">
                   У меня есть аккаунт
                 </div>
-                <form action="post" class="basket-entry__signin">
+                <form action="post" class="basket-enty__signin">
                    <div class="basket-entry__input-wrapper">
                       <input type="email" class="basket-entry__input" placeholder="Email">
                       <input type="password" class="basket-entry__input" placeholder="Пароль">
@@ -185,8 +185,10 @@
             </section>
                       
             <section class="basket-delivery">
+             <form action="/" name="basket-delivery__form">
               <div class="basket-delivery__left">
-                <input type="text" class="basket-delivery__input-name" placeholder="Имя">
+                <input type="text" class="basket-delivery__input-name" name="basket-name" placeholder="Имя">
+                <input type="text" class="basket-delivery__input-name" placeholder="Телефон" name="basket-phone">
                 <div class="add-address">
                 <div class="add-address__title">
                   Адрес:
@@ -210,18 +212,20 @@
                 </div>
               </div>
               <div class="basket-delivery__right">
-                <div class="date-select">
-                  <div class="date-select__title">
+                <div class="basket-delivery__top">
+                 <div class="date-select__title">
                    Дата и время
                   </div>
-                  <select name="delivery-date" id="delivery-date">
+                  <select class="delivery-date" name="delivery-date" id="delivery-date">
                     <option value="14.02.2016">Вс, 14 февраля</option>
                     <option value="15.02.2016">Пн, 15 февраля</option>
                     <option value="21.02.2016">Вс, 21 февраля</option>
                     <option value="22.02.2016">Пн, 22 февраля</option>
 
                   </select>
-
+                </div>
+                
+                <div class="date-select">
                   <div class="delivery-time">
                     <div class="delivery-time__item">
                       <input type="radio" name="delivery-time" value="12:00-14:00" id="time1" checked>
@@ -248,9 +252,11 @@
                       <label for="time6">22:00 - 00:00</label>
                     </div>
                   </div>
+                  <a href="#" class="basket-delivery__btn" id="delivery-next">Далее >></a>
                 </div>
-                <a href="#" class="basket-delivery__btn" id="delivery-next">Далее >></a>
+                
               </div>
+              </form>
             </section>
           
             <section class="basket-confirm">

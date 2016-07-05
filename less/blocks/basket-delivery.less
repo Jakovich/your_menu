@@ -7,9 +7,10 @@
   padding-right: 0;
   width: 858px;
   float: right;
+  position: relative;
   .clearfix();
   position: relative;
-  
+
   &::before {
     position: absolute;
     content: "";
@@ -38,20 +39,29 @@
 }
 
 .basket-delivery__right {
-  float: right;
   padding-top: 5px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  
+  right: 0;
+  top: 0;
+  height: 100%;
   .clearfix();
 }
 
 .basket-delivery__input-name {
   font-size: 24px;
   color: #878686;
+  display: block;
   padding: 6px 25px;
   border: 1px solid #009036;
   border-radius: 15px;
   margin-bottom: 15px;
   margin-top: 5px;
 }
+
+
 
 .basket-delivery__btn {
   font-size: 20px;
@@ -66,4 +76,8 @@
   &:hover {
     background-color: #13b04e;
   }
+}
+
+.basket-delivery__top {
+  text-align: center;
 }

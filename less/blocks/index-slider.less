@@ -44,9 +44,24 @@
     background-color: #ea7037;
 }
 
-      
+
       /* Point "selectionné". De la même manière que l'image, on change en fonction de la classe de slider */
-.index-slider__dots [disabled="disabled"] {
+/*.index-slider__dots [disabled="disabled"] {
+  background-color: #ea7037;
+  cursor: normal;
+}*/
+
+.image1 .index-slider__dots li:nth-child(1) {
+  background-color: #ea7037;
+  cursor: normal;
+}
+
+.image2 .index-slider__dots li:nth-child(2) {
+  background-color: #ea7037;
+  cursor: normal;
+}
+
+.image3 .index-slider__dots li:nth-child(3) {
   background-color: #ea7037;
   cursor: normal;
 }
@@ -56,15 +71,15 @@
   width: 300%;
   height:100%;
         /* La transition sur tout les navigateurs */
-           /* Chrome */ 
+           /* Chrome */
   -webkit-transition-property:all;
   -webkit-transition-duration:1s;
 
-           /* Firefox */ 
+           /* Firefox */
   -moz-transition-property:all;
   -moz-transition-duration:1s;
-          
-           /* Opera */ 
+
+           /* Opera */
   transition-property:all;
   transition-duration:1s;
 
@@ -74,7 +89,7 @@
   position: relative;
 
 }
-      
+
       /* Les différentes positions du slider */
 .image1 .index-slider__container{
   left:0;
@@ -87,8 +102,8 @@
 .image3 .index-slider__container {
   left:-200%;
 }
- 
-      
+
+
       /* Les images */
 .index-slider__container li{
   float: left;

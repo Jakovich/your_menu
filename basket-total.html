@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ТВОЕ МЕНЮ</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter36806495 = new Ya.Metrika({
+                        id: 36806495,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true,
+                        trackHash: true
+                    });
+                } catch (e) {}
+            });
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function() {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+    </script> <noscript><div><img src="https://mc.yandex.ru/watch/36806495" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+
+    <header class="page-header">
+
+        <nav class="main-nav">
+            <div class="main-nav__user">
+                <div class="wrapper--index">
+                    <div class="user-nav">
+                        <div class="page-header__logo">
+                            <a href="main.html"><img src="img/logo.png" width="233" height="211" alt="ТВОЕ МЕНЮ"></a>
+                        </div>
+                        <ul class="user-nav__items">
+                            <li class="user-nav__item user-nav__item--location"><a href="#">Орёл</a></li>
+                            <li class="user-nav__item user-nav__item--tel"><a href="#">89996050000 <span class="tel-expl">Перезвоните мне</span></a></li>
+                            <li class="user-nav__item user-nav__item--entry"><a href="#">Вход</a></li>
+                            <li class="user-nav__item user-nav__item--profile"><a href="#">Мой профиль</a></li>
+                            <li class="user-nav__item user-nav__item--basket"><a href="#">Корзина <span class="user-nav__basket-total"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main-nav__service">
+                <div class="wrapper">
+                    <div class="service-nav">
+                        <ul class="service-nav__items">
+                            <li class="service-nav__item service-nav__item--withchildren">
+                                <div><a href="#" class="service-nav__menu-week">Меню<br>недели</a>
+                                </div>
+                                <div class="popup-dinner">
+                                    <div class="popup-dinner__item popup-dinner__item--dinner">
+                                        <div class="popup-dinner__title">Ужины</div>
+                                        <a href="#" class="popup-dinner__link">с 29 февраля по 4 марта</a>
+                                        <a href="#" class="popup-dinner__link">с 7 марта по 11 марта</a>
+                                    </div>
+                                    <div class="popup-dinner__item popup-dinner__item--smoothies">
+                                        <div class="popup-dinner__title">Смузи</div>
+                                        <a href="#" class="popup-dinner__link">с 29 февраля по 4 марта</a>
+                                    </div>
+                                    <div class="popup-dinner__item popup-dinner__item--sandwich">
+                                        <div class="popup-dinner__title">Сэндвич-start</div>
+                                        <a href="#" class="popup-dinner__link">с 29 февраля по 4 марта</a>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="service-nav__item"><a href="#">Товары<br>для кухни</a></li>
+                            <li class="service-nav__item"><a href="delivery.html">Доставка<br>и оплата</a></li>
+                            <li class="service-nav__item"><a href="#">Вместе<br>c нами</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="page-main">
+
+        <div class="wrapper">
+            <div class="basket-wrapper">
+                <div class="basket-nav">
+                    <ul class="basket-nav__items">
+                        <li class="basket-nav__item basket-nav__item--active basket-nav__item--basket"><span>1</span> Корзина</li>
+                        <li class="basket-nav__item basket-nav__item--entry"><span>2</span> Вход</li>
+                        <li class="basket-nav__item basket-nav__item--delivery"><span>3</span> Доставка</li>
+                        <li class="basket-nav__item basket-nav__item--confirm"><span>4</span> Подтверждение</li>
+                    </ul>
+                </div>
+                <section class="basket-total">
+                    <table class="basket-total__table">
+
+                        <tr>
+                            <th class="basket-total__recipe">Рецепты, которые<br> вы&nbsp;заказываете</th>
+                            <th class="basket-total__quantity">Цена и кол-во<br>порций</th>
+                            <th class="basket-total__cost">Стоимость</th>
+                            <th></th>
+                        </tr>
+
+                        <tr class="basket-total__dish-item">
+                            <td class="basket-total__recipe">
+                                <img src="img/photo-fish--small.jpg" alt="" width="68" height="68">
+                                <div>Треска на подушечке из&nbsp;овощей со сливочным соусом</div>
+                            </td>
+                            <td class="basket-total__quantity">
+                                <span>420Р</span> Х
+                                <select name="quantity-portion">
+                      <option value="2">2</option>
+                      <option value="4">4</option>
+                      <option value="6">6</option>
+                     </select>
+                            </td>
+                            <td class="basket-total__cost">
+                                <span>840</span>Р
+                            </td>
+                            <td>
+                                <div class="basket-total__delete">x</div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="basket-total__summary">
+                        <div class="basket-total__summary-left">
+                            <div class="basket-total__gift">
+                                <div class="basket-total__gift-text">
+                                    <p class="basket-total__gift-title">Подарок от &laquo;Твое меню&raquo;</p>
+                                    <p class="basket-total__gift-name">Магнит &laquo;Блюдо&raquo;</p>
+                                </div>
+                                <div class="basket-total__gift-image"><img src="img/photo-magnet.jpg" width="83" height="84" alt=""></div>
+
+                            </div>
+                            <div class="basket-total__links">
+                                <a href="#" class="basket-total__btn basket-total__btn--white">Продолжить покупки</a>
+                                <a href="#" id="total-next" class="basket-total__btn basket-total__btn--green">Далее >></a>
+                                <a class="basket-total__clear" href="#">Очистить корзину</a>
+                            </div>
+                        </div>
+                        <div class="basket-total__summary-right">
+                            <form class="basket-total__promo" action="post">
+                                <input type="text" placeholder="Промо код">
+                                <button type="submit">Применить</button>
+                            </form>
+                            <div class="basket-total__full">
+                                <div class="basket-total__full-cost">Итого <span>840P</span></div>
+                                <div class="basket-total__full-sale">С учетом скидки 20% <span>672р.</span></div>
+                                <a href="personal-points.html" class="basket-total__full-points">Начислено <span>10</span> баллов</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="basket-entry">
+                    <div class="basket-entry__inner">
+                        <div class="basket-entry__left">
+
+                            <div class="basket-entry__title">
+                                Введите ниже свой телефон,<br>на&nbsp;который мы пришлем пароль.
+                            </div>
+                            <form action="post" class="basket-entry__signup">
+                                <div class="basket-entry__input-wrapper">
+
+                                    <input type="text" class="basket-entry__input" placeholder="Телефон">
+
+                                    <div class="basket-entry__accept">
+                                        <input type="checkbox" id="entry-accept">
+                                        <label for="entry-accept">Я принимаю условия пользовательского&nbsp;соглашения</label>
+                                    </div>
+                                </div>
+                                <div class="basket-entry__btn-wrapper">
+
+                                    <button type="submit">Регистрация</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="basket-entry__right">
+                            <div class="basket-entry__title">
+                                У меня есть аккаунт
+                            </div>
+                            <form action="post" class="basket-enty__signin">
+                                <div class="basket-entry__input-wrapper">
+                                    <input type="email" class="basket-entry__input" placeholder="Email">
+                                    <input type="password" class="basket-entry__input" placeholder="Пароль">
+                                </div>
+                                <div class="basket-entry__btn-wrapper">
+                                    <button type="submit">Войти</button>
+                                    <a href="#" class="basket-entry__password">Забыли пароль?</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="basket-entry__social-links">
+                        <p>Авторизироваться с помощью</p>
+                        <a class="basket-entry__social-link basket-entry__social-link--vk"><img src="img/icon-vk--signin.png" width="137" height="37" alt="Вконтакте"> </a>
+                        <a class="basket-entry__social-link basket-entry__social-link--fb"><img src="img/icon-fb--signin.png" width="132" height="37" alt="Facebook"> </a>
+                    </div>
+                </section>
+
+                <section class="basket-delivery">
+                    <form action="/" name="basket-delivery__form">
+                        <div class="basket-delivery__left">
+                            <input type="text" class="basket-delivery__input-name" name="basket-name" placeholder="Имя">
+                            <input type="text" class="basket-delivery__input-name" placeholder="Телефон" name="basket-phone">
+                            <div class="add-address">
+                                <div class="add-address__title">
+                                    Адрес:
+                                </div>
+                                <select name="address" class="add-address__select">
+
+                  <option value="1">Санкт-Петербург ул. Камская, д.10, кв. 86</option>
+                  <option value="2">Москва ул. Камская, д.10, кв. 86</option>
+                  <option value="3">sdfsdfsdsd fsfdsdsdf sfdsdsdfsdfdfgdgfdgfdgfdgfdgf dgdsdf</option>
+                </select>
+                                <div class="add-address__address-exist">
+                                    Санкт-Петербург<br>ул. Камская, д.10, кв. 86
+                                </div>
+                                <div class="add-address__form">
+                                    <button class="add-address__form-title">Добавить</button>
+                                    <input class="add-address__item add-address__item--street" type="text" placeholder="Улица">
+                                    <input class="add-address__item" type="text" placeholder="Дом">
+                                    <input class="add-address__item" type="text" placeholder="Корпус">
+                                    <input class="add-address__item" type="text" placeholder="Кв.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-delivery__right">
+                            <div class="basket-delivery__top">
+                                <div class="date-select__title">
+                                    Дата и время
+                                </div>
+                                <select class="delivery-date" name="delivery-date" id="delivery-date">
+                    <option value="14.02.2016">Вс, 14 февраля</option>
+                    <option value="15.02.2016">Пн, 15 февраля</option>
+                    <option value="21.02.2016">Вс, 21 февраля</option>
+                    <option value="22.02.2016">Пн, 22 февраля</option>
+
+                  </select>
+                            </div>
+
+                            <div class="date-select">
+                                <div class="delivery-time">
+                                    <div class="delivery-time__item">
+                                        <input type="radio" name="delivery-time" value="12:00-14:00" id="time1" checked>
+                                        <label for="time1">12:00 - 14:00</label>
+                                    </div>
+                                    <div class="delivery-time__item">
+                                        <input type="radio" name="delivery-time" value="14:00-16:00" id="time2">
+                                        <label for="time2">14:00 - 16:00</label>
+                                    </div>
+                                    <div class="delivery-time__item">
+                                        <input type="radio" name="delivery-time" value="16:00-18:00" id="time3">
+                                        <label for="time3">16:00 - 18:00</label>
+                                    </div>
+                                    <div class="delivery-time__item">
+                                        <input type="radio" name="delivery-time" value="18:00-20:00" id="time4">
+                                        <label for="time4">18:00 - 20:00</label>
+                                    </div>
+                                    <div class="delivery-time__item">
+                                        <input type="radio" name="delivery-time" value="20:00-22:00" id="time5">
+                                        <label for="time5">20:00 - 22:00</label>
+                                    </div>
+                                    <div class="delivery-time__item">
+                                        <input type="radio" name="delivery-time" value="22:00-00:00" id="time6">
+                                        <label for="time6">22:00 - 00:00</label>
+                                    </div>
+                                </div>
+                                <a href="#" class="basket-delivery__btn" id="delivery-next">Далее >></a>
+                            </div>
+
+                        </div>
+                    </form>
+                </section>
+
+                <section class="basket-confirm">
+                    <div class="basket-confirm__left">
+                        <div class="basket-confirm__title">Итог</div>
+                        <div class="basket-confirm__item basket-confirm__item--compos">
+                            Треска на подушечке из овощей со сливочным соусом (2 порции)
+                        </div>
+                        <div class="basket-confirm__item  basket-confirm__item--address">
+                            Санкт-Петербург. ул. Камская, д.10, кв.86
+                        </div>
+                        <div class="basket-confirm__item basket-confirm__item--date">
+                            12 февраля, 12:00-14:00
+                        </div>
+                        <div class="basket-confirm__total">
+                            <div class="basket-confirm__total-delivery">Доставка - <span>0р.</span></div>
+                            <div class="basket-confirm__total-sum">Итоговая сумма заказа: <span>2000Р</span></div>
+                        </div>
+                        <a href="#" id="confirm-prev" class="basket-confirm__link">&lt;&lt;Назад</a>
+                    </div>
+                    <div class="basket-confirm__right">
+                        <form class="basket-confirm__payment">
+                            <div class="basket-confirm__payment-title">Способ оплаты</div>
+                            <div class="basket-confirm__payment-item">
+                                <input type="radio" name="card" value="card1" id="card1" checked>
+                                <label for="card1">Наличными курьеру</label>
+                            </div>
+                            <div class="basket-confirm__payment-change">
+                                <input type="checkbox" id="payment-change">
+                                <label for="payment-change">Нужна сдача</label>
+                            </div>
+
+                            <div class="basket-confirm__payment-item">
+                                <input type="radio" name="card" value="card2" id="card2">
+                                <label for="card2">карта Visa 5550 0000 0000 9999</label>
+                            </div>
+
+                            <div class="basket-confirm__add-card">
+
+                                <div class="add-card">
+                                    <div class="add-card__title">Добавить</div>
+                                    <input class="add-cart__item add-cart__item--number" type="text" name="card-number" placeholder="Номер карты" id="card-number">
+                                    <select class="add-cart__item add-cart__item--select" name="card-month" id="card-month">
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                                    <select class="add-cart__item add-cart__item--select" name="card-year" id="card-year">
+                        <option value="2016">16</option>
+                        <option value="2017">17</option>
+                        <option value="2018">18</option>
+                        <option value="2019">19</option>
+                        <option value="2020">20</option>
+                        <option value="2021">21</option>
+                        <option value="2022">22</option>
+                        <option value="2023">23</option>
+                        <option value="2024">24</option>
+                        <option value="2025">25</option>
+                        <option value="2026">26</option>
+                        <option value="2027">27</option>
+                      </select>
+                                    <input class="add-cart__item add-cart__item--css" type="text" placeholder="CV2" title="Введите три цифры, расположенные на оборотной стороне вашей банковской карты">
+                                    <input class="add-cart__item add-cart__item--name" type="text" name="card-name" placeholder="Имя держателя*" id="card-name">
+                                    <div class="add-cart__explic">*Заполните это поле в точности как на карте</div>
+                                </div>
+                            </div>
+                            <button type="submit" class="basket-confirm__btn">Оформить заказ</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="page-footer">
+        <div class="page-footer__contacts">
+            <div class="wrapper">
+                <div class="contacts__inner">
+                    <div class="social-links">
+                        <a class="social-link social-link--vk" href="https://vk.com/tvoemenu" title="Вконтакте"></a>
+                        <a class="social-link social-link--fb" href=" https://www.facebook.com/tvoemenu/" title="Facebook"></a>
+                        <a class="social-link social-link--ok" href="http://www.ok.ru/group/52905877110983" title="Одноклассники"></a>
+                        <a class="social-link social-link--inst" href="https://www.instagram.com/tvoemenu/" title="Instagram"></a>
+                    </div>
+                    <div class="contacts__tel">
+                        тел. 8999605000<br> (Viber, WhatsApp)
+                    </div>
+                    <div class="contacts__subscribe">
+                        <div class="contacts__explic">
+                            Хочу получать новое меню на почту
+                        </div>
+                        <form class="contacts__form" action="post">
+                            <input type="email" placeholder="email">
+                            <button type="submit">Ok</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer__nav">
+            <div class="wrapper">
+                <nav class="footer-nav">
+                    <ul class="footer-nav__items">
+                        <li class="footer-nav__item"><a href="#">О нас</a></li>
+                        <li class="footer-nav__item"><a href="contacts.html">Контакты</a></li>
+                        <li class="footer-nav__item"><a href="#">Вопросы/Ответы</a></li>
+                        <li class="footer-nav__item"><a href="#">Как это работает</a></li>
+                        <li class="footer-nav__item"><a href="delivery.html">Доставка/Оплата</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="page-footer__confident">
+            <div class="wrapper">
+                <a class="page-footer__confident-item" href="#">Защита персональной информации</a>
+                <a class="page-footer__confident-item" href="#">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/basket-nav.js"></script>
+    <script src="js/basket-select.js"></script>
+</body>
+
+</html>
